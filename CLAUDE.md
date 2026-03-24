@@ -8,6 +8,7 @@ Parses `.dem` demo files, extracts player stats, fetches FACEIT ELO, and display
 - `index.html` — FACEIT ELO rankings by team
 - `standings.html` — Division standings
 - `stats.html` — Individual player stats
+- `match-history.html` — Per-demo match results with expandable player stats
 
 ## Data pipeline
 All data lives in `data/s8/`:
@@ -42,10 +43,31 @@ Team names in demo filenames are often wrong or use player nicknames (e.g. "team
 
 2. **Schedule canonicalization** — fuzzy-matches raw team names against canonical names from `schedule.json` (cutoff 0.75)
 
-3. **Roster correction** — loads `rosters.json` and fuzzy-matches player Steam display names against official SFL nicknames (cutoff 0.82). This is the authoritative fallback — catches any remaining wrong assignments regardless of what the filename says.
+3. **Roster correction** — loads `rosters.json` and matches player Steam display names against official SFL nicknames. Matching logic:
+   - Exact match first
+   - Word-boundary containment in either direction (e.g. "neoo" matches "Uniguide neoo" but "mrk" does NOT match "mrkothe")
+   - Only accepts a match if exactly one team's roster matches (ambiguous = skip)
+   - Fuzzy match fallback (cutoff 0.82)
+
+## rosters.json notes
+- Source of truth is the SFL homepage HTML — re-paste it when rosters change
+- Stand-in players (not on official SFL roster) must be added manually using their in-game Steam display name
+- If a player's display name has a clan prefix (e.g. "Uniguide neoo"), the word-boundary match handles it automatically — no need to add the full prefixed name
+- Known stand-ins added manually: `Lord Commander` (Andwhy AB), `spetero` (Andwhy AB)
 
 ## Known aliases
 - "BoaBots" → "NoA Ignite AB" (hard-coded in ALIASES dict in parse_demos.py)
+
+## Full data refresh workflow
+Run this after adding demos or fixing rosters:
+```
+python3 scripts/parse_demos.py --season s8
+python3 scripts/fetch_elo.py --season s8
+python3 scripts/fetch_standings.py
+python3 scripts/fetch_schedule.py
+git add data/s8/ && git commit -m "Refresh s8 data" && git push
+```
+Always run `fetch_elo.py` after `parse_demos.py` — ELO is keyed by steamid→team and must reflect the latest team assignments.
 
 ## Secrets
 - FACEIT API key is stored in `.env` (gitignored), loaded via `os.environ.get("FACEIT_API_KEY")`
