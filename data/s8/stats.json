@@ -1415,7 +1415,7 @@
     {
       "steamid": "76561199637688495",
       "name": "Lord Commander",
-      "team": "Telia Sverige AB",
+      "team": "NODAF AB",
       "kills": 8,
       "deaths": 35,
       "assists": 9,
@@ -1432,7 +1432,7 @@
     {
       "steamid": "76561197960613299",
       "name": "[G-Power]spetero",
-      "team": "NODAF AB",
+      "team": "Andwhy AB",
       "kills": 75,
       "deaths": 28,
       "assists": 22,
@@ -1619,7 +1619,7 @@
     {
       "steamid": "76561198210338380",
       "name": "STORA OXAR",
-      "team": "Hello Ebbot AB",
+      "team": "Netgain AB",
       "kills": 44,
       "deaths": 42,
       "assists": 19,
@@ -1636,7 +1636,7 @@
     {
       "steamid": "76561197986434448",
       "name": "Frälsaren",
-      "team": "Hello Ebbot AB",
+      "team": "Netgain AB",
       "kills": 50,
       "deaths": 39,
       "assists": 16,
@@ -1653,7 +1653,7 @@
     {
       "steamid": "76561198116828805",
       "name": "silversigge",
-      "team": "Hello Ebbot AB",
+      "team": "Netgain AB",
       "kills": 44,
       "deaths": 41,
       "assists": 9,
@@ -1670,7 +1670,7 @@
     {
       "steamid": "76561198025475427",
       "name": "Muerdurör",
-      "team": "Hello Ebbot AB",
+      "team": "Netgain AB",
       "kills": 38,
       "deaths": 44,
       "assists": 17,
@@ -1687,7 +1687,7 @@
     {
       "steamid": "76561198007137925",
       "name": "گUPRA",
-      "team": "Hello Ebbot AB",
+      "team": "Netgain AB",
       "kills": 24,
       "deaths": 50,
       "assists": 13,
@@ -2231,7 +2231,7 @@
     {
       "steamid": "76561198000665124",
       "name": "Mrkothe",
-      "team": "Netlight AB DUENDE",
+      "team": "DynaMate AB",
       "kills": 8,
       "deaths": 15,
       "assists": 3,
@@ -2248,7 +2248,7 @@
     {
       "steamid": "76561198042773220",
       "name": "[NoA] phade",
-      "team": "NoA Ignite AB",
+      "team": "Silverspin AB",
       "kills": 18,
       "deaths": 19,
       "assists": 15,
@@ -2639,7 +2639,7 @@
     {
       "steamid": "76561198207185136",
       "name": "Uniguide neoo",
-      "team": "Uniguide AB",
+      "team": "Xenit AB",
       "kills": 43,
       "deaths": 27,
       "assists": 10,
@@ -2673,7 +2673,7 @@
     {
       "steamid": "76561198075073796",
       "name": "Uniguide tarre",
-      "team": "Uniguide AB",
+      "team": "Xenit AB",
       "kills": 23,
       "deaths": 28,
       "assists": 10,
@@ -6854,7 +6854,7 @@
       "team1_raw": "team گUPRA",
       "team2_raw": "team CruZan",
       "home_team": "Netgain AB",
-      "away_team": "Hello Ebbot AB",
+      "away_team": "Sweco AB",
       "total_rounds": 36,
       "t_start_score": 19,
       "ct_start_score": 17,
@@ -7049,8 +7049,8 @@
           "kpr": 0.33
         }
       ],
-      "home_score": 19,
-      "away_score": 17
+      "home_score": 17,
+      "away_score": 19
     },
     {
       "file": "2026-03-19_21-18-17_51_de_mirage_team_keTTa_vs_team_Muerdurör.dem",

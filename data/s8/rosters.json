@@ -1,580 +1,65 @@
 {
-  "CGI Sverige AB": [
-    "Wallak Spooted",
-    "xelos",
-    "ezki",
-    "pekz",
-    "SeagullN",
-    "robix"
-  ],
-  "Bredband2 AB": [
-    "Kasi",
-    "TJAKK",
-    "Sklad",
-    "Wakke",
-    "ROLLA",
-    "n0liox"
-  ],
-  "Toyota Material Handling AB": [
-    "nALLEn",
-    "Mange",
-    "hRL",
-    "Nero",
-    "vigge",
-    "DembeR",
-    "Sjöbbe",
-    "PredictYpath"
-  ],
-  "Telia Sverige AB": [
-    "Klzn",
-    "havreN",
-    "GABBEE",
-    "sTR",
-    "ferna",
-    "Lord"
-  ],
-  "Netlight AB DUENDE": [
-    "kn0rring",
-    "mini",
-    "MRK",
-    "RealAndre",
-    "bmx",
-    "Bralle"
-  ],
-  "Northmill Bank AB": [
-    "GoatMcQueen",
-    "sAINTLOUIS",
-    "Jakul",
-    "koodimake666",
-    "Tohoned"
-  ],
-  "Webhallen Sverige AB": [
-    "Mr Cats",
-    "Svalan",
-    "Kungsprute",
-    "Cl1py",
-    "Ferro",
-    "Bossian",
-    "OlliDog",
-    "Flex",
-    "Fujimy"
-  ],
-  "Sciber AB": [
-    "olander",
-    "p1erry",
-    "ninya",
-    "Errit",
-    "Blandfers",
-    "Schuster",
-    "Bruno"
-  ],
-  "Spiris AB": [
-    "bnd",
-    "GurraB",
-    "Derrew",
-    "Suppe",
-    "Hugge",
-    "Kenai",
-    "DrYilmaz"
-  ],
-  "Fortnox AB": [
-    "wRoNg",
-    "Lolkana",
-    "units",
-    "Cuuurl",
-    "Atlas",
-    "BJOERN",
-    "skarre",
-    "Krak3N"
-  ],
-  "EA DICE AB": [
-    "cmd",
-    "zorkie",
-    "Trollmeister 2.0",
-    "gurki",
-    "LK",
-    "DoctorIcy",
-    "nattaratu",
-    "Villmon"
-  ],
-  "Telia AB Jönköping": [
-    "Keken",
-    "Wirr0",
-    "Cardell",
-    "Fh0ny",
-    "Vaalen",
-    "Arvid",
-    "Ferv",
-    "Pierre-piraya"
-  ],
-  "Netlight AB BOIDS": [
-    "rasqall",
-    "kleen",
-    "sam",
-    "Domilz",
-    "gbuic",
-    "faallin",
-    "Yariz"
-  ],
-  "Boulder AB Hong Kong": [
-    "cel",
-    "HaZ",
-    "sparvel",
-    "De_dos",
-    "PMA",
-    "Aggro"
-  ],
-  "XXL Sport och Vildmark AB": [
-    "Götterdämmerung",
-    "Forzen",
-    "GETaGRIPH",
-    "SpoderPoni",
-    "big rapper",
-    "Haddock",
-    "Dripsson",
-    "datapata",
-    "Atte"
-  ],
-  "Fragbite AB": [
-    "JoeAWESOME",
-    "kritaren",
-    "pereaux",
-    "ship",
-    "hazte",
-    "Kl0nkarN",
-    "quacke",
-    "Jade"
-  ],
-  "HappyHomes Lidingö AB": [
-    "FillzBadMan",
-    "Didde6",
-    "HasseHs",
-    "Kritan",
-    "Phoenix",
-    "Fernando"
-  ],
-  "Öhrlings PricewaterhouseCoopers AB": [
-    "s3mlan",
-    "askbnad",
-    "St0f",
-    "All_Day",
-    "ejmults",
-    "UntilGG",
-    "Humpsy"
-  ],
-  "Uniguide AB": [
-    "tarre",
-    "frall1",
-    "DOGGLER",
-    "kray2sick",
-    "Timothybtw",
-    "Neoo"
-  ],
-  "Lumera AB 2": [
-    "Manstret",
-    "axel",
-    ".Venskan",
-    "BOT Olle",
-    "mwa",
-    "SnakeEye"
-  ],
-  "Aderian Aktiv IT AB": [
-    "westlund",
-    "Zaxen",
-    "Trusii",
-    "Razze100",
-    "olarz",
-    "Stinky",
-    "Baloo von Sivers"
-  ],
-  "Xenit AB": [
-    "Blob",
-    "Kimchi",
-    "Bowman",
-    "Gordon",
-    "Adm",
-    "Kai Havertz"
-  ],
-  "Svea Bank AB": [
-    "SiddeBror",
-    "Kuld",
-    "niclas4s",
-    "CUBER",
-    "therirre",
-    "Contrast"
-  ],
-  "Boulder AB Mozarteum": [
-    "Googman",
-    "Gerkan",
-    "LiNde",
-    "Linus",
-    "bergeet",
-    "Defy",
-    "Savetherainforest"
-  ],
-  "Dizparc Infrastruktur Jönköping AB": [
-    "Dot1Q",
-    "Wasted",
-    "HailoKnight",
-    "Thandrill",
-    "ALITOXD",
-    "mre",
-    "vick3sson"
-  ],
-  "Eltel Networks AB": [
-    "Sunkan",
-    "cykeljonas",
-    "zip.",
-    "Emalit",
-    "Norrlando",
-    "ErikMannen",
-    "teNzyo"
-  ],
-  "Onevinn AB": [
-    "kylenn",
-    "hASSELBACKSPUTUTIS",
-    "Alfakrull",
-    "predsson",
-    "vässelan",
-    "törp",
-    "kimpa",
-    "Mäktig"
-  ],
-  "SSG Solutions AB": [
-    "Hunke",
-    "Slickrlck",
-    "Manyl",
-    "antw0nung",
-    "Rox",
-    "Koldolmen",
-    "PAraflaXet",
-    "Tildur"
-  ],
-  "DynaMate AB": [
-    "Directivo",
-    "HnK",
-    "Oviman",
-    "NinjaPotato",
-    "Volvojanne",
-    "Mr.Kothe",
-    "Kralluz",
-    "DG"
-  ],
-  "Omegapoint AB": [
-    "Martengooz",
-    "Headshot man",
-    "Lidngren",
-    "Kaggish",
-    "Vinkelsliparn",
-    "Dingoo",
-    "The Mayor"
-  ],
-  "Asurgent AB": [
-    "LMT",
-    "Exodiuz",
-    "digamentra",
-    "egnirra",
-    "Keffo",
-    "jbit",
-    "ath",
-    "LarssonQQ"
-  ],
-  "Accenture AB": [
-    "Bruhn",
-    "Ragnar",
-    "Vidde",
-    "RedSpettan",
-    "SLITZ",
-    "bullersson",
-    "Int"
-  ],
-  "Nordlo Evolve AB": [
-    "regnpojken",
-    "Doskalle",
-    "Tazic",
-    "Hussman",
-    "Nizhon",
-    "xent",
-    "k"
-  ],
-  "evolvit Solutions AB": [
-    "guka",
-    "pach",
-    "Joneer",
-    "zairy",
-    "xervier",
-    "Lijo"
-  ],
-  "PARA Esports AB": [
-    "Siggelito",
-    "LoGGan",
-    "Malmen",
-    "Dystrofin",
-    "kill3rbee",
-    "alone",
-    "knobbe"
-  ],
-  "Silverspin AB": [
-    "MDGrein",
-    "WargAnkan",
-    "Wooggie",
-    "Purpl3ttuce",
-    "Rimpi",
-    "Luniit",
-    "Pixelpaj",
-    "Loyen",
-    "Schwoebel"
-  ],
-  "NoA Ignite AB": [
-    "Alfahane",
-    "Klinqan",
-    "badhuset",
-    "IBC",
-    "phade",
-    "haxxiee",
-    "ylä"
-  ],
-  "Horda Stans AB": [
-    "Gamboo",
-    "Dencho",
-    "Sc4ri",
-    "Herr3Viking",
-    "DennisTech",
-    "Nilssxn",
-    "matiteos"
-  ],
-  "Teamtailor AB": [
-    "yungsteve",
-    "keewkN",
-    "Gaston",
-    "Edenwhat",
-    "Neiven",
-    "Jaydawg",
-    "Ludde"
-  ],
-  "Lumera AB 1": [
-    "Dannedubbel",
-    "lagga",
-    "hvk",
-    "Lorre",
-    "lki",
-    "Lurpen"
-  ],
-  "Nordomatic AB": [
-    "Nickepice",
-    "Sisami",
-    "Blazert",
-    "JDS",
-    "Mr-Awk",
-    "REDDAN",
-    "AdventureHer"
-  ],
-  "Teris AB": [
-    "Dæder",
-    "HyperKossan",
-    "Fl1ppad",
-    "Cayeen",
-    "Rallmagedon",
-    "SpaO",
-    "Swaxer",
-    "Jakbauz"
-  ],
-  "Viström Digital Development AB": [
-    "Number12",
-    "Cindra",
-    "olle",
-    "Åsa Nietzsche",
-    "Grizzly"
-  ],
-  "SOLTAK AB": [
-    "Dinkovich",
-    "Sniff",
-    "Piggy",
-    "Ken Kirk",
-    "Idfk",
-    "HWUT?",
-    "Z8kS",
-    "Öhlqvist",
-    "Ankan"
-  ],
-  "Boulder AB Golden": [
-    "d0mo",
-    "ekmanloco",
-    "borgaren",
-    "Bzeb",
-    "buck fitchess",
-    "barsom",
-    "vispen"
-  ],
-  "Monitor ERP System AB": [
-    "Nuska",
-    "Kevv",
-    "BoB",
-    "VerteX",
-    "dextro",
-    "Chrille Sjögren",
-    "nnyfi",
-    "Revolten",
-    "phhoglund"
-  ],
-  "Enzure AB": [
-    "M0D1G",
-    "Twinktucker",
-    "Khagz",
-    "Prajwal",
-    "combatunit",
-    "Floopii",
-    "Fezzlan",
-    "ElMetal*",
-    "J-P"
-  ],
-  "Etraveli Group AB": [
-    "hoattz",
-    "CookieSmartSmart",
-    "Eddie",
-    "fox",
-    "Arawak",
-    "coult",
-    "Issadon",
-    "stimmit"
-  ],
-  "CGI AB Optimistic Reloaders": [
-    "H4ppyMan",
-    "Mag",
-    "Reggae Shark",
-    "Roy Ramone",
-    "Raffa",
-    "Vajron",
-    "SaltyGaben",
-    "Zack Ziadi"
-  ],
-  "Hello Ebbot AB": [
-    "how r u mad, or?",
-    "Spöket",
-    "kajja",
-    "SNAKEBABY",
-    "JediMind",
-    "AWM_sniperino",
-    "^5[QSM]^2Mighty^6Nerd",
-    "gabbelabbe",
-    "Muerdurör",
-    "Frälsaren",
-    "Huggehugg",
-    "Mumme",
-    "silversigge",
-    "STORA OXAR",
-    "گUPRA"
-  ],
-  "SAVR AB": [
-    "JERK",
-    "pinball",
-    "DiscoPrinsen",
-    "robbinmed2ben",
-    "bjorsberg",
-    "Larsson",
-    "Höegh Autoliners",
-    "Sharpmeadow"
-  ],
-  "Hogia AB": [
-    "stORMie",
-    "Yetro",
-    "Sim0nSnipe",
-    "Elof",
-    "lamborghini",
-    "Mypav",
-    "itsYouTouch"
-  ],
-  "Sweco AB": [
-    "CruZan",
-    "Iveer",
-    "Naiv",
-    "keTTa",
-    "El Maco",
-    "Dr.Albin",
-    "KWalter"
-  ],
-  "Leadstar Media AB": [
-    "Tudar",
-    "AverageJoe",
-    "jACE",
-    "KALLEKOLTRAST",
-    "Spaggen",
-    "zeca",
-    "Leif_GG",
-    "behman"
-  ],
-  "Softronic CM1 AB": [
-    "Geddsson",
-    "Skorpan",
-    "Grisbältet",
-    "WowBagger",
-    "Geten",
-    "Akke",
-    "Praktikanten",
-    "KYC"
-  ],
-  "Knuts Bygg AB": [
-    "yoaddeyo",
-    "Hassearo77",
-    "HakiExperten",
-    "real heaton",
-    "bearlynx66",
-    "Soethest",
-    "Spiken",
-    "Dillskruven"
-  ],
-  "Andwhy AB": [
-    "Maxie",
-    "Jesusbarnet",
-    "Penils",
-    "Ernst",
-    "Mitch Connor"
-  ],
-  "Gjuteriteknik AB": [
-    "TehStuss",
-    "Iwaslookingforbenji",
-    "Masen",
-    "Rocco",
-    "GiwduL",
-    "Lushen",
-    "Scooten"
-  ],
-  "Infracom AB": [
-    "Male335",
-    "Onibaba",
-    "Hold Q",
-    "frundsberg",
-    "Lasse",
-    "Glowshout"
-  ],
-  "Mpya Digital AB": [
-    "Naknut",
-    "スtain",
-    "Wallstedt",
-    "amr",
-    "CH",
-    "Cagemaster",
-    "corianders",
-    "Holmberg",
-    "Fennan"
-  ],
-  "Bizzdo AB": [
-    "MuRRweLL",
-    "Mrbombastic",
-    "Swashbuckler",
-    "saldot",
-    "Teed",
-    "zevsXIII",
-    "Nari",
-    "Joein",
-    "Morf"
-  ],
-  "NODAF AB": [
-    "tivsen",
-    "Feber",
-    "Soldi",
-    "K_astarN^",
-    "Marran Swe",
-    "BT"
-  ]
+  "CGI Sverige AB": ["Wallak Spooted", "xelos", "ezki", "pekz", "SeagullN", "robix"],
+  "Bredband2 AB": ["Kasi", "TJAKK", "Sklad", "Wakke", "ROLLA", "n0liox"],
+  "Toyota Material Handling AB": ["nALLEn", "Mange", "hRL", "Nero", "vigge", "DembeR", "Sjöbbe", "PredictYpath"],
+  "Telia Sverige AB": ["Klzn", "havreN", "GABBEE", "sTR", "ferna", "Lord"],
+  "Netlight AB DUENDE": ["kn0rring", "mini", "MRK", "RealAndre", "bmx", "Bralle", "linsmakarN^"],
+  "Northmill Bank AB": ["GoatMcQueen", "sAINTLOUIS", "Jakul", "koodimake666", "Tohoned"],
+  "Webhallen Sverige AB": ["Mr Cats", "Svalan", "Kungsprute", "Cl1py", "Ferro", "Bossian", "OlliDog", "Flex", "Fujimy"],
+  "Sciber AB": ["olander", "p1erry", "ninya", "Errit", "Blandfers", "Schuster", "Bruno"],
+  "Spiris AB": ["bnd", "GurraB", "Derrew", "Suppe", "Hugge", "Kenai", "DrYilmaz"],
+  "Fortnox AB": ["wRoNg", "Lolkana", "units", "Cuuurl", "Atlas", "BJOERN", "skarre", "Krak3N"],
+  "EA DICE AB": ["cmd", "zorkie", "Trollmeister 2.0", "gurki", "LK", "DoctorIcy", "nattaratu", "Villmon"],
+  "Telia AB Jönköping": ["Keken", "Wirr0", "Cardell", "Fh0ny", "Vaalen", "Arvid", "Ferv", "Pierre-piraya"],
+  "Netlight AB BOIDS": ["rasqall", "kleen", "sam", "Domilz", "gbuic", "faallin", "Yariz", "mattus"],
+  "Boulder AB Hong Kong": ["cel", "HaZ", "sparvel", "De_dos", "PMA", "Aggro"],
+  "XXL Sport och Vildmark AB": ["Götterdämmerung", "Forzen", "GETaGRIPH", "SpoderPoni", "big rapper", "Haddock", "Dripsson", "datapata", "Atte"],
+  "Fragbite AB": ["JoeAWESOME", "kritaren", "pereaux", "ship", "hazte", "Kl0nkarN", "quacke", "Jade"],
+  "HappyHomes Lidingö AB": ["FillzBadMan", "Didde6", "HasseHs", "Kritan", "Phoenix", "Fernando"],
+  "Öhrlings PricewaterhouseCoopers AB": ["s3mlan", "askbnad", "St0f", "All_Day", "ejmults", "UntilGG", "Humpsy"],
+  "Uniguide AB": ["tarre", "frall1", "DOGGLER", "kray2sick", "Timothybtw", "Neoo"],
+  "Lumera AB 2": ["Manstret", "axel", ".Venskan", "BOT Olle", "mwa", "SnakeEye"],
+  "Aderian Aktiv IT AB": ["westlund", "Zaxen", "Trusii", "Razze100", "olarz", "Stinky", "Baloo von Sivers"],
+  "Xenit AB": ["Blob", "Kimchi", "Bowman", "Gordon", "Adm", "Kai Havertz"],
+  "Svea Bank AB": ["SiddeBror", "Kuld", "niclas4s", "CUBER", "therirre", "Contrast"],
+  "Boulder AB Mozarteum": ["Googman", "Gerkan", "LiNde", "Linus", "bergeet", "Defy", "Savetherainforest"],
+  "Dizparc Infrastruktur Jönköping AB": ["Dot1Q", "Wasted", "HailoKnight", "Thandrill", "ALITOXD", "mre", "vick3sson"],
+  "Eltel Networks AB": ["Sunkan", "cykeljonas", "zip.", "Emalit", "Norrlando", "ErikMannen", "teNzyo"],
+  "Onevinn AB": ["kylenn", "hASSELBACKSPUTUTIS", "Alfakrull", "predsson", "vässelan", "törp", "kimpa", "Mäktig"],
+  "SSG Solutions AB": ["Hunke", "Slickrlck", "Manyl", "antw0nung", "Rox", "Koldolmen", "PAraflaXet", "Tildur"],
+  "DynaMate AB": ["Directivo", "HnK", "Oviman", "NinjaPotato", "Volvojanne", "Mr.Kothe", "Kralluz", "DG"],
+  "Omegapoint AB": ["Martengooz", "Headshot man", "Lidngren", "Kaggish", "Vinkelsliparn", "Dingoo", "The Mayor", "Deflow"],
+  "Asurgent AB": ["LMT", "Exodiuz", "digamentra", "egnirra", "Keffo", "jbit", "ath", "Tom_Bombadilll", "LarssonQQ"],
+  "Accenture AB": ["Bruhn", "Ragnar", "Vidde", "RedSpettan", "SLITZ", "bullersson", "Int"],
+  "Nordlo Evolve AB": ["regnpojken", "Doskalle", "Tazic", "Hussman", "Nizhon", "xent", "k"],
+  "evolvit Solutions AB": ["guka", "pach", "Joneer", "zairy", "xervier", "Lijo"],
+  "PARA Esports AB": ["Siggelito", "LoGGan", "Malmen", "Dystrofin", "kill3rbee", "alone", "knobbe"],
+  "Silverspin AB": ["MDGrein", "WargAnkan", "Wooggie", "Purpl3ttuce", "Rimpi", "Luniit", "Pixelpaj", "Loyen", "Schwoebel"],
+  "NoA Ignite AB": ["Alfahane", "Klinqan", "badhuset", "IBC", "phade", "haxxiee", "ylä"],
+  "Horda Stans AB": ["Gamboo", "Dencho", "Sc4ri", "Herr3Viking", "DennisTech", "Nilssxn", "matiteos"],
+  "Teamtailor AB": ["yungsteve", "keewkN", "Gaston", "Edenwhat", "Neiven", "Jaydawg", "Ludde"],
+  "Lumera AB 1": ["Dannedubbel", "lagga", "hvk", "Lorre", "lki", "Lurpen"],
+  "Nordomatic AB": ["Nickepice", "Sisami", "Blazert", "JDS", "Mr-Awk", "REDDAN", "AdventureHer"],
+  "Teris AB": ["Dæder", "HyperKossan", "Fl1ppad", "Cayeen", "Rallmagedon", "SpaO", "Swaxer", "Jakbauz"],
+  "Viström Digital Development AB": ["Number12", "Cindra", "olle", "Åsa Nietzsche", "Grizzly"],
+  "SOLTAK AB": ["Dinkovich", "Sniff", "Piggy", "Ken Kirk", "Idfk", "HWUT?", "Z8kS", "Öhlqvist", "Ankan"],
+  "Boulder AB Golden": ["d0mo", "ekmanloco", "borgaren", "Bzeb", "buck fitchess", "barsom", "vispen"],
+  "Monitor ERP System AB": ["Nuska", "Kevv", "BoB", "VerteX", "dextro", "Chrille Sjögren", "nnyfi", "Revolten", "phhoglund"],
+  "Enzure AB": ["M0D1G", "Twinktucker", "Khagz", "Prajwal", "combatunit", "Floopii", "Fezzlan", "ElMetal*", "J-P"],
+  "Etraveli Group AB": ["hoattz", "CookieSmartSmart", "Eddie", "fox", "Arawak", "coult", "Issadon", "stimmit"],
+  "CGI AB Optimistic Reloaders": ["H4ppyMan", "Mag", "Reggae Shark", "Roy Ramone", "Raffa", "Vajron", "SaltyGaben", "Zack Ziadi"],
+  "Hello Ebbot AB": ["how r u mad", "or?", "Spöket", "kajja", "SNAKEBABY", "JediMind", "AWM_sniperino", "^5[QSM]^2Mighty^6Nerd", "gabbelabbe"],
+  "Netgain AB": ["Muerdurör", "Frälsaren", "Huggehugg", "Mumme", "silversigge", "STORA OXAR", "گUPRA"],
+  "SAVR AB": ["JERK", "pinball", "DiscoPrinsen", "robbinmed2ben", "bjorsberg", "Larsson", "Höegh Autoliners", "Sharpmeadow"],
+  "Hogia AB": ["stORMie", "Yetro", "Sim0nSnipe", "Elof", "lamborghini", "Mypav", "itsYouTouch"],
+  "Sweco AB": ["CruZan", "Iveer", "Naiv", "keTTa", "El Maco", "Dr.Albin", "KWalter"],
+  "Leadstar Media AB": ["Tudar", "AverageJoe", "jACE", "KALLEKOLTRAST", "Spaggen", "zeca", "Leif_GG", "behman"],
+  "Softronic CM1 AB": ["Geddsson", "Skorpan", "Grisbältet", "WowBagger", "Geten", "Akke", "Praktikanten", "KYC"],
+  "Knuts Bygg AB": ["yoaddeyo", "Hassearo77", "HakiExperten", "real heaton", "bearlynx66", "Soethest", "Spiken", "Dillskruven"],
+  "Andwhy AB": ["Maxie", "Jesusbarnet", "Penils", "Ernst", "Mitch Connor", "spetero"],
+  "Gjuteriteknik AB": ["TehStuss", "Iwaslookingforbenji", "Masen", "Rocco", "GiwduL", "Lushen", "Scooten"],
+  "Infracom AB": ["Male335", "Onibaba", "Hold Q", "frundsberg", "Lasse", "Glowshout"],
+  "Mpya Digital AB": ["Naknut", "スtain", "Wallstedt", "amr", "CH", "Cagemaster", "corianders", "Holmberg", "Fennan"],
+  "Bizzdo AB": ["MuRRweLL", "Mrbombastic", "Swashbuckler", "saldot", "Teed", "zevsXIII", "Nari", "Joein", "Morf"],
+  "NODAF AB": ["tivsen", "Feber", "Soldi", "K_astarN^", "Marran Swe", "BT"]
 }

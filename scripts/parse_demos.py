@@ -646,8 +646,9 @@ def main():
             if name_lc in nick_to_team:
                 return nick_to_team[name_lc]
             # Substring containment (name contains nickname or vice versa)
+            # Require at least 6 chars to avoid short nicks matching as prefix of longer names
             for nick in all_nicks:
-                if (len(nick) >= 3 and nick in name_lc) or (len(name_lc) >= 3 and name_lc in nick):
+                if (len(nick) >= 6 and nick in name_lc) or (len(name_lc) >= 6 and name_lc in nick):
                     return nick_to_team[nick]
             # Fuzzy match
             close = difflib.get_close_matches(name_lc, all_nicks, n=1, cutoff=0.82)
