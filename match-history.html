@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS League — Match History</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    header { text-align: center; margin-bottom: 2rem; }
+    header h1 { font-size: 2rem; font-weight: 700; color: #fff; }
+    header p  { color: #888; margin-top: 0.4rem; font-size: 0.875rem; }
+    header nav {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    header nav a {
+      color: #ff6240;
+      text-decoration: none;
+      font-size: 0.85rem;
+      border: 1px solid #ff6240;
+      padding: 0.3rem 0.8rem;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
+    }
+    header nav a:hover { background: #ff6240; color: #fff; }
+
+    /* Filters */
+    .filters {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      max-width: 1300px;
+      margin: 0 auto 1.5rem;
+    }
+    .filters select,
+    .filters input {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      color: #ccc;
+      font-size: 0.85rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .filters select:focus,
+    .filters input:focus { border-color: #555; }
+    .filters input { min-width: 200px; }
+
+    /* Demo cards */
+    .demos-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      max-width: 1300px;
+      margin: 0 auto;
+    }
+    .demo-card {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .demo-card-header {
+      padding: 0.85rem 1.2rem;
+      display: grid;
+      grid-template-columns: 70px 1fr auto 1fr auto;
+      align-items: center;
+      gap: 0.75rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .demo-card-header:hover { background: #252525; }
+    .demo-map {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #ff6240;
+    }
+    .demo-team {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #888;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .demo-team.winner { color: #fff; }
+    .demo-team.home   { text-align: right; }
+    .demo-team.away   { text-align: left; }
+    .demo-scorebox {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 1rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .sc-w { color: #1ce400; }
+    .sc-l { color: #f55; }
+    .sc-sep { color: #444; }
+    .demo-meta { font-size: 0.75rem; color: #555; white-space: nowrap; text-align: right; }
+    .demo-chevron { color: #444; font-size: 0.8rem; transition: transform 0.2s; }
+    .demo-card.open .demo-chevron { transform: rotate(180deg); }
+    @media (max-width: 600px) {
+      .demo-card-header { grid-template-columns: 50px 1fr auto 1fr auto; gap: 0.4rem; }
+    }
+
+    .demo-stats { display: none; border-top: 1px solid #2a2a2a; }
+    .demo-card.open .demo-stats { display: block; }
+    .demo-stats table { width: 100%; border-collapse: collapse; }
+    .demo-stats th {
+      font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em;
+      color: #555; padding: 0.4rem 0.8rem; text-align: left;
+      border-bottom: 1px solid #2a2a2a; white-space: nowrap;
+    }
+    .demo-stats td {
+      padding: 0.4rem 0.8rem; font-size: 0.82rem;
+      border-bottom: 1px solid #1a1a1a; white-space: nowrap;
+    }
+    .demo-stats tr:last-child td { border-bottom: none; }
+    .demo-stats tr:hover td { background: #252525; }
+    .team-divider td {
+      background: #1a1a1a !important;
+      font-size: 0.65rem; text-transform: uppercase;
+      letter-spacing: 0.08em; color: #555;
+      padding: 0.3rem 0.8rem;
+    }
+
+    .val-hi   { color: #1ce400; }
+    .val-lo   { color: #f55; }
+    .val-muted { color: #555; }
+
+    .empty-state {
+      text-align: center;
+      color: #444;
+      font-style: italic;
+      padding: 3rem 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CS League — Match History</h1>
+  <p>Season 8 · all parsed demos</p>
+  <nav>
+    <a href="index.html">ELO Rankings</a>
+    <a href="standings.html">Standings</a>
+    <a href="stats.html">Player Stats</a>
+  </nav>
+</header>
+
+<div class="filters">
+  <select id="div-filter" onchange="filterDemos()">
+    <option value="">All divisions</option>
+  </select>
+  <input id="team-filter" type="text" placeholder="Search team…" oninput="filterDemos()" />
+</div>
+
+<div class="demos-list" id="demos-list">
+  <div class="empty-state">Loading…</div>
+</div>
+
+<script>
+const S8_DIVISION_TEAMS = {
+  "Division 1":  ["CGI Sverige AB","Bredband2 AB","Toyota Material Handling AB","Telia Sverige AB","Netlight AB DUENDE","Northmill Bank AB","Webhallen Sverige AB"],
+  "Division 2A": ["Sciber AB","Spiris AB","Fortnox AB","EA DICE AB","Telia AB Jönköping","Netlight AB BOIDS","Boulder AB Hong Kong","XXL Sport och Vildmark AB"],
+  "Division 2B": ["Fragbite AB","HappyHomes Lidingö AB","Öhrlings PricewaterhouseCoopers AB","Uniguide AB","Lumera AB 2","Aderian Aktiv IT AB","Xenit AB","Svea Bank AB"],
+  "Division 2C": ["Boulder AB Mozarteum","Dizparc Infrastruktur Jönköping AB","Eltel Networks AB","Onevinn AB","SSG Solutions AB","DynaMate AB","Omegapoint AB","Asurgent AB"],
+  "Division 2D": ["Accenture AB","Nordlo Evolve AB","evolvit Solutions AB","PARA Esports AB","Silverspin AB","NoA Ignite AB","Horda Stans AB","Teamtailor AB"],
+  "Division 2E": ["Lumera AB 1","Nordomatic AB","Teris AB","Viström Digital Development AB","SOLTAK AB","Boulder AB Golden","Monitor ERP System AB","Enzure AB"],
+  "Division 2F": ["Etraveli Group AB","CGI AB Optimistic Reloaders","Hello Ebbot AB","Netgain AB","SAVR AB","Hogia AB","Sweco AB","Leadstar Media AB"],
+  "Division 2G": ["Softronic CM1 AB","Knuts Bygg AB","Andwhy AB","Gjuteriteknik AB","Infracom AB","Mpya Digital AB","Bizzdo AB","NODAF AB"],
+};
+
+let allDemos     = [];
+let faceit       = {};
+let sidTeamMap   = {};  // steamid → canonical team
+
+// Populate division filter
+const divSel = document.getElementById("div-filter");
+Object.keys(S8_DIVISION_TEAMS).forEach(div => {
+  const opt = document.createElement("option");
+  opt.value = opt.textContent = div;
+  divSel.appendChild(opt);
+});
+
+// Load data
+Promise.all([
+  fetch("data/s8/stats.json").then(r => r.ok ? r.json() : null).catch(() => null),
+  fetch("data/s8/faceit.json").then(r => r.ok ? r.json() : {}).catch(() => ({})),
+]).then(([stats, fc]) => {
+  faceit   = fc || {};
+  allDemos = stats?.demos || [];
+  for (const p of stats?.players || []) sidTeamMap[p.steamid] = p.team;
+  filterDemos();
+});
+
+function filterDemos() {
+  const divFilter  = document.getElementById("div-filter").value;
+  const teamFilter = document.getElementById("team-filter").value.trim().toLowerCase();
+
+  let demos = allDemos;
+  if (divFilter) {
+    const teamsInDiv = new Set(S8_DIVISION_TEAMS[divFilter] || []);
+    demos = demos.filter(d => teamsInDiv.has(d.folder_team));
+  }
+  if (teamFilter) {
+    demos = demos.filter(d =>
+      (d.folder_team || "").toLowerCase().includes(teamFilter) ||
+      (d.team1_raw   || "").toLowerCase().includes(teamFilter) ||
+      (d.team2_raw   || "").toLowerCase().includes(teamFilter)
+    );
+  }
+
+  renderDemos(demos);
+}
+
+function renderDemos(demos) {
+  const list   = document.getElementById("demos-list");
+  const sorted = [...demos].sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+
+  if (!sorted.length) {
+    list.innerHTML = '<div class="empty-state">No matches found.</div>';
+    return;
+  }
+
+  list.innerHTML = sorted.map((d, idx) => {
+    const mapName = (d.map || "unknown").replace("de_", "");
+    const t1      = d.home_team || d.folder_team || "Team 1";
+    const t2      = d.away_team || "Team 2";
+    const dateStr = d.date ? new Date(d.date).toLocaleDateString("sv-SE", { month: "short", day: "numeric" }) : "";
+
+    const tSet  = new Set(d.comp_team_t_ids  || d.team_t_ids);
+    const ctSet = new Set(d.comp_team_ct_ids || d.team_ct_ids);
+    const tPlayers  = (d.player_stats || []).filter(p => tSet.has(p.steamid)).sort((a,b) => b.kills - a.kills);
+    const ctPlayers = (d.player_stats || []).filter(p => ctSet.has(p.steamid)).sort((a,b) => b.kills - a.kills);
+
+    const tScore    = d.t_start_score;
+    const ctScore   = d.ct_start_score;
+    const homeScore = d.home_score ?? tScore;
+    const awayScore = d.away_score ?? ctScore;
+    const homeWon   = homeScore > awayScore;
+
+    const playerRow = (p) => {
+      const f      = faceit[p.steamid] || {};
+      const avatar = f.avatar
+        ? `<img src="${f.avatar}" style="width:22px;height:22px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:6px" onerror="this.style.display='none'">`
+        : "";
+      const kdCls  = p.kd >= 1.2 ? "val-hi" : p.kd < 0.9 ? "val-lo" : "";
+      const adrCls = p.adr >= 80 ? "val-hi" : p.adr < 55 ? "val-lo" : "";
+      return `<tr>
+        <td>${avatar}${esc(p.name)}</td>
+        <td style="text-align:right">${p.kills}</td>
+        <td style="text-align:right">${p.deaths}</td>
+        <td style="text-align:right">${p.assists}</td>
+        <td style="text-align:right" class="${kdCls}">${p.kd}</td>
+        <td style="text-align:right">${p.hs_pct}%</td>
+        <td style="text-align:right" class="${adrCls}">${p.adr}</td>
+      </tr>`;
+    };
+
+    // Figure out which canonical team is on each side using sidTeamMap
+    const tTeam  = mostCommon(tPlayers.map(p => sidTeamMap[p.steamid]).filter(Boolean)) || t1;
+    const ctTeam = mostCommon(ctPlayers.map(p => sidTeamMap[p.steamid]).filter(Boolean)) || t2;
+
+    const statsTable = `
+      <div class="demo-stats">
+        <table>
+          <thead><tr>
+            <th>Player</th>
+            <th style="text-align:right">K</th>
+            <th style="text-align:right">D</th>
+            <th style="text-align:right">A</th>
+            <th style="text-align:right">K/D</th>
+            <th style="text-align:right">HS%</th>
+            <th style="text-align:right">ADR</th>
+          </tr></thead>
+          <tbody>
+            <tr class="team-divider"><td colspan="7">${esc(tTeam)} — T Side — ${tScore} rounds won</td></tr>
+            ${tPlayers.map(playerRow).join("")}
+            <tr class="team-divider"><td colspan="7">${esc(ctTeam)} — CT Side — ${ctScore} rounds won</td></tr>
+            ${ctPlayers.map(playerRow).join("")}
+          </tbody>
+        </table>
+      </div>`;
+
+    return `
+      <div class="demo-card" id="demo-${idx}">
+        <div class="demo-card-header" onclick="toggleDemo('demo-${idx}')">
+          <div class="demo-map">${esc(mapName)}<br><span style="color:#444;font-size:0.65rem">${dateStr}</span></div>
+          <div class="demo-team home ${homeWon ? 'winner' : ''}">${esc(t1)}</div>
+          <div class="demo-scorebox">
+            <span class="${homeWon ? 'sc-w' : 'sc-l'}">${homeScore}</span>
+            <span class="sc-sep">–</span>
+            <span class="${!homeWon ? 'sc-w' : 'sc-l'}">${awayScore}</span>
+          </div>
+          <div class="demo-team away ${!homeWon ? 'winner' : ''}">${esc(t2)}</div>
+          <div class="demo-meta">${d.total_rounds} rds ▼</div>
+        </div>
+        ${statsTable}
+      </div>`;
+  }).join("");
+}
+
+function toggleDemo(id) {
+  document.getElementById(id).classList.toggle("open");
+}
+
+function mostCommon(arr) {
+  if (!arr.length) return null;
+  const counts = {};
+  for (const v of arr) counts[v] = (counts[v] || 0) + 1;
+  return Object.entries(counts).sort((a,b) => b[1]-a[1])[0][0];
+}
+
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+</script>
+</body>
+</html>

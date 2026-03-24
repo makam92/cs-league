@@ -3162,6 +3162,8 @@
       "match_id": "7",
       "team1_raw": "Accenture",
       "team2_raw": "Nordlo Evolve",
+      "home_team": "Accenture AB",
+      "away_team": "Nordlo Evolve AB",
       "total_rounds": 24,
       "t_start_score": 13,
       "ct_start_score": 11,
@@ -3174,6 +3176,20 @@
         "76561198858270466"
       ],
       "team_ct_ids": [
+        "76561198091917187",
+        "76561198006978277",
+        "76561198022548607",
+        "76561198025125798"
+      ],
+      "comp_team_t_ids": [
+        "76561198263999689",
+        "76561198043613650",
+        "76561197989134789",
+        "76561197997739223",
+        "76561198858270466"
+      ],
+      "comp_team_ct_ids": [
+        "76561197960330159",
         "76561198091917187",
         "76561198006978277",
         "76561198022548607",
@@ -3324,7 +3340,9 @@
           "adr": 46.0,
           "kpr": 0.5
         }
-      ]
+      ],
+      "home_score": 11,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_20-00-19_35_de_ancient_Accenture_vs_Nordlo_Evolve.dem",
@@ -3333,6 +3351,8 @@
       "match_id": "35",
       "team1_raw": "Accenture",
       "team2_raw": "Nordlo Evolve",
+      "home_team": "Accenture AB",
+      "away_team": "Nordlo Evolve AB",
       "total_rounds": 30,
       "t_start_score": 14,
       "ct_start_score": 16,
@@ -3345,6 +3365,20 @@
         "76561197997739223"
       ],
       "team_ct_ids": [
+        "76561198006978277",
+        "76561198091917187",
+        "76561198022548607",
+        "76561197960330159",
+        "76561198025125798"
+      ],
+      "comp_team_t_ids": [
+        "76561198263999689",
+        "76561198858270466",
+        "76561198043613650",
+        "76561197989134789",
+        "76561197997739223"
+      ],
+      "comp_team_ct_ids": [
         "76561198006978277",
         "76561198091917187",
         "76561198022548607",
@@ -3512,7 +3546,9 @@
           "adr": 44.3,
           "kpr": 0.33
         }
-      ]
+      ],
+      "home_score": 16,
+      "away_score": 14
     },
     {
       "file": "2026-03-19_19-03-19_10_de_inferno_boulder_golden_vs_soltak.dem",
@@ -3521,6 +3557,8 @@
       "match_id": "10",
       "team1_raw": "boulder golden",
       "team2_raw": "soltak",
+      "home_team": "Boulder AB Golden",
+      "away_team": "SOLTAK AB",
       "total_rounds": 17,
       "t_start_score": 13,
       "ct_start_score": 4,
@@ -3538,6 +3576,20 @@
         "76561197977910930",
         "76561198000665332",
         "76561198069794662"
+      ],
+      "comp_team_t_ids": [
+        "76561198329438517",
+        "76561197987177053",
+        "76561197977910930",
+        "76561198000665332",
+        "76561198069794662"
+      ],
+      "comp_team_ct_ids": [
+        "76561198154163643",
+        "76561198068867337",
+        "76561198068750228",
+        "76561198328942042",
+        "76561198051537851"
       ],
       "player_stats": [
         {
@@ -3700,7 +3752,9 @@
           "adr": 80.4,
           "kpr": 0.71
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 4
     },
     {
       "file": "2026-03-19_19-38-53_25_de_overpass_boulder_golden_vs_soltak.dem",
@@ -3709,6 +3763,8 @@
       "match_id": "25",
       "team1_raw": "boulder golden",
       "team2_raw": "soltak",
+      "home_team": "Boulder AB Golden",
+      "away_team": "SOLTAK AB",
       "total_rounds": 20,
       "t_start_score": 13,
       "ct_start_score": 7,
@@ -3721,6 +3777,20 @@
         "76561198051537851"
       ],
       "team_ct_ids": [
+        "76561198069794662",
+        "76561198329438517",
+        "76561197977910930",
+        "76561197987177053",
+        "76561198000665332"
+      ],
+      "comp_team_t_ids": [
+        "76561198328942042",
+        "76561198068867337",
+        "76561198154163643",
+        "76561198068750228",
+        "76561198051537851"
+      ],
+      "comp_team_ct_ids": [
         "76561198069794662",
         "76561198329438517",
         "76561197977910930",
@@ -3888,7 +3958,9 @@
           "adr": 87.3,
           "kpr": 0.9
         }
-      ]
+      ],
+      "home_score": 7,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-05-36_17_de_ancient_Dizparc_Infrastruktur_Jönköping_AB_vs_Boulder_Mozarteum.dem",
@@ -3897,6 +3969,8 @@
       "match_id": "17",
       "team1_raw": "Dizparc Infrastruktur Jönköping AB",
       "team2_raw": "Boulder Mozarteum",
+      "home_team": "Dizparc Infrastruktur Jönköping AB",
+      "away_team": "Boulder AB Mozarteum",
       "total_rounds": 23,
       "t_start_score": 10,
       "ct_start_score": 13,
@@ -3914,6 +3988,20 @@
         "76561198202277999",
         "76561198224217856",
         "76561198030769581"
+      ],
+      "comp_team_t_ids": [
+        "76561198075950034",
+        "76561198087374751",
+        "76561198202277999",
+        "76561198224217856",
+        "76561198030769581"
+      ],
+      "comp_team_ct_ids": [
+        "76561197961442249",
+        "76561197961622237",
+        "76561197986284979",
+        "76561197985196273",
+        "76561198066208197"
       ],
       "player_stats": [
         {
@@ -4076,7 +4164,9 @@
           "adr": 100.1,
           "kpr": 0.87
         }
-      ]
+      ],
+      "home_score": 10,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-54-11_32_de_inferno_team_HailoKnight_vs_team_LiNde.dem",
@@ -4085,6 +4175,8 @@
       "match_id": "32",
       "team1_raw": "team HailoKnight",
       "team2_raw": "team LiNde",
+      "home_team": "Dizparc Infrastruktur Jönköping AB",
+      "away_team": "Boulder AB Mozarteum",
       "total_rounds": 20,
       "t_start_score": 7,
       "ct_start_score": 13,
@@ -4097,6 +4189,20 @@
         "76561197985196273"
       ],
       "team_ct_ids": [
+        "76561198030769581",
+        "76561198224217856",
+        "76561198087374751",
+        "76561198075950034",
+        "76561198202277999"
+      ],
+      "comp_team_t_ids": [
+        "76561198066208197",
+        "76561197961442249",
+        "76561197961622237",
+        "76561197986284979",
+        "76561197985196273"
+      ],
+      "comp_team_ct_ids": [
         "76561198030769581",
         "76561198224217856",
         "76561198087374751",
@@ -4264,7 +4370,9 @@
           "adr": 73.6,
           "kpr": 0.6
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 7
     },
     {
       "file": "2026-03-19_19-01-23_4_de_nuke_Eltel_Networks_vs_team_LarssonQQ.dem",
@@ -4273,6 +4381,8 @@
       "match_id": "4",
       "team1_raw": "Eltel Networks",
       "team2_raw": "team LarssonQQ",
+      "home_team": "Eltel Networks AB",
+      "away_team": "Asurgent AB",
       "total_rounds": 24,
       "t_start_score": 13,
       "ct_start_score": 11,
@@ -4285,6 +4395,20 @@
         "76561198082418574"
       ],
       "team_ct_ids": [
+        "76561198070071117",
+        "76561199439307979",
+        "76561198003822408",
+        "76561198035484265",
+        "76561198025982300"
+      ],
+      "comp_team_t_ids": [
+        "76561197968889440",
+        "76561197984476886",
+        "76561198001858639",
+        "76561197974185371",
+        "76561198082418574"
+      ],
+      "comp_team_ct_ids": [
         "76561198070071117",
         "76561199439307979",
         "76561198003822408",
@@ -4452,7 +4576,9 @@
           "adr": 100.2,
           "kpr": 0.88
         }
-      ]
+      ],
+      "home_score": 11,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-54-13_31_de_dust2_team_digamentra_vs_team_cykeljonas.dem",
@@ -4461,6 +4587,8 @@
       "match_id": "31",
       "team1_raw": "team digamentra",
       "team2_raw": "team cykeljonas",
+      "home_team": "Eltel Networks AB",
+      "away_team": "Asurgent AB",
       "total_rounds": 24,
       "t_start_score": 13,
       "ct_start_score": 11,
@@ -4473,6 +4601,20 @@
         "76561199439307979"
       ],
       "team_ct_ids": [
+        "76561198082418574",
+        "76561197968889440",
+        "76561197984476886",
+        "76561197974185371",
+        "76561198001858639"
+      ],
+      "comp_team_t_ids": [
+        "76561198025982300",
+        "76561198035484265",
+        "76561198003822408",
+        "76561198070071117",
+        "76561199439307979"
+      ],
+      "comp_team_ct_ids": [
         "76561198082418574",
         "76561197968889440",
         "76561197984476886",
@@ -4640,7 +4782,9 @@
           "adr": 58.8,
           "kpr": 0.42
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 11
     },
     {
       "file": "2026-03-19_19-01-00_2_de_mirage_Etraveli_Group_AB_vs_CGI_Optimistic_Reloaders.dem",
@@ -4649,6 +4793,8 @@
       "match_id": "2",
       "team1_raw": "Etraveli Group AB",
       "team2_raw": "CGI Optimistic Reloaders",
+      "home_team": "Etraveli Group AB",
+      "away_team": "CGI AB Optimistic Reloaders",
       "total_rounds": 24,
       "t_start_score": 13,
       "ct_start_score": 11,
@@ -4661,6 +4807,20 @@
         "76561199113765491"
       ],
       "team_ct_ids": [
+        "76561198011323321",
+        "76561198048161024",
+        "76561199866239628",
+        "76561198059729962",
+        "76561197961764035"
+      ],
+      "comp_team_t_ids": [
+        "76561199567430746",
+        "76561197971423545",
+        "76561197972862899",
+        "76561197981147866",
+        "76561199113765491"
+      ],
+      "comp_team_ct_ids": [
         "76561198011323321",
         "76561198048161024",
         "76561199866239628",
@@ -4828,7 +4988,9 @@
           "adr": 55.7,
           "kpr": 0.5
         }
-      ]
+      ],
+      "home_score": 11,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_20-01-18_37_de_inferno_CGI_Optimistic_Reloaders_vs_Etraveli_Group.dem",
@@ -4837,6 +4999,8 @@
       "match_id": "37",
       "team1_raw": "CGI Optimistic Reloaders",
       "team2_raw": "Etraveli Group",
+      "home_team": "Etraveli Group AB",
+      "away_team": "CGI AB Optimistic Reloaders",
       "total_rounds": 22,
       "t_start_score": 9,
       "ct_start_score": 13,
@@ -4854,6 +5018,20 @@
         "76561199567430746",
         "76561197972862899",
         "76561197981147866"
+      ],
+      "comp_team_t_ids": [
+        "76561199113765491",
+        "76561197971423545",
+        "76561199567430746",
+        "76561197972862899",
+        "76561197981147866"
+      ],
+      "comp_team_ct_ids": [
+        "76561198048161024",
+        "76561197961764035",
+        "76561199866239628",
+        "76561198011323321",
+        "76561198059729962"
       ],
       "player_stats": [
         {
@@ -5016,7 +5194,9 @@
           "adr": 91.0,
           "kpr": 0.86
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 9
     },
     {
       "file": "2026-03-19_19-04-24_13_de_mirage_team_Nilssxn_vs_team_LoGGan.dem",
@@ -5025,6 +5205,8 @@
       "match_id": "13",
       "team1_raw": "team Nilssxn",
       "team2_raw": "team LoGGan",
+      "home_team": "Horda Stans AB",
+      "away_team": "PARA Esports AB",
       "total_rounds": 19,
       "t_start_score": 6,
       "ct_start_score": 13,
@@ -5042,6 +5224,20 @@
         "76561198073223856",
         "76561197996259214",
         "76561198840463886"
+      ],
+      "comp_team_t_ids": [
+        "76561198202751056",
+        "76561198079454710",
+        "76561198073223856",
+        "76561197996259214",
+        "76561198840463886"
+      ],
+      "comp_team_ct_ids": [
+        "76561198184806709",
+        "76561199092191870",
+        "76561199086086653",
+        "76561197982692882",
+        "76561198198396663"
       ],
       "player_stats": [
         {
@@ -5204,7 +5400,9 @@
           "adr": 90.8,
           "kpr": 0.84
         }
-      ]
+      ],
+      "home_score": 6,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_20-01-15_39_de_inferno_team_LoGGan_vs_team_Herr3Viking.dem",
@@ -5213,6 +5411,8 @@
       "match_id": "39",
       "team1_raw": "team LoGGan",
       "team2_raw": "team Herr3Viking",
+      "home_team": "Horda Stans AB",
+      "away_team": "PARA Esports AB",
       "total_rounds": 23,
       "t_start_score": 10,
       "ct_start_score": 13,
@@ -5230,6 +5430,20 @@
         "76561197982692882",
         "76561199092191870",
         "76561199086086653"
+      ],
+      "comp_team_t_ids": [
+        "76561198198396663",
+        "76561198184806709",
+        "76561197982692882",
+        "76561199092191870",
+        "76561199086086653"
+      ],
+      "comp_team_ct_ids": [
+        "76561197996259214",
+        "76561198202751056",
+        "76561198073223856",
+        "76561198079454710",
+        "76561198840463886"
       ],
       "player_stats": [
         {
@@ -5392,7 +5606,9 @@
           "adr": 34.4,
           "kpr": 0.26
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 10
     },
     {
       "file": "2026-03-19_19-01-25_5_de_nuke_team_SPAGG3N_vs_team_SNAKEBABY.dem",
@@ -5401,6 +5617,8 @@
       "match_id": "5",
       "team1_raw": "team SPAGG3N",
       "team2_raw": "team SNAKEBABY",
+      "home_team": "Leadstar Media AB",
+      "away_team": "Hello Ebbot AB",
       "total_rounds": 24,
       "t_start_score": 11,
       "ct_start_score": 13,
@@ -5418,6 +5636,20 @@
         "76561198003211139",
         "76561197968270315",
         "76561198014005402"
+      ],
+      "comp_team_t_ids": [
+        "76561198799744991",
+        "76561198981759886",
+        "76561198003211139",
+        "76561197968270315",
+        "76561198014005402"
+      ],
+      "comp_team_ct_ids": [
+        "76561198742568523",
+        "76561198165196733",
+        "76561197991803577",
+        "76561197960981741",
+        "76561198208345905"
       ],
       "player_stats": [
         {
@@ -5580,7 +5812,9 @@
           "adr": 88.9,
           "kpr": 0.79
         }
-      ]
+      ],
+      "home_score": 11,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-49-41_29_de_inferno_team_KALLEKOLTRAST_vs_team_Spöket.dem",
@@ -5589,6 +5823,8 @@
       "match_id": "29",
       "team1_raw": "team KALLEKOLTRAST",
       "team2_raw": "team Spöket",
+      "home_team": "Leadstar Media AB",
+      "away_team": "Hello Ebbot AB",
       "total_rounds": 22,
       "t_start_score": 13,
       "ct_start_score": 9,
@@ -5601,6 +5837,20 @@
         "76561198742568523"
       ],
       "team_ct_ids": [
+        "76561198014005402",
+        "76561197968270315",
+        "76561198981759886",
+        "76561198003211139",
+        "76561198799744991"
+      ],
+      "comp_team_t_ids": [
+        "76561197960981741",
+        "76561198165196733",
+        "76561198208345905",
+        "76561197991803577",
+        "76561198742568523"
+      ],
+      "comp_team_ct_ids": [
         "76561198014005402",
         "76561197968270315",
         "76561198981759886",
@@ -5768,7 +6018,9 @@
           "adr": 48.9,
           "kpr": 0.41
         }
-      ]
+      ],
+      "home_score": 9,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-00-05_1_de_dust2_team_Revolten_vs_team_olle.dem",
@@ -5777,6 +6029,8 @@
       "match_id": "1",
       "team1_raw": "team Revolten",
       "team2_raw": "team olle",
+      "home_team": "Monitor ERP System AB",
+      "away_team": "Viström Digital Development AB",
       "total_rounds": 15,
       "t_start_score": 13,
       "ct_start_score": 2,
@@ -5794,6 +6048,20 @@
         "76561197964061221",
         "76561197972229106",
         "76561198067119372"
+      ],
+      "comp_team_t_ids": [
+        "76561198064735934",
+        "76561198011907377",
+        "76561197964061221",
+        "76561197972229106",
+        "76561198067119372"
+      ],
+      "comp_team_ct_ids": [
+        "76561199723149146",
+        "76561198018715519",
+        "76561197976149839",
+        "76561197965463120",
+        "76561198094646089"
       ],
       "player_stats": [
         {
@@ -5956,7 +6224,9 @@
           "adr": 55.1,
           "kpr": 0.53
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 2
     },
     {
       "file": "2026-03-19_20-01-23_38_de_ancient_team_Nuska_vs_team_Grizzly.dem",
@@ -5965,6 +6235,8 @@
       "match_id": "38",
       "team1_raw": "team Nuska",
       "team2_raw": "team Grizzly",
+      "home_team": "Monitor ERP System AB",
+      "away_team": "Viström Digital Development AB",
       "total_rounds": 17,
       "t_start_score": 13,
       "ct_start_score": 4,
@@ -5982,6 +6254,20 @@
         "76561197964061221",
         "76561197972229106",
         "76561198011907377"
+      ],
+      "comp_team_t_ids": [
+        "76561198067119372",
+        "76561198064735934",
+        "76561197964061221",
+        "76561197972229106",
+        "76561198011907377"
+      ],
+      "comp_team_ct_ids": [
+        "76561198018715519",
+        "76561197965463120",
+        "76561198094646089",
+        "76561199723149146",
+        "76561197976149839"
       ],
       "player_stats": [
         {
@@ -6144,7 +6430,9 @@
           "adr": 63.6,
           "kpr": 0.76
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 4
     },
     {
       "file": "2026-03-19_19-07-19_19_de_dust2_nodaf_vs_Andwhy.dem",
@@ -6153,6 +6441,8 @@
       "match_id": "19",
       "team1_raw": "nodaf",
       "team2_raw": "Andwhy",
+      "home_team": "NODAF AB",
+      "away_team": "Andwhy AB",
       "total_rounds": 19,
       "t_start_score": 13,
       "ct_start_score": 6,
@@ -6165,6 +6455,20 @@
         "76561197960613299"
       ],
       "team_ct_ids": [
+        "76561198018429350",
+        "76561197966679519",
+        "76561199822445688",
+        "76561197992460690",
+        "76561198233243860"
+      ],
+      "comp_team_t_ids": [
+        "76561197960880766",
+        "76561197980645114",
+        "76561198107425970",
+        "76561199637688495",
+        "76561197960613299"
+      ],
+      "comp_team_ct_ids": [
         "76561198018429350",
         "76561197966679519",
         "76561199822445688",
@@ -6332,7 +6636,9 @@
           "adr": 59.4,
           "kpr": 0.53
         }
-      ]
+      ],
+      "home_score": 6,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-52-48_30_de_mirage_Nodaf_vs_Andwhy.dem",
@@ -6341,6 +6647,8 @@
       "match_id": "30",
       "team1_raw": "Nodaf",
       "team2_raw": "Andwhy",
+      "home_team": "NODAF AB",
+      "away_team": "Andwhy AB",
       "total_rounds": 29,
       "t_start_score": 13,
       "ct_start_score": 16,
@@ -6353,6 +6661,20 @@
         "76561199637688495"
       ],
       "team_ct_ids": [
+        "76561197992460690",
+        "76561198018429350",
+        "76561197966679519",
+        "76561198233243860",
+        "76561199822445688"
+      ],
+      "comp_team_t_ids": [
+        "76561197980645114",
+        "76561198107425970",
+        "76561197960613299",
+        "76561197960880766",
+        "76561199637688495"
+      ],
+      "comp_team_ct_ids": [
         "76561197992460690",
         "76561198018429350",
         "76561197966679519",
@@ -6520,7 +6842,9 @@
           "adr": 51.0,
           "kpr": 0.52
         }
-      ]
+      ],
+      "home_score": 16,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_20-06-29_42_de_anubis_team_گUPRA_vs_team_CruZan.dem",
@@ -6529,6 +6853,8 @@
       "match_id": "42",
       "team1_raw": "team گUPRA",
       "team2_raw": "team CruZan",
+      "home_team": "Netgain AB",
+      "away_team": "Hello Ebbot AB",
       "total_rounds": 36,
       "t_start_score": 19,
       "ct_start_score": 17,
@@ -6541,6 +6867,20 @@
         "76561198055351051"
       ],
       "team_ct_ids": [
+        "76561198210338380",
+        "76561197986434448",
+        "76561198116828805",
+        "76561198025475427",
+        "76561198007137925"
+      ],
+      "comp_team_t_ids": [
+        "76561198866819505",
+        "76561198087440138",
+        "76561199310078355",
+        "76561197968638473",
+        "76561198055351051"
+      ],
+      "comp_team_ct_ids": [
         "76561198210338380",
         "76561197986434448",
         "76561198116828805",
@@ -6708,7 +7048,9 @@
           "adr": 42.8,
           "kpr": 0.33
         }
-      ]
+      ],
+      "home_score": 19,
+      "away_score": 17
     },
     {
       "file": "2026-03-19_21-18-17_51_de_mirage_team_keTTa_vs_team_Muerdurör.dem",
@@ -6717,6 +7059,8 @@
       "match_id": "51",
       "team1_raw": "team keTTa",
       "team2_raw": "team Muerdurör",
+      "home_team": "Netgain AB",
+      "away_team": "Sweco AB",
       "total_rounds": 23,
       "t_start_score": 10,
       "ct_start_score": 13,
@@ -6729,6 +7073,20 @@
         "76561198025475427"
       ],
       "team_ct_ids": [
+        "76561198866819505",
+        "76561199310078355",
+        "76561198087440138",
+        "76561197968638473",
+        "76561198055351051"
+      ],
+      "comp_team_t_ids": [
+        "76561198007137925",
+        "76561198116828805",
+        "76561198210338380",
+        "76561197986434448",
+        "76561198025475427"
+      ],
+      "comp_team_ct_ids": [
         "76561198866819505",
         "76561199310078355",
         "76561198087440138",
@@ -6896,7 +7254,9 @@
           "adr": 89.7,
           "kpr": 0.96
         }
-      ]
+      ],
+      "home_score": 10,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-04-47_11_de_nuke_team_Mäktig_vs_team_Dingoo.dem",
@@ -6905,6 +7265,8 @@
       "match_id": "11",
       "team1_raw": "team Mäktig",
       "team2_raw": "team Dingoo",
+      "home_team": "Onevinn AB",
+      "away_team": "Omegapoint AB",
       "total_rounds": 22,
       "t_start_score": 13,
       "ct_start_score": 9,
@@ -6917,6 +7279,20 @@
         "76561198174361389"
       ],
       "team_ct_ids": [
+        "76561197983019970",
+        "76561198001503244",
+        "76561199013055232",
+        "76561198064234146",
+        "76561198021560982"
+      ],
+      "comp_team_t_ids": [
+        "76561197995814927",
+        "76561198128802182",
+        "76561198016476715",
+        "76561198211176221",
+        "76561198174361389"
+      ],
+      "comp_team_ct_ids": [
         "76561197983019970",
         "76561198001503244",
         "76561199013055232",
@@ -7084,7 +7460,9 @@
           "adr": 66.9,
           "kpr": 0.59
         }
-      ]
+      ],
+      "home_score": 9,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-54-43_33_de_ancient_team_Martengooz_vs_team_kylenn.dem",
@@ -7093,6 +7471,8 @@
       "match_id": "33",
       "team1_raw": "team Martengooz",
       "team2_raw": "team kylenn",
+      "home_team": "Onevinn AB",
+      "away_team": "Omegapoint AB",
       "total_rounds": 24,
       "t_start_score": 13,
       "ct_start_score": 11,
@@ -7105,6 +7485,20 @@
         "76561198021560982"
       ],
       "team_ct_ids": [
+        "76561198174361389",
+        "76561198128802182",
+        "76561198016476715",
+        "76561197960356479",
+        "76561198037442232"
+      ],
+      "comp_team_t_ids": [
+        "76561197983019970",
+        "76561199013055232",
+        "76561198064234146",
+        "76561198001503244",
+        "76561198021560982"
+      ],
+      "comp_team_ct_ids": [
         "76561198174361389",
         "76561198128802182",
         "76561198016476715",
@@ -7272,7 +7666,9 @@
           "adr": 54.3,
           "kpr": 0.33
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 11
     },
     {
       "file": "2026-03-19_19-23-35_22_de_inferno_team_SAVR_DiscoPrinsen_bruuur_vs_team_Elof.dem",
@@ -7281,6 +7677,8 @@
       "match_id": "22",
       "team1_raw": "team SAVR DiscoPrinsen bruuur",
       "team2_raw": "team Elof",
+      "home_team": "SAVR AB",
+      "away_team": "Hogia AB",
       "total_rounds": 18,
       "t_start_score": 5,
       "ct_start_score": 13,
@@ -7298,6 +7696,20 @@
         "76561197999919076",
         "76561198032695196",
         "76561198150946948"
+      ],
+      "comp_team_t_ids": [
+        "76561198108671504",
+        "76561197987987308",
+        "76561197999919076",
+        "76561198032695196",
+        "76561198150946948"
+      ],
+      "comp_team_ct_ids": [
+        "76561198004768336",
+        "76561198167671374",
+        "76561198075055658",
+        "76561198198283239",
+        "76561198772122732"
       ],
       "player_stats": [
         {
@@ -7460,7 +7872,9 @@
           "adr": 55.3,
           "kpr": 0.39
         }
-      ]
+      ],
+      "home_score": 5,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_20-08-49_43_de_mirage_team_Köksal_baba_vs_team_SAVR_JERK.dem",
@@ -7469,6 +7883,8 @@
       "match_id": "43",
       "team1_raw": "team Köksal baba",
       "team2_raw": "team SAVR JERK",
+      "home_team": "SAVR AB",
+      "away_team": "Hogia AB",
       "total_rounds": 18,
       "t_start_score": 5,
       "ct_start_score": 13,
@@ -7481,6 +7897,20 @@
         "76561198150946948"
       ],
       "team_ct_ids": [
+        "76561198198283239",
+        "76561198772122732",
+        "76561198004768336",
+        "76561198075055658",
+        "76561198167671374"
+      ],
+      "comp_team_t_ids": [
+        "76561197999919076",
+        "76561198108671504",
+        "76561198032695196",
+        "76561197987987308",
+        "76561198150946948"
+      ],
+      "comp_team_ct_ids": [
         "76561198198283239",
         "76561198772122732",
         "76561198004768336",
@@ -7648,7 +8078,9 @@
           "adr": 78.7,
           "kpr": 0.83
         }
-      ]
+      ],
+      "home_score": 5,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_20-28-12_48_de_inferno_Dynamate_AB_vs_SSG_Standard_Solutions_Group.dem",
@@ -7657,6 +8089,8 @@
       "match_id": "48",
       "team1_raw": "Dynamate AB",
       "team2_raw": "SSG Standard Solutions Group",
+      "home_team": "SSG Solutions AB",
+      "away_team": "DynaMate AB",
       "total_rounds": 19,
       "t_start_score": 13,
       "ct_start_score": 6,
@@ -7669,6 +8103,20 @@
         "76561198002506171"
       ],
       "team_ct_ids": [
+        "76561197992732492",
+        "76561197998229138",
+        "76561199576739168",
+        "76561198122416516",
+        "76561198000665124"
+      ],
+      "comp_team_t_ids": [
+        "76561198819430484",
+        "76561197973327397",
+        "76561198736564821",
+        "76561198241473496",
+        "76561198002506171"
+      ],
+      "comp_team_ct_ids": [
         "76561197992732492",
         "76561197998229138",
         "76561199576739168",
@@ -7836,7 +8284,9 @@
           "adr": 57.5,
           "kpr": 0.42
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 6
     },
     {
       "file": "2026-03-19_19-08-14_21_de_inferno_BoaBots_vs_Silverspinbotters.dem",
@@ -7845,6 +8295,8 @@
       "match_id": "21",
       "team1_raw": "BoaBots",
       "team2_raw": "Silverspinbotters",
+      "home_team": "Silverspin AB",
+      "away_team": "NoA Ignite AB",
       "total_rounds": 18,
       "t_start_score": 13,
       "ct_start_score": 5,
@@ -7857,6 +8309,20 @@
         "76561198003579256"
       ],
       "team_ct_ids": [
+        "76561197987897761",
+        "76561197982493947",
+        "76561197984438629",
+        "76561198179872043",
+        "76561198046778204"
+      ],
+      "comp_team_t_ids": [
+        "76561198042773220",
+        "76561198020126050",
+        "76561197996917983",
+        "76561197968805909",
+        "76561198003579256"
+      ],
+      "comp_team_ct_ids": [
         "76561197987897761",
         "76561197982493947",
         "76561197984438629",
@@ -8024,7 +8490,9 @@
           "adr": 15.9,
           "kpr": 0.06
         }
-      ]
+      ],
+      "home_score": 5,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_20-04-47_41_de_overpass_Silverspin_vs_NoAIgnite.dem",
@@ -8033,6 +8501,8 @@
       "match_id": "41",
       "team1_raw": "Silverspin",
       "team2_raw": "NoAIgnite",
+      "home_team": "Silverspin AB",
+      "away_team": "NoA Ignite AB",
       "total_rounds": 13,
       "t_start_score": 0,
       "ct_start_score": 13,
@@ -8050,6 +8520,20 @@
         "76561198179872043",
         "76561197977947680",
         "76561198070144655"
+      ],
+      "comp_team_t_ids": [
+        "76561197987897761",
+        "76561198116953212",
+        "76561198179872043",
+        "76561197977947680",
+        "76561198070144655"
+      ],
+      "comp_team_ct_ids": [
+        "76561198020126050",
+        "76561198003579256",
+        "76561197996917983",
+        "76561197968805909",
+        "76561198042773220"
       ],
       "player_stats": [
         {
@@ -8212,7 +8696,9 @@
           "adr": 70.0,
           "kpr": 0.69
         }
-      ]
+      ],
+      "home_score": 0,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-02-16_9_de_inferno_Softronic_CM1_AB_vs_Knuts_Bygg.dem",
@@ -8221,6 +8707,8 @@
       "match_id": "9",
       "team1_raw": "Softronic CM1 AB",
       "team2_raw": "Knuts Bygg",
+      "home_team": "Softronic CM1 AB",
+      "away_team": "Knuts Bygg AB",
       "total_rounds": 36,
       "t_start_score": 17,
       "ct_start_score": 19,
@@ -8237,6 +8725,20 @@
         "76561197973729715",
         "76561198770246176",
         "76561198085665917"
+      ],
+      "comp_team_t_ids": [
+        "76561198052063018",
+        "76561197983540149",
+        "76561197973729715",
+        "76561198770246176",
+        "76561198085665917"
+      ],
+      "comp_team_ct_ids": [
+        "76561199274184060",
+        "76561197999059961",
+        "76561198300979810",
+        "76561199869927461",
+        "76561199082350066"
       ],
       "player_stats": [
         {
@@ -8383,7 +8885,9 @@
           "adr": 90.8,
           "kpr": 0.89
         }
-      ]
+      ],
+      "home_score": 17,
+      "away_score": 19
     },
     {
       "file": "2026-03-19_20-13-29_46_de_mirage_Knuts_Bygg_vs_Softronic_CM1_AB.dem",
@@ -8392,6 +8896,8 @@
       "match_id": "46",
       "team1_raw": "Knuts Bygg",
       "team2_raw": "Softronic CM1 AB",
+      "home_team": "Softronic CM1 AB",
+      "away_team": "Knuts Bygg AB",
       "total_rounds": 21,
       "t_start_score": 13,
       "ct_start_score": 8,
@@ -8409,6 +8915,20 @@
         "76561199869927461",
         "76561197999059961",
         "76561198300979810"
+      ],
+      "comp_team_t_ids": [
+        "76561199082350066",
+        "76561199274184060",
+        "76561199869927461",
+        "76561197999059961",
+        "76561198300979810"
+      ],
+      "comp_team_ct_ids": [
+        "76561197973729715",
+        "76561197983540149",
+        "76561198052063018",
+        "76561198770246176",
+        "76561198085665917"
       ],
       "player_stats": [
         {
@@ -8571,7 +9091,9 @@
           "adr": 70.7,
           "kpr": 0.62
         }
-      ]
+      ],
+      "home_score": 8,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-04-20_14_de_inferno_team__Kimchi_vs_team_Uniguide_DOGGLER.dem",
@@ -8580,6 +9102,8 @@
       "match_id": "14",
       "team1_raw": "team  Kimchi",
       "team2_raw": "team Uniguide DOGGLER",
+      "home_team": "Xenit AB",
+      "away_team": "Uniguide AB",
       "total_rounds": 17,
       "t_start_score": 4,
       "ct_start_score": 13,
@@ -8597,6 +9121,20 @@
         "76561198107299516",
         "76561198023772041",
         "76561197969701400"
+      ],
+      "comp_team_t_ids": [
+        "76561197988553594",
+        "76561198154595852",
+        "76561198107299516",
+        "76561198023772041",
+        "76561197969701400"
+      ],
+      "comp_team_ct_ids": [
+        "76561198207185136",
+        "76561198187308345",
+        "76561198075073796",
+        "76561197996985966",
+        "76561198004467065"
       ],
       "player_stats": [
         {
@@ -8759,7 +9297,9 @@
           "adr": 66.4,
           "kpr": 0.35
         }
-      ]
+      ],
+      "home_score": 4,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_20-16-04_47_de_nuke_team__Kimchi_vs_team_Uniguide_DOGGLER.dem",
@@ -8768,6 +9308,8 @@
       "match_id": "47",
       "team1_raw": "team  Kimchi",
       "team2_raw": "team Uniguide DOGGLER",
+      "home_team": "Xenit AB",
+      "away_team": "Uniguide AB",
       "total_rounds": 23,
       "t_start_score": 10,
       "ct_start_score": 13,
@@ -8784,6 +9326,20 @@
         "76561198107299516",
         "76561198023772041",
         "76561197988553594"
+      ],
+      "comp_team_t_ids": [
+        "76561198154595852",
+        "76561198107299516",
+        "76561198023772041",
+        "76561197969701400",
+        "76561197988553594"
+      ],
+      "comp_team_ct_ids": [
+        "76561197996985966",
+        "76561198004467065",
+        "76561198075073796",
+        "76561198207185136",
+        "76561198187308345"
       ],
       "player_stats": [
         {
@@ -8930,7 +9486,9 @@
           "adr": 48.6,
           "kpr": 0.35
         }
-      ]
+      ],
+      "home_score": 10,
+      "away_score": 13
     },
     {
       "file": "2026-03-19_19-01-13_6_de_mirage_evolvit_vs_Teamtailor.dem",
@@ -8939,6 +9497,8 @@
       "match_id": "6",
       "team1_raw": "evolvit",
       "team2_raw": "Teamtailor",
+      "home_team": "evolvit Solutions AB",
+      "away_team": "Teamtailor AB",
       "total_rounds": 16,
       "t_start_score": 3,
       "ct_start_score": 13,
@@ -8951,6 +9511,20 @@
         "76561197993782213"
       ],
       "team_ct_ids": [
+        "76561198066008286",
+        "76561197972809087",
+        "76561197995061447",
+        "76561198443657236",
+        "76561198269352121"
+      ],
+      "comp_team_t_ids": [
+        "76561197991293389",
+        "76561198073245242",
+        "76561198741242927",
+        "76561198202449913",
+        "76561197993782213"
+      ],
+      "comp_team_ct_ids": [
         "76561198066008286",
         "76561197972809087",
         "76561197995061447",
@@ -9118,7 +9692,9 @@
           "adr": 95.7,
           "kpr": 0.81
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 3
     },
     {
       "file": "2026-03-19_19-25-57_23_de_ancient_evolvit_vs_Teamtailor.dem",
@@ -9127,6 +9703,8 @@
       "match_id": "23",
       "team1_raw": "evolvit",
       "team2_raw": "Teamtailor",
+      "home_team": "evolvit Solutions AB",
+      "away_team": "Teamtailor AB",
       "total_rounds": 14,
       "t_start_score": 1,
       "ct_start_score": 13,
@@ -9135,6 +9713,20 @@
       "team_ct_ids": [
         "76561198269352121",
         "76561197995061447"
+      ],
+      "comp_team_t_ids": [
+        "76561198741242927",
+        "76561198202449913",
+        "76561197991293389",
+        "76561198073245242",
+        "76561197993782213"
+      ],
+      "comp_team_ct_ids": [
+        "76561198443657236",
+        "76561198066008286",
+        "76561198269352121",
+        "76561197995061447",
+        "76561197972809087"
       ],
       "player_stats": [
         {
@@ -9169,7 +9761,9 @@
           "adr": 32.5,
           "kpr": 0.36
         }
-      ]
+      ],
+      "home_score": 13,
+      "away_score": 1
     }
   ]
 }

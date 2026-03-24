@@ -111,6 +111,24 @@ def parse_demo(path: Path) -> dict:
         except Exception:
             match_start_tick = 0
 
+    # ── Competitive-match sides (post-knife) ─────────────────────────────────
+    # Re-read team assignments at match_start_tick to get the correct sides
+    # after any knife-round side swap.
+    comp_team_t  = {}
+    comp_team_ct = {}
+    if match_start_tick > 0:
+        comp_ticks = _ticks(parser, ["team_name", "steamid", "name"], ticks=[match_start_tick])
+        for row in comp_ticks.to_dict("records") if len(comp_ticks) else []:
+            sid = str(row["steamid"])
+            if row["team_name"] == "TERRORIST":
+                comp_team_t[sid]  = row["name"]
+            elif row["team_name"] == "CT":
+                comp_team_ct[sid] = row["name"]
+    if not comp_team_t and not comp_team_ct:
+        # Fallback to early-tick sides if match_start_tick read failed
+        comp_team_t  = team_t
+        comp_team_ct = team_ct
+
     # ── Rounds (knife round filtered out) ────────────────────────────────────
     rounds_df = _event(parser, "round_end")
     if len(rounds_df) and "tick" in rounds_df.columns:
@@ -245,8 +263,10 @@ def parse_demo(path: Path) -> dict:
         # Score per starting side
         "t_start_score":  t_score,
         "ct_start_score": ct_score,
-        "team_t_ids":   list(team_t.keys()),
-        "team_ct_ids":  list(team_ct.keys()),
+        "team_t_ids":      list(team_t.keys()),
+        "team_ct_ids":     list(team_ct.keys()),
+        "comp_team_t_ids":  list(comp_team_t.keys()),
+        "comp_team_ct_ids": list(comp_team_ct.keys()),
         "player_stats": list(stats.values()),
     }
 
@@ -386,6 +406,25 @@ def build_team_map(parsed_demos: list) -> dict:
 
 
 # ── Aggregation ───────────────────────────────────────────────────────────────
+def _canonical_teams(demo: dict, team_map: dict) -> dict:
+    """Return home_team / away_team using canonical names from team_map."""
+    folder = demo["folder_team"]
+    t_ids  = demo["team_t_ids"]
+    ct_ids = demo["team_ct_ids"]
+
+    # Which side has the folder (home) team?
+    t_home  = sum(1 for s in t_ids  if team_map.get(s) == folder)
+    ct_home = sum(1 for s in ct_ids if team_map.get(s) == folder)
+    away_ids = ct_ids if t_home >= ct_home else t_ids
+
+    # Canonical away team = most common non-folder team name among away players
+    from collections import Counter
+    away_names = [team_map[s] for s in away_ids if s in team_map and team_map[s] != folder]
+    away_team  = Counter(away_names).most_common(1)[0][0] if away_names else (demo["team2_raw"] or "Unknown")
+
+    return {"home_team": folder, "away_team": away_team}
+
+
 def aggregate(parsed_demos: list, season_num: int = 7) -> dict:
     # Exclude inconclusive games (neither team reached winning threshold)
     parsed_demos = [d for d in parsed_demos if max(d["t_start_score"], d["ct_start_score"]) >= 13]
@@ -457,12 +496,15 @@ def aggregate(parsed_demos: list, season_num: int = 7) -> dict:
             "match_id":     d["match_id"],
             "team1_raw":    d["team1_raw"],
             "team2_raw":    d["team2_raw"],
+            **_canonical_teams(d, team_map),
             "total_rounds":   d["total_rounds"],
             "t_start_score":  d["t_start_score"],
             "ct_start_score": d["ct_start_score"],
             "folder_team":    d["folder_team"],
-            "team_t_ids":     d["team_t_ids"],
-            "team_ct_ids":    d["team_ct_ids"],
+            "team_t_ids":      d["team_t_ids"],
+            "team_ct_ids":     d["team_ct_ids"],
+            "comp_team_t_ids":  d.get("comp_team_t_ids", d["team_t_ids"]),
+            "comp_team_ct_ids": d.get("comp_team_ct_ids", d["team_ct_ids"]),
             "player_stats": [{
                 **ps,
                 "kd":     round(ps["kills"] / ps["deaths"], 2) if ps["deaths"] else ps["kills"],
@@ -668,6 +710,24 @@ def main():
                 corrections += 1
 
         print(f"Roster-based corrections: {corrections}")
+
+    # ── Rebuild home_team / away_team using final corrected player assignments ──
+    sid_to_team = {p["steamid"]: p["team"] for p in stats["players"]}
+    from collections import Counter as _Counter
+    for d in stats["demos"]:
+        home   = d.get("folder_team", "")
+        # Use competitive sides (post-knife) for score attribution
+        t_ids  = d.get("comp_team_t_ids") or d.get("team_t_ids", [])
+        ct_ids = d.get("comp_team_ct_ids") or d.get("team_ct_ids", [])
+        t_home  = sum(1 for s in t_ids  if sid_to_team.get(s) == home)
+        ct_home = sum(1 for s in ct_ids if sid_to_team.get(s) == home)
+        home_on_t = t_home >= ct_home
+        away_ids   = ct_ids if home_on_t else t_ids
+        away_names = [sid_to_team[s] for s in away_ids if sid_to_team.get(s) and sid_to_team.get(s) != home]
+        d["home_team"]  = home
+        d["away_team"]  = _Counter(away_names).most_common(1)[0][0] if away_names else (d.get("team2_raw") or "Unknown")
+        d["home_score"] = d["t_start_score"] if home_on_t else d["ct_start_score"]
+        d["away_score"] = d["ct_start_score"] if home_on_t else d["t_start_score"]
 
     with open(STATS_FILE, "w") as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)

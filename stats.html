@@ -181,7 +181,7 @@
     .lvl-10         { background: #e60039; }
     .lvl-none       { background: #2a2a2a; color: #444; }
 
-    /* Demos tab */
+    /* Demos */
     .demos-list {
       display: flex;
       flex-direction: column;
@@ -242,9 +242,6 @@
       padding: 0.3rem 0.8rem;
     }
 
-    /* hidden */
-    .tab-pane { display: none; }
-    .tab-pane.active { display: block; }
   </style>
 </head>
 <body>
@@ -255,16 +252,12 @@
   <nav style="margin-top:1rem;display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap">
     <a href="index.html">ELO Rankings</a>
     <a href="standings.html">Standings</a>
+    <a href="match-history.html">Match History</a>
   </nav>
 </header>
 
-<div class="tabs">
-  <button class="tab-btn active" data-tab="players">Player Stats</button>
-  <button class="tab-btn" data-tab="demos">Match History</button>
-</div>
-
-<!-- PLAYERS TAB -->
-<div id="tab-players" class="tab-pane active">
+<!-- PLAYERS -->
+<div id="tab-players">
   <div class="table-wrap">
     <div class="table-header">
       <h2 id="players-heading">All Players</h2>
@@ -301,10 +294,6 @@
   </div>
 </div>
 
-<!-- DEMOS TAB -->
-<div id="tab-demos" class="tab-pane">
-  <div class="demos-list" id="demos-list"></div>
-</div>
 
 <script>
 // ── Division map (S8) ─────────────────────────────────────────────────────────
@@ -393,7 +382,6 @@ function initApp(stats, faceit) {
   });
 
   renderTable();
-  renderDemos(stats.demos, faceit);
 }
 
 // ── Table rendering ────────────────────────────────────────────────────────────
@@ -507,99 +495,9 @@ document.getElementById("team-filter").addEventListener("change", e => {
   renderTable();
 });
 
-// ── Demos tab ─────────────────────────────────────────────────────────────────
-function renderDemos(demos, faceit) {
-  const list   = document.getElementById("demos-list");
-  const sorted = [...demos].sort((a, b) => (a.date || "").localeCompare(b.date || ""));
-
-  list.innerHTML = sorted.map((d, idx) => {
-    const mapName = (d.map || "unknown").replace("de_", "");
-    const t1      = d.team1_raw || "Team 1";
-    const t2      = d.team2_raw || "Team 2";
-    const dateStr = d.date ? new Date(d.date).toLocaleDateString("sv-SE", { month: "short", day: "numeric" }) : "";
-
-    // Split players into the two sides using team_t_ids / team_ct_ids
-    const tSet  = new Set(d.team_t_ids);
-    const ctSet = new Set(d.team_ct_ids);
-    const tPlayers  = (d.player_stats || []).filter(p => tSet.has(p.steamid)).sort((a,b) => b.kills - a.kills);
-    const ctPlayers = (d.player_stats || []).filter(p => ctSet.has(p.steamid)).sort((a,b) => b.kills - a.kills);
-
-    // Score: map t_start/ct_start scores to the two team names
-    const tScore  = d.t_start_score;
-    const ctScore = d.ct_start_score;
-    // Figure out which team (t1/t2) started on T — use team_t_ids to check which boulder players are there
-    const scoreStr = `${tScore}-${ctScore}`;
-
-    const playerRow = (p) => {
-      const f      = faceit[p.steamid] || {};
-      const avatar = f.avatar
-        ? `<img class="avatar" src="${f.avatar}" style="width:22px;height:22px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:6px" onerror="this.style.display='none'">`
-        : "";
-      const kdCls  = p.kd >= 1.2 ? "val-hi" : p.kd < 0.9 ? "val-lo" : "";
-      const adrCls = p.adr >= 80 ? "val-hi" : p.adr < 55 ? "val-lo" : "";
-      return `<tr>
-        <td>${avatar}${p.name}</td>
-        <td style="text-align:right">${p.kills}</td>
-        <td style="text-align:right">${p.deaths}</td>
-        <td style="text-align:right">${p.assists}</td>
-        <td style="text-align:right" class="${kdCls}">${p.kd}</td>
-        <td style="text-align:right">${p.hs_pct}%</td>
-        <td style="text-align:right" class="${adrCls}">${p.adr}</td>
-      </tr>`;
-    };
-
-    const statsTable = `
-      <div class="demo-stats">
-        <table>
-          <thead><tr>
-            <th>Player</th>
-            <th style="text-align:right">K</th>
-            <th style="text-align:right">D</th>
-            <th style="text-align:right">A</th>
-            <th style="text-align:right">K/D</th>
-            <th style="text-align:right">HS%</th>
-            <th style="text-align:right">ADR</th>
-          </tr></thead>
-          <tbody>
-            <tr class="team-divider"><td colspan="7">T Side — ${tScore} rounds won</td></tr>
-            ${tPlayers.map(playerRow).join("")}
-            <tr class="team-divider"><td colspan="7">CT Side — ${ctScore} rounds won</td></tr>
-            ${ctPlayers.map(playerRow).join("")}
-          </tbody>
-        </table>
-      </div>`;
-
-    return `
-      <div class="demo-card" id="demo-${idx}">
-        <div class="demo-card-header" onclick="toggleDemo('demo-${idx}')">
-          <div class="demo-map">${mapName}</div>
-          <div class="demo-teams">${t1} <span style="color:#555">vs</span> ${t2}</div>
-          <div class="demo-meta" style="font-weight:700;color:#fff;font-size:0.95rem">${scoreStr}</div>
-          <div class="demo-meta">${dateStr} · ${d.total_rounds} rounds</div>
-          <div class="demo-chevron">▼</div>
-        </div>
-        ${statsTable}
-      </div>`;
-  }).join("");
-}
-
-function toggleDemo(id) {
-  document.getElementById(id).classList.toggle("open");
-}
-
 // ── Init ──────────────────────────────────────────────────────────────────────
 document.getElementById('division-filter').style.display = '';
 loadData();
-
-// ── Tabs ──────────────────────────────────────────────────────────────────────
-document.querySelectorAll(".tab-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
-    document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
-    btn.classList.add("active");
-    document.getElementById("tab-" + btn.dataset.tab).classList.add("active");
-  });
-});
 </script>
 </body>
 </html>
