@@ -66,6 +66,15 @@
       "faceit_id": "bfc203f5-ae24-45ef-8ce9-0021517de56d"
     },
     {
+      "steamid": "76561197960613299",
+      "name": "[G-Power]spetero",
+      "nickname": "spetero",
+      "avatar": "https://distribution.faceit-cdn.net/images/fa7da196-8511-4225-b493-49234a8b8ed8.jpeg",
+      "elo": 1383,
+      "level": 7,
+      "faceit_id": "d20a19cc-d913-4bf8-aee9-f2b62e2521d5"
+    },
+    {
       "steamid": "76561197960880766",
       "name": "Ernst",
       "nickname": "",
@@ -77,6 +86,15 @@
     {
       "steamid": "76561198107425970",
       "name": "Mitch Conner",
+      "nickname": "",
+      "avatar": "",
+      "elo": 0,
+      "level": 0,
+      "faceit_id": ""
+    },
+    {
+      "steamid": "76561199637688495",
+      "name": "Lord Commander",
       "nickname": "",
       "avatar": "",
       "elo": 0,
@@ -346,6 +364,15 @@
       "elo": 1074,
       "level": 5,
       "faceit_id": "fa6c2cbd-581f-4660-bd78-346758b15c07"
+    },
+    {
+      "steamid": "76561198000665124",
+      "name": "Mrkothe",
+      "nickname": "Mrkothe",
+      "avatar": "",
+      "elo": 942,
+      "level": 4,
+      "faceit_id": "914fd20b-46a9-4912-858c-a2855bfb7a78"
     }
   ],
   "Eltel Networks AB": [
@@ -453,13 +480,13 @@
   ],
   "Hello Ebbot AB": [
     {
-      "steamid": "76561197986434448",
-      "name": "Frälsaren",
-      "nickname": "PastorOlle",
-      "avatar": "https://assets.faceit-cdn.net/avatars/95b5dcb0-0739-44d0-845c-6b86c3286e3f_1564859094550.jpg",
-      "elo": 1385,
+      "steamid": "76561198208345905",
+      "name": "kajja",
+      "nickname": "kajja",
+      "avatar": "https://assets.faceit-cdn.net/avatars/c3a566e1-dc10-4a80-a48d-0462aaf5dd43_1550945974130.jpg",
+      "elo": 1430,
       "level": 7,
-      "faceit_id": "95b5dcb0-0739-44d0-845c-6b86c3286e3f"
+      "faceit_id": "c3a566e1-dc10-4a80-a48d-0462aaf5dd43"
     },
     {
       "steamid": "76561197960981741",
@@ -480,15 +507,6 @@
       "faceit_id": "3a053f6f-84f6-4eb0-8424-213a2e364f04"
     },
     {
-      "steamid": "76561198025475427",
-      "name": "Muerdurör",
-      "nickname": "7uan_Deeg",
-      "avatar": "https://distribution.faceit-cdn.net/images/c3bad59d-2987-4bec-9b5a-a0aa15515fc7.jpeg",
-      "elo": 1051,
-      "level": 5,
-      "faceit_id": "ddf7c34d-0eda-4506-a239-66296170c1a5"
-    },
-    {
       "steamid": "76561198742568523",
       "name": "Jedi Mind",
       "nickname": "",
@@ -500,42 +518,6 @@
     {
       "steamid": "76561198165196733",
       "name": "how r u mad, or?",
-      "nickname": "",
-      "avatar": "",
-      "elo": 0,
-      "level": 0,
-      "faceit_id": ""
-    },
-    {
-      "steamid": "76561198208345905",
-      "name": "kajja",
-      "nickname": "",
-      "avatar": "",
-      "elo": 0,
-      "level": 0,
-      "faceit_id": ""
-    },
-    {
-      "steamid": "76561198210338380",
-      "name": "STORA OXAR",
-      "nickname": "",
-      "avatar": "",
-      "elo": 0,
-      "level": 0,
-      "faceit_id": ""
-    },
-    {
-      "steamid": "76561198116828805",
-      "name": "silversigge",
-      "nickname": "",
-      "avatar": "",
-      "elo": 0,
-      "level": 0,
-      "faceit_id": ""
-    },
-    {
-      "steamid": "76561198007137925",
-      "name": "گUPRA",
       "nickname": "",
       "avatar": "",
       "elo": 0,
@@ -771,15 +753,6 @@
   ],
   "NODAF AB": [
     {
-      "steamid": "76561197960613299",
-      "name": "[G-Power]spetero",
-      "nickname": "spetero",
-      "avatar": "https://distribution.faceit-cdn.net/images/fa7da196-8511-4225-b493-49234a8b8ed8.jpeg",
-      "elo": 1383,
-      "level": 7,
-      "faceit_id": "d20a19cc-d913-4bf8-aee9-f2b62e2521d5"
-    },
-    {
       "steamid": "76561198018429350",
       "name": "tivsen",
       "nickname": "tivsen",
@@ -825,15 +798,51 @@
       "faceit_id": ""
     }
   ],
-  "Netlight AB DUENDE": [
+  "Netgain AB": [
     {
-      "steamid": "76561198000665124",
-      "name": "Mrkothe",
-      "nickname": "Mrkothe",
+      "steamid": "76561197986434448",
+      "name": "Frälsaren",
+      "nickname": "PastorOlle",
+      "avatar": "https://assets.faceit-cdn.net/avatars/95b5dcb0-0739-44d0-845c-6b86c3286e3f_1564859094550.jpg",
+      "elo": 1385,
+      "level": 7,
+      "faceit_id": "95b5dcb0-0739-44d0-845c-6b86c3286e3f"
+    },
+    {
+      "steamid": "76561198025475427",
+      "name": "Muerdurör",
+      "nickname": "7uan_Deeg",
+      "avatar": "https://distribution.faceit-cdn.net/images/c3bad59d-2987-4bec-9b5a-a0aa15515fc7.jpeg",
+      "elo": 1051,
+      "level": 5,
+      "faceit_id": "ddf7c34d-0eda-4506-a239-66296170c1a5"
+    },
+    {
+      "steamid": "76561198210338380",
+      "name": "STORA OXAR",
+      "nickname": "",
       "avatar": "",
-      "elo": 942,
-      "level": 4,
-      "faceit_id": "914fd20b-46a9-4912-858c-a2855bfb7a78"
+      "elo": 0,
+      "level": 0,
+      "faceit_id": ""
+    },
+    {
+      "steamid": "76561198116828805",
+      "name": "silversigge",
+      "nickname": "",
+      "avatar": "",
+      "elo": 0,
+      "level": 0,
+      "faceit_id": ""
+    },
+    {
+      "steamid": "76561198007137925",
+      "name": "گUPRA",
+      "nickname": "",
+      "avatar": "",
+      "elo": 0,
+      "level": 0,
+      "faceit_id": ""
     }
   ],
   "NoA Ignite AB": [
@@ -1438,17 +1447,6 @@
     {
       "steamid": "76561198202449913",
       "name": "Edenwhat",
-      "nickname": "",
-      "avatar": "",
-      "elo": 0,
-      "level": 0,
-      "faceit_id": ""
-    }
-  ],
-  "Telia Sverige AB": [
-    {
-      "steamid": "76561199637688495",
-      "name": "Lord Commander",
       "nickname": "",
       "avatar": "",
       "elo": 0,

@@ -74,15 +74,6 @@
     },
     {
       "datetime": "2026-03-26T19:00:00+0100",
-      "team1": "Toyota Material Handling AB",
-      "team2": "Northmill Bank AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 1"
-    },
-    {
-      "datetime": "2026-03-26T19:00:00+0100",
       "team1": "Telia Sverige AB",
       "team2": "Netlight AB DUENDE",
       "score1": null,
@@ -445,15 +436,6 @@
     },
     {
       "datetime": "2026-03-26T19:00:00+0100",
-      "team1": "Spiris AB",
-      "team2": "Boulder AB Hong Kong",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2A"
-    },
-    {
-      "datetime": "2026-03-26T19:00:00+0100",
       "team1": "Fortnox AB",
       "team2": "Netlight AB BOIDS",
       "score1": null,
@@ -501,6 +483,15 @@
       "datetime": "2026-03-26T20:00:00+0100",
       "team1": "Fortnox AB",
       "team2": "EA DICE AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2A"
+    },
+    {
+      "datetime": "2026-03-26T21:00:00+0100",
+      "team1": "Spiris AB",
+      "team2": "Boulder AB Hong Kong",
       "score1": null,
       "score2": null,
       "played": false,

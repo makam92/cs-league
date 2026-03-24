@@ -866,5 +866,12 @@
     "elo": 971,
     "level": 4,
     "faceit_id": "a4dea0a8-d52f-477e-ac16-d0b93fb86a00"
+  },
+  "76561198208345905": {
+    "nickname": "kajja",
+    "avatar": "https://assets.faceit-cdn.net/avatars/c3a566e1-dc10-4a80-a48d-0462aaf5dd43_1550945974130.jpg",
+    "elo": 1430,
+    "level": 7,
+    "faceit_id": "c3a566e1-dc10-4a80-a48d-0462aaf5dd43"
   }
 }

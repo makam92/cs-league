@@ -639,18 +639,33 @@ def main():
 
         all_nicks = list(nick_to_team.keys())
 
+        def word_boundary_match(a: str, b: str) -> bool:
+            """True if string b appears as whole word(s) inside string a."""
+            pattern = r"(?<![^\W_])" + re.escape(b) + r"(?![^\W_])"
+            return bool(re.search(pattern, a))
+
         def match_nick(name: str) -> str | None:
-            """Fuzzy-match a player display name against roster nicknames."""
+            """Match a player display name against roster nicknames.
+
+            A match is accepted only if exactly one team's roster contains a nick
+            that is a whole-word match within the display name (or vice versa).
+            This means "neoo" matches "Uniguide neoo" but "mrk" won't match "mrkothe".
+            """
             name_lc = name.lower().strip()
             # Exact match
             if name_lc in nick_to_team:
                 return nick_to_team[name_lc]
-            # Substring containment (name contains nickname or vice versa)
-            # Require at least 6 chars to avoid short nicks matching as prefix of longer names
+            # Word-boundary containment in either direction:
+            # - roster nick appears as whole word inside player display name, OR
+            # - player display name appears as whole word inside roster nick
+            matched_teams: set[str] = set()
             for nick in all_nicks:
-                if (len(nick) >= 6 and nick in name_lc) or (len(name_lc) >= 6 and name_lc in nick):
-                    return nick_to_team[nick]
-            # Fuzzy match
+                if word_boundary_match(name_lc, nick) or word_boundary_match(nick, name_lc):
+                    matched_teams.add(nick_to_team[nick])
+            # Only accept if unambiguous (exactly one team matched)
+            if len(matched_teams) == 1:
+                return next(iter(matched_teams))
+            # Fuzzy fallback
             close = difflib.get_close_matches(name_lc, all_nicks, n=1, cutoff=0.82)
             return nick_to_team[close[0]] if close else None
 
