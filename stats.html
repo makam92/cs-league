@@ -81,7 +81,7 @@
       background: #1e1e1e;
       border-radius: 10px;
       border: 1px solid #2a2a2a;
-      overflow: hidden;
+      overflow-x: auto;
     }
 
     .table-header {
@@ -242,6 +242,28 @@
       padding: 0.3rem 0.8rem;
     }
 
+    @media (max-width: 640px) {
+      body { padding: 1rem 0.5rem; }
+      .table-header { padding: 0.75rem 0.8rem; }
+      .search-box { width: 100% !important; }
+      /* Hide avatar, truncate name */
+      #player-table .avatar,
+      #player-table .avatar-placeholder { display: none !important; }
+      #player-table .nick { max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.75rem; }
+      #player-table .faceit-nick { display: none; }
+      /* Hide Team (3), A (6), KPR (11), ELO (12), Lvl (13) */
+      #player-table th:nth-child(3),
+      #player-table td:nth-child(3),
+      #player-table th:nth-child(6),
+      #player-table td:nth-child(6),
+      #player-table th:nth-child(11),
+      #player-table td:nth-child(11),
+      #player-table th:nth-child(12),
+      #player-table td:nth-child(12),
+      #player-table th:nth-child(13),
+      #player-table td:nth-child(13) { display: none; }
+    }
+
   </style>
 </head>
 <body>
@@ -277,13 +299,13 @@
           <th class="rank-num">#</th>
           <th data-col="name">Player</th>
           <th data-col="team">Team</th>
-          <th data-col="maps" class="sorted" style="text-align:right">Maps<span class="sort-arrow">↓</span></th>
-          <th data-col="kills" style="text-align:right">K</th>
+          <th data-col="kills" class="sorted" style="text-align:right">K<span class="sort-arrow">↓</span></th>
           <th data-col="deaths" style="text-align:right">D</th>
           <th data-col="assists" style="text-align:right">A</th>
           <th data-col="kd" style="text-align:right">K/D</th>
           <th data-col="hs_pct" style="text-align:right">HS%</th>
           <th data-col="adr" style="text-align:right">ADR</th>
+          <th data-col="maps" style="text-align:right">Maps</th>
           <th data-col="kpr" style="text-align:right">KPR</th>
           <th data-col="elo" style="text-align:center">ELO</th>
           <th style="text-align:center">Lvl</th>
@@ -339,7 +361,7 @@ function loadData() {
 
 // ── Data ─────────────────────────────────────────────────────────────────────
 let allPlayers = [];
-let sortCol    = "maps";
+let sortCol    = "kills";
 let sortAsc    = false;
 let searchTerm = "";
 let teamFilter = "";
@@ -400,6 +422,7 @@ function renderTable() {
   });
 
   const tbody = document.getElementById("player-tbody");
+
   tbody.innerHTML = rows.map((p, i) => {
     const avatarEl = p.avatar
       ? `<img class="avatar" src="${p.avatar}" alt="" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="avatar-placeholder" style="display:none">${p.name[0].toUpperCase()}</div>`
@@ -428,16 +451,16 @@ function renderTable() {
         </div>
       </td>
       <td style="color:#666;font-size:0.8rem;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.team || "—"}</td>
-      <td style="text-align:right">${p.maps}</td>
-      <td style="text-align:right">${p.kills}</td>
-      <td style="text-align:right">${p.deaths}</td>
-      <td style="text-align:right">${p.assists}</td>
-      <td style="text-align:right" class="${kdCls}">${p.kd}</td>
-      <td style="text-align:right" class="${hsCls}">${p.hs_pct}%</td>
-      <td style="text-align:right" class="${adrCls}">${p.adr}</td>
-      <td style="text-align:right">${p.kpr}</td>
-      <td style="text-align:center">${eloStr}</td>
-      <td style="text-align:center">${lvlStr}</td>
+      <td data-label="K"    style="text-align:right">${p.kills}</td>
+      <td data-label="D"    style="text-align:right">${p.deaths}</td>
+      <td data-label="A"    style="text-align:right">${p.assists}</td>
+      <td data-label="K/D"  style="text-align:right" class="${kdCls}">${p.kd}</td>
+      <td data-label="HS%"  style="text-align:right" class="${hsCls}">${p.hs_pct}%</td>
+      <td data-label="ADR"  style="text-align:right" class="${adrCls}">${p.adr}</td>
+      <td data-label="Maps" style="text-align:right">${p.maps}</td>
+      <td data-label="KPR"  style="text-align:right">${p.kpr}</td>
+      <td data-label="ELO"  style="text-align:center">${eloStr}</td>
+      <td data-label="Lvl"  style="text-align:center">${lvlStr}</td>
     </tr>`;
   }).join("");
 }

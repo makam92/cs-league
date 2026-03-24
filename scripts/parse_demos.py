@@ -450,10 +450,6 @@ def aggregate(parsed_demos: list, season_num: int = 7) -> dict:
                     "damage":        0,
                     "rounds":        0,
                     "maps":          0,
-                    "_adr_per_game": [],
-                    "_kd_per_game":  [],
-                    "_hs_per_game":  [],
-                    "_kpr_per_game": [],
                 }
             p = players[sid]
             p["name"]          = ps["name"]   # keep latest name
@@ -465,25 +461,12 @@ def aggregate(parsed_demos: list, season_num: int = 7) -> dict:
             p["damage"]        += ps["damage"]
             p["rounds"]        += ps["rounds"]
             p["maps"]          += 1
-            if ps["rounds"] > 0:
-                p["_adr_per_game"].append(ps["damage"] / ps["rounds"])
-                p["_kpr_per_game"].append(ps["kills"] / ps["rounds"])
-            p["_kd_per_game"].append(ps["kills"] / ps["deaths"] if ps["deaths"] else ps["kills"])
-            p["_hs_per_game"].append(ps["headshots"] / ps["kills"] * 100 if ps["kills"] else 0)
-
-    # Derived stats — all averaged per game for consistency
+    # Derived stats — computed from accumulated totals so they match K/D/rounds columns
     for p in players.values():
-        def avg(lst): return round(sum(lst) / len(lst), 2) if lst else 0
-
-        adrs = p.pop("_adr_per_game")
-        kds  = p.pop("_kd_per_game")
-        hss  = p.pop("_hs_per_game")
-        kprs = p.pop("_kpr_per_game")
-
-        p["adr"]    = round(sum(adrs) / len(adrs), 1) if adrs else 0
-        p["kd"]     = avg(kds)
-        p["hs_pct"] = round(sum(hss) / len(hss), 1) if hss else 0
-        p["kpr"]    = avg(kprs)
+        p["kd"]     = round(p["kills"] / p["deaths"], 2) if p["deaths"] else float(p["kills"])
+        p["adr"]    = round(p["damage"] / p["rounds"], 1) if p["rounds"] else 0
+        p["hs_pct"] = round(p["headshots"] / p["kills"] * 100, 1) if p["kills"] else 0
+        p["kpr"]    = round(p["kills"] / p["rounds"], 2) if p["rounds"] else 0
 
     return {
         "season":     season_num,

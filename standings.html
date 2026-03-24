@@ -98,6 +98,9 @@
       flex-shrink: 0;
     }
 
+    /* ── Scroll wrapper for wide tables ── */
+    .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
     /* ── Standings table ── */
     .standings-table {
       width: 100%;
@@ -377,6 +380,22 @@
     .history-table .ht-date  { color: #555; font-size: 0.78rem; white-space: nowrap; }
     .history-empty { color: #444; font-style: italic; font-size: 0.85rem; padding: 1.5rem 0.75rem; }
 
+    @media (max-width: 600px) {
+      body { padding: 1rem 0.5rem; }
+      /* Hide Draws, Score-For, Score-Against columns in standings */
+      .standings-table th:nth-child(5),
+      .standings-table td:nth-child(5),
+      .standings-table th:nth-child(7),
+      .standings-table td:nth-child(7),
+      .standings-table th:nth-child(8),
+      .standings-table td:nth-child(8) { display: none; }
+      .standings-table th, .standings-table td { padding: 0.5rem 0.4rem; font-size: 0.8rem; }
+      /* Hide Division column in match history table */
+      .history-table th:last-child,
+      .history-table td:last-child { display: none; }
+      .history-table th, .history-table td { padding: 0.45rem 0.5rem; font-size: 0.78rem; }
+    }
+
     /* ── Notice ── */
     .notice {
       text-align: center;
@@ -410,7 +429,7 @@
     </select>
     <input id="hist-team-filter" type="text" placeholder="Search team…" oninput="renderHistory()" />
   </div>
-  <table class="history-table">
+  <div class="table-scroll"><table class="history-table">
     <thead>
       <tr>
         <th>Date</th>
@@ -421,7 +440,7 @@
       </tr>
     </thead>
     <tbody id="hist-tbody"></tbody>
-  </table>
+  </table></div>
   <div id="hist-empty" class="history-empty" style="display:none">No matches found.</div>
 </div>
 
@@ -552,6 +571,7 @@ function renderDivision(divName) {
 
   const standingsHTML = `
     ${legend}
+    <div class="table-scroll">
     <table class="standings-table">
       <thead>
         <tr>
@@ -567,7 +587,8 @@ function renderDivision(divName) {
         </tr>
       </thead>
       <tbody>${tbodyRows}</tbody>
-    </table>`;
+    </table>
+    </div>`;
 
   content.innerHTML = `
     <div class="content-wrap">
