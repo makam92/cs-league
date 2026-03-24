@@ -380,6 +380,68 @@
 
     .no-matches { color: #444; font-size: 0.8rem; font-style: italic; padding: 0.25rem 0; }
 
+    /* ── Match history section ── */
+    .history-section {
+      max-width: 1200px;
+      margin: 3rem auto 0;
+      padding-top: 2rem;
+      border-top: 1px solid #2a2a2a;
+    }
+    .history-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.25rem;
+    }
+    .history-filters {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .history-filters select,
+    .history-filters input {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      color: #ccc;
+      font-size: 0.85rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .history-filters select:focus,
+    .history-filters input:focus { border-color: #555; }
+    .history-filters input { min-width: 200px; }
+    .history-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+    }
+    .history-table th {
+      text-align: left;
+      color: #555;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.4rem 0.75rem;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .history-table td {
+      padding: 0.55rem 0.75rem;
+      border-bottom: 1px solid #1e1e1e;
+      color: #ccc;
+    }
+    .history-table tr:hover td { background: #1a1a1a; }
+    .history-table .ht-team  { font-weight: 500; }
+    .history-table .ht-winner { color: #fff; font-weight: 600; }
+    .history-table .ht-score { color: #888; text-align: center; white-space: nowrap; }
+    .history-table .ht-score .sc-w { color: #1ce400; font-weight: 600; }
+    .history-table .ht-score .sc-l { color: #f55; }
+    .history-table .ht-div   { color: #555; font-size: 0.78rem; }
+    .history-table .ht-date  { color: #555; font-size: 0.78rem; white-space: nowrap; }
+    .history-empty { color: #444; font-style: italic; font-size: 0.85rem; padding: 1.5rem 0.75rem; }
+
     /* ── Notice ── */
     .notice {
       text-align: center;
@@ -403,6 +465,29 @@
 
 <div id="div-tabs" class="div-tabs"></div>
 <div id="content"></div>
+
+<div class="history-section">
+  <div class="history-title">Match History</div>
+  <div class="history-filters">
+    <select id="hist-div-filter" onchange="renderHistory()">
+      <option value="">All divisions</option>
+    </select>
+    <input id="hist-team-filter" type="text" placeholder="Search team…" oninput="renderHistory()" />
+  </div>
+  <table class="history-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Team 1</th>
+        <th>Score</th>
+        <th>Team 2</th>
+        <th>Division</th>
+      </tr>
+    </thead>
+    <tbody id="hist-tbody"></tbody>
+  </table>
+  <div id="hist-empty" class="history-empty" style="display:none">No matches found.</div>
+</div>
 
 <script>
 const ADVANCE = { "Division 1": 6, default: 3 };
@@ -428,6 +513,7 @@ async function loadAndRender() {
   ]);
 
   render();
+  initHistory();
 }
 
 // ── Render ────────────────────────────────────────────────────────────────────
@@ -728,6 +814,64 @@ function buildPlayerPanel(teamName) {
 // ── Util ──────────────────────────────────────────────────────────────────────
 function esc(s) {
   return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Match history ─────────────────────────────────────────────────────────────
+function initHistory() {
+  if (!scheduleData) return;
+  const sel = document.getElementById('hist-div-filter');
+  const existing = new Set([...sel.options].map(o => o.value));
+  for (const div of Object.keys(scheduleData)) {
+    if (!existing.has(div)) {
+      const opt = document.createElement('option');
+      opt.value = opt.textContent = div;
+      sel.appendChild(opt);
+    }
+  }
+  renderHistory();
+}
+
+function renderHistory() {
+  if (!scheduleData) return;
+  const divFilter  = document.getElementById('hist-div-filter').value;
+  const teamFilter = document.getElementById('hist-team-filter').value.trim().toLowerCase();
+
+  // Flatten all played matches across all divisions
+  let matches = Object.values(scheduleData).flat().filter(m => m.played);
+
+  if (divFilter)  matches = matches.filter(m => m.division === divFilter);
+  if (teamFilter) matches = matches.filter(m =>
+    m.team1.toLowerCase().includes(teamFilter) ||
+    m.team2.toLowerCase().includes(teamFilter)
+  );
+
+  matches.sort((a, b) => new Date(b.datetime) - new Date(a.datetime));
+
+  const tbody = document.getElementById('hist-tbody');
+  const empty = document.getElementById('hist-empty');
+
+  if (!matches.length) {
+    tbody.innerHTML = '';
+    empty.style.display = '';
+    return;
+  }
+  empty.style.display = 'none';
+
+  tbody.innerHTML = matches.map(m => {
+    const t1win = m.score1 > m.score2;
+    const date  = new Date(m.datetime).toLocaleDateString('sv-SE', { day: 'numeric', month: 'short', year: 'numeric' });
+    return `<tr>
+      <td class="ht-date">${date}</td>
+      <td class="ht-team ${t1win ? 'ht-winner' : ''}">${esc(m.team1)}</td>
+      <td class="ht-score">
+        <span class="${t1win ? 'sc-w' : 'sc-l'}">${m.score1}</span>
+        <span style="color:#444"> – </span>
+        <span class="${!t1win ? 'sc-w' : 'sc-l'}">${m.score2}</span>
+      </td>
+      <td class="ht-team ${!t1win ? 'ht-winner' : ''}">${esc(m.team2)}</td>
+      <td class="ht-div">${esc(m.division)}</td>
+    </tr>`;
+  }).join('');
 }
 
 // ── Init ──────────────────────────────────────────────────────────────────────
