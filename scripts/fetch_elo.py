@@ -6,12 +6,14 @@ Usage:
   python fetch_elo.py --season s8
 """
 
-import json, subprocess, time, argparse
+import json, subprocess, time, argparse, os
 from pathlib import Path
 from collections import Counter
 
 ROOT    = Path(__file__).parent.parent
-API_KEY = "e19bebec-abc8-4a5b-855a-6eb7ee1e73b6"
+API_KEY = os.environ.get("FACEIT_API_KEY", "")
+if not API_KEY:
+    raise SystemExit("Error: FACEIT_API_KEY environment variable not set.")
 
 
 def faceit_lookup(steamid: str, cache: dict) -> dict | None:

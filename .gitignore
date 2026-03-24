@@ -1,6 +1,9 @@
 # Demo files (large binary files)
 demos/
 
+# Secrets
+.env
+
 # Python
 __pycache__/
 *.pyc
