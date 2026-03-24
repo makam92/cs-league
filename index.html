@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS League — FACEIT ELO</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #fff;
+    }
+
+    header p {
+      color: #888;
+      margin-top: 0.4rem;
+      font-size: 0.875rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .team-card {
+      background: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #2a2a2a;
+    }
+
+    .team-header {
+      padding: 1rem 1.2rem;
+      background: #242424;
+      border-bottom: 1px solid #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .team-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .team-avg {
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .team-avg span {
+      color: #ff6240;
+      font-weight: 600;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      padding: 0.5rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    th.right { text-align: right; }
+
+    td {
+      padding: 0.55rem 1rem;
+      font-size: 0.875rem;
+      border-bottom: 1px solid #1a1a1a;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: #252525; }
+
+    .player-cell {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #333;
+      flex-shrink: 0;
+    }
+
+    .avatar-placeholder {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: #2e2e2e;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      color: #555;
+      font-weight: 700;
+    }
+
+    .nick {
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .realname {
+      font-size: 0.75rem;
+      color: #666;
+    }
+
+    .elo-cell {
+      text-align: right;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+
+    .elo-none { color: #444; }
+
+    .level-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: #fff;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+
+    .lvl-1  { background: #828282; }
+    .lvl-2  { background: #828282; }
+    .lvl-3  { background: #1ce400; color: #000; text-shadow: none; }
+    .lvl-4  { background: #1ce400; color: #000; text-shadow: none; }
+    .lvl-5  { background: #f5e942; color: #000; text-shadow: none; }
+    .lvl-6  { background: #f5a623; color: #000; text-shadow: none; }
+    .lvl-7  { background: #f5a623; color: #000; text-shadow: none; }
+    .lvl-8  { background: #f0582a; }
+    .lvl-9  { background: #f0582a; }
+    .lvl-10 { background: #e60039; }
+    .lvl-none { background: #2a2a2a; color: #444; }
+
+    .rank-col { width: 24px; color: #444; font-size: 0.8rem; text-align: center; }
+
+    .div-heading {
+      grid-column: 1 / -1;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #ff6240;
+      padding: 0.5rem 0.2rem 0.1rem;
+      border-bottom: 1px solid #2a2a2a;
+      margin-bottom: 0.25rem;
+    }
+
+    .season-toggle {
+      display: inline-flex;
+      gap: 0.4rem;
+      margin-top: 1rem;
+    }
+    .season-btn {
+      background: transparent;
+      border: 1px solid #444;
+      color: #888;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .season-btn.active {
+      border-color: #ff6240;
+      color: #ff6240;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CS League — FACEIT ELO</h1>
+    <p id="season-label">Season 8 team standings by average ELO</p>
+    <nav style="margin-top:1rem;display:flex;justify-content:center;gap:0.5rem;flex-wrap:wrap">
+      <a href="standings.html" style="color:#ff6240;text-decoration:none;font-size:0.85rem;border:1px solid #ff6240;padding:0.3rem 0.8rem;border-radius:4px">Standings</a>
+      <a href="stats.html" style="color:#ff6240;text-decoration:none;font-size:0.85rem;border:1px solid #ff6240;padding:0.3rem 0.8rem;border-radius:4px">Player Stats</a>
+    </nav>
+  </header>
+
+  <div class="grid" id="grid"><p style="text-align:center;color:#555;padding:2rem">Loading...</p></div>
+
+  <script>
+    const S8_DIVISION_TEAMS = {
+      "Division 1":  ["CGI Sverige AB","Bredband2 AB","Toyota Material Handling AB","Telia Sverige AB","Netlight AB DUENDE","Northmill Bank AB","Webhallen Sverige AB"],
+      "Division 2A": ["Sciber AB","Spiris AB","Fortnox AB","EA DICE AB","Telia AB Jönköping","Netlight AB BOIDS","Boulder AB Hong Kong","XXL Sport och Vildmark AB"],
+      "Division 2B": ["Fragbite AB","HappyHomes Lidingö AB","Öhrlings PricewaterhouseCoopers AB","Uniguide AB","Lumera AB 2","Aderian Aktiv IT AB","Xenit AB","Svea Bank AB"],
+      "Division 2C": ["Boulder AB Mozarteum","Dizparc Infrastruktur Jönköping AB","Eltel Networks AB","Onevinn AB","SSG Solutions AB","DynaMate AB","Omegapoint AB","Asurgent AB"],
+      "Division 2D": ["Accenture AB","Nordlo Evolve AB","evolvit Solutions AB","PARA Esports AB","Silverspin AB","NoA Ignite AB","Horda Stans AB","Teamtailor AB"],
+      "Division 2E": ["Lumera AB 1","Nordomatic AB","Teris AB","Viström Digital Development AB","SOLTAK AB","Boulder AB Golden","Monitor ERP System AB","Enzure AB"],
+      "Division 2F": ["Etraveli Group AB","CGI AB Optimistic Reloaders","Hello Ebbot AB","Netgain AB","SAVR AB","Hogia AB","Sweco AB","Leadstar Media AB"],
+      "Division 2G": ["Softronic CM1 AB","Knuts Bygg AB","Andwhy AB","Gjuteriteknik AB","Infracom AB","Mpya Digital AB","Bizzdo AB","NODAF AB"],
+    };
+
+    let currentSeason = 's8';
+
+    function loadData() {
+      fetch(`data/${currentSeason}/elo_teams.json`)
+        .then(r => {
+          if (!r.ok) throw new Error(`No ELO data for Season ${currentSeason.replace('s','')} yet`);
+          return r.json();
+        })
+        .then(data => {
+          const grid = document.getElementById('grid');
+          if (currentSeason === 's8') {
+            grid.innerHTML = renderByDivision(data);
+          } else {
+            const teams = Object.entries(data);
+            teams.sort((a, b) => (avgElo(b[1]) || 0) - (avgElo(a[1]) || 0));
+            grid.innerHTML = teams.map(([name, players], i) => renderTeam(name, players, i + 1)).join('');
+          }
+        })
+        .catch(err => {
+          const s = currentSeason.replace('s','');
+          document.getElementById('grid').innerHTML = `
+            <p style="text-align:center;color:#555;padding:3rem;grid-column:1/-1">
+              No data available for Season ${s} yet.
+            </p>`;
+        });
+    }
+
+    function renderByDivision(data) {
+      const remaining = new Set(Object.keys(data));
+      let html = '';
+      for (const [divName, teamNames] of Object.entries(S8_DIVISION_TEAMS)) {
+        const divTeams = teamNames
+          .filter(n => data[n])
+          .map(n => { remaining.delete(n); return [n, data[n]]; });
+        if (!divTeams.length) continue;
+        divTeams.sort((a, b) => (avgElo(b[1]) || 0) - (avgElo(a[1]) || 0));
+        html += `<div class="div-heading">${divName}</div>`;
+        html += divTeams.map(([name, players], i) => renderTeam(name, players, i + 1)).join('');
+      }
+      // Teams not matched to any division
+      if (remaining.size) {
+        html += `<div class="div-heading">Other</div>`;
+        const others = [...remaining].map(n => [n, data[n]]);
+        others.sort((a, b) => (avgElo(b[1]) || 0) - (avgElo(a[1]) || 0));
+        html += others.map(([name, players], i) => renderTeam(name, players, i + 1)).join('');
+      }
+      return html;
+    }
+
+    function levelClass(lvl) {
+      if (!lvl) return 'lvl-none';
+      return `lvl-${lvl}`;
+    }
+
+    function eloColor(elo) {
+      if (!elo) return '#444';
+      if (elo >= 2000) return '#e60039';
+      if (elo >= 1700) return '#f0582a';
+      if (elo >= 1400) return '#f5a623';
+      if (elo >= 1250) return '#f5e942';
+      if (elo >= 950)  return '#1ce400';
+      return '#828282';
+    }
+
+    function avgElo(players) {
+      const known = players.filter(p => p.elo);
+      if (!known.length) return null;
+      return Math.round(known.reduce((s, p) => s + p.elo, 0) / known.length);
+    }
+
+    function esc(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+
+    function renderTeam(name, players, rank) {
+      const sorted = [...players].sort((a, b) => (b.elo || 0) - (a.elo || 0));
+      const avg = avgElo(players);
+
+      const rows = sorted.map((p, i) => {
+        const initial = (p.nickname || p.name || '?')[0].toUpperCase();
+        const avatarEl = p.avatar
+          ? `<img class="avatar" src="${esc(p.avatar)}" alt="${esc(p.nickname)}" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><div class="avatar-placeholder" style="display:none">${initial}</div>`
+          : `<div class="avatar-placeholder">${initial}</div>`;
+
+        const displayNick = p.nickname || p.name || '?';
+        const eloStr = p.elo ? `<span style="color:${eloColor(p.elo)}">${p.elo}</span>` : `<span class="elo-none">—</span>`;
+        const lvlStr = p.level
+          ? `<span class="level-badge ${levelClass(p.level)}">${p.level}</span>`
+          : `<span class="level-badge lvl-none">—</span>`;
+
+        return `
+          <tr>
+            <td class="rank-col">${p.elo ? i + 1 : ''}</td>
+            <td>
+              <div class="player-cell">
+                ${avatarEl}
+                <div>
+                  <div class="nick">${esc(displayNick)}</div>
+                  <div class="realname">${esc(p.name)}</div>
+                </div>
+              </div>
+            </td>
+            <td style="text-align:center">${lvlStr}</td>
+            <td class="elo-cell">${eloStr}</td>
+          </tr>`;
+      }).join('');
+
+      return `
+        <div class="team-card">
+          <div class="team-header">
+            <div>
+              <div style="font-size:0.7rem;color:#555;margin-bottom:0.2rem">#${rank}</div>
+              <div class="team-name">${esc(name)}</div>
+            </div>
+            <div class="team-avg">${avg ? `Avg ELO <span>${avg}</span>` : 'ELO unavailable'}</div>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th class="rank-col">#</th>
+                <th>Player</th>
+                <th style="text-align:center">Lvl</th>
+                <th class="right">ELO</th>
+              </tr>
+            </thead>
+            <tbody>${rows}</tbody>
+          </table>
+        </div>`;
+    }
+
+    // Init season toggle state and load data
+    loadData();
+  </script>
+</body>
+</html>

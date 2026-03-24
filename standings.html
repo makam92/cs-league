@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS League — Standings</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    /* ── Header ── */
+    header { text-align: center; margin-bottom: 2rem; }
+    header h1 { font-size: 2rem; font-weight: 700; color: #fff; }
+    header p  { color: #888; margin-top: 0.4rem; font-size: 0.875rem; }
+
+    header nav {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    header nav a {
+      color: #ff6240;
+      text-decoration: none;
+      font-size: 0.85rem;
+      border: 1px solid #ff6240;
+      padding: 0.3rem 0.8rem;
+      border-radius: 4px;
+      transition: background 0.15s, color 0.15s;
+    }
+    header nav a:hover { background: #ff6240; color: #fff; }
+
+    /* ── Season toggle ── */
+    .season-toggle { display: inline-flex; gap: 0.4rem; margin-top: 1rem; }
+    .season-btn {
+      background: transparent;
+      border: 1px solid #444;
+      color: #888;
+      font-size: 0.8rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .season-btn.active { border-color: #ff6240; color: #ff6240; font-weight: 600; }
+
+    /* ── Division tabs ── */
+    .div-tabs {
+      display: flex;
+      gap: 0.4rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto 1.5rem;
+    }
+    .div-btn {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      color: #888;
+      padding: 0.45rem 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.875rem;
+      transition: all 0.15s;
+    }
+    .div-btn:hover  { border-color: #555; color: #ccc; }
+    .div-btn.active { background: #ff6240; border-color: #ff6240; color: #fff; font-weight: 600; }
+
+    /* ── Main layout ── */
+    .content-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .top-row {
+      display: grid;
+      grid-template-columns: 1fr 300px;
+      gap: 1.25rem;
+      align-items: start;
+    }
+    @media (max-width: 800px) {
+      .top-row { grid-template-columns: 1fr; }
+    }
+
+    /* ── Legend ── */
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: #555;
+      margin-bottom: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .legend-item { display: flex; align-items: center; gap: 0.4rem; }
+    .legend-bar {
+      width: 3px;
+      height: 14px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    /* ── Standings table ── */
+    .standings-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #1e1e1e;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #2a2a2a;
+    }
+
+    .standings-table thead th {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      padding: 0.55rem 0.75rem;
+      text-align: center;
+      border-bottom: 1px solid #2a2a2a;
+      background: #1a1a1a;
+    }
+    .standings-table thead th.col-team { text-align: left; padding-left: 1rem; }
+
+    .standings-table tbody tr.team-row {
+      cursor: pointer;
+      border-bottom: 1px solid #1a1a1a;
+      transition: background 0.12s;
+    }
+    .standings-table tbody tr.team-row:last-of-type { border-bottom: none; }
+    .standings-table tbody tr.team-row:hover td { background: #252525; }
+    .standings-table tbody tr.team-row.expanded td { background: #222; }
+
+    .standings-table td {
+      padding: 0.65rem 0.75rem;
+      font-size: 0.875rem;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .standings-table td.col-team {
+      text-align: left;
+      padding-left: 1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .col-rank { width: 36px; color: #555; font-size: 0.8rem; }
+    .col-pts  { font-weight: 700; color: #fff; }
+    .col-w    { color: #1ce400; }
+    .col-l    { color: #f55; }
+
+    .advance-bar {
+      display: inline-block;
+      width: 3px;
+      height: 18px;
+      border-radius: 2px;
+      margin-right: 8px;
+      flex-shrink: 0;
+    }
+    .adv-1   { background: #ff6240; }
+    .adv-2   { background: #f5a623; }
+    .adv-out { background: transparent; }
+
+    .col-team-inner { display: flex; align-items: center; }
+
+    .expand-arrow {
+      font-size: 0.65rem;
+      color: #444;
+      margin-left: 0.5rem;
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+    tr.expanded .expand-arrow { transform: rotate(180deg); color: #888; }
+
+    /* ── Player panel ── */
+    tr.player-panel-row          { display: none; }
+    tr.player-panel-row.visible  { display: table-row; }
+
+    .player-panel {
+      padding: 0.75rem 1rem 1rem;
+      background: #191919;
+      border-bottom: 2px solid #2a2a2a;
+    }
+
+    .player-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+      gap: 0.5rem;
+    }
+
+    .player-card {
+      background: #222;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 0.6rem 0.7rem;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .p-avatar {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      background: #333;
+      flex-shrink: 0;
+    }
+    .p-avatar-placeholder {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: #2e2e2e;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.72rem;
+      color: #555;
+      font-weight: 700;
+    }
+
+    .p-info { flex: 1; min-width: 0; }
+    .p-nick { font-size: 0.8rem; font-weight: 600; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .p-name { font-size: 0.68rem; color: #555; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .p-badges { display: flex; align-items: center; gap: 0.3rem; margin-top: 0.2rem; flex-wrap: wrap; }
+
+    .lvl-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      width: 17px; height: 17px; border-radius: 3px;
+      font-size: 0.6rem; font-weight: 800; color: #fff;
+    }
+    .lvl-1,.lvl-2  { background: #828282; }
+    .lvl-3,.lvl-4  { background: #1ce400; color: #000; }
+    .lvl-5         { background: #f5e942; color: #000; }
+    .lvl-6,.lvl-7  { background: #f5a623; color: #000; }
+    .lvl-8,.lvl-9  { background: #f0582a; }
+    .lvl-10        { background: #e60039; }
+    .lvl-none      { background: #2a2a2a; color: #444; }
+
+    .elo-tag { font-size: 0.68rem; font-weight: 700; padding: 0 0.28rem; border-radius: 3px; background: #1a1a1a; }
+    .stat-chip { font-size: 0.63rem; color: #666; background: #1a1a1a; padding: 0.1rem 0.28rem; border-radius: 3px; }
+    .stat-chip span { color: #aaa; }
+    .no-players { color: #444; font-size: 0.8rem; padding: 0.5rem 0; font-style: italic; }
+
+    /* ── Results sidebar ── */
+    .results-sidebar {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .results-heading {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      padding: 0.6rem 1rem;
+      background: #1a1a1a;
+      border-bottom: 1px solid #2a2a2a;
+    }
+
+    .result-date-group { padding: 0.5rem 1rem 0.25rem; }
+    .result-date-label {
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #444;
+      margin-bottom: 0.35rem;
+    }
+
+    .result-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.4rem;
+      padding: 0.3rem 0;
+      border-bottom: 1px solid #1a1a1a;
+      font-size: 0.78rem;
+    }
+    .result-row:last-child { border-bottom: none; }
+
+    .result-team { flex: 1; color: #888; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .result-team.t1 { text-align: right; }
+    .result-team.winner { color: #ccc; font-weight: 600; }
+
+    .result-score {
+      display: flex;
+      gap: 0.2rem;
+      align-items: center;
+      font-weight: 700;
+      font-size: 0.8rem;
+      flex-shrink: 0;
+    }
+    .result-score .s-win  { color: #1ce400; }
+    .result-score .s-loss { color: #f55; }
+    .result-score .s-sep  { color: #2a2a2a; }
+
+    /* ── Matches section ── */
+    .matches-block {
+      margin-top: 2rem;
+    }
+
+    .matches-block-title {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #444;
+      margin-bottom: 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #1e1e1e;
+    }
+
+    .date-group { margin-bottom: 1.25rem; }
+    .date-group:last-child { margin-bottom: 0; }
+
+    .date-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+      margin-bottom: 0.5rem;
+    }
+
+    .match-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .match-card {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 0.5rem 0.75rem;
+      min-width: 220px;
+      flex: 1 1 220px;
+      max-width: 300px;
+    }
+
+    .mc-time {
+      font-size: 0.65rem;
+      color: #444;
+      margin-bottom: 0.3rem;
+    }
+
+    .mc-teams {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+    }
+    .mc-team { flex: 1; color: #ccc; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .mc-team.t1 { text-align: right; }
+    .mc-team.t2 { text-align: left; }
+    .mc-team.winner { color: #fff; font-weight: 600; }
+
+    .mc-sep { color: #333; font-size: 0.7rem; flex-shrink: 0; }
+
+    .mc-score {
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .mc-score .s-win  { color: #1ce400; }
+    .mc-score .s-loss { color: #f55; }
+    .mc-score .s-sep  { color: #2a2a2a; margin: 0 0.1rem; }
+
+    .no-matches { color: #444; font-size: 0.8rem; font-style: italic; padding: 0.25rem 0; }
+
+    /* ── Notice ── */
+    .notice {
+      text-align: center;
+      color: #555;
+      padding: 4rem 1rem;
+      font-size: 0.9rem;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CS League — Standings</h1>
+  <p id="season-sub">Season 8 · live standings</p>
+  <nav>
+    <a href="index.html">ELO Rankings</a>
+    <a href="stats.html">Player Stats</a>
+  </nav>
+</header>
+
+<div id="div-tabs" class="div-tabs"></div>
+<div id="content"></div>
+
+<script>
+const ADVANCE = { "Division 1": 6, default: 3 };
+
+let currentSeason = 's8';
+let currentDiv    = 0;
+let standingsData = null;
+let scheduleData  = null;
+let eloData       = null;
+let statsData     = null;
+
+
+// ── Data loading ───────────────────────────────────────────────────────────────
+async function loadAndRender() {
+  const base = `data/${currentSeason}`;
+  const tryFetch = url => fetch(url).then(r => { if (!r.ok) throw 0; return r.json(); }).catch(() => null);
+
+  [standingsData, scheduleData, eloData, statsData] = await Promise.all([
+    tryFetch(`${base}/standings.json`),
+    tryFetch(`${base}/schedule.json`),
+    tryFetch(`${base}/elo_teams.json`),
+    tryFetch(`${base}/stats.json`),
+  ]);
+
+  render();
+}
+
+// ── Render ────────────────────────────────────────────────────────────────────
+function render() {
+  const tabs    = document.getElementById('div-tabs');
+  const content = document.getElementById('content');
+
+  if (!standingsData) {
+    tabs.innerHTML = '';
+    content.innerHTML = `<div class="notice">No standings data available for Season ${currentSeason.replace('s','')} yet.</div>`;
+    return;
+  }
+
+  const divNames = Object.keys(standingsData);
+  tabs.innerHTML = divNames.map((d, i) =>
+    `<button class="div-btn${i === currentDiv ? ' active' : ''}" onclick="selectDiv(${i})">${d}</button>`
+  ).join('');
+
+  renderDivision(divNames[currentDiv]);
+}
+
+function selectDiv(idx) {
+  currentDiv = idx;
+  document.querySelectorAll('.div-btn').forEach((b, i) =>
+    b.classList.toggle('active', i === idx)
+  );
+  renderDivision(Object.keys(standingsData)[idx]);
+}
+
+// ── Division view ─────────────────────────────────────────────────────────────
+function renderDivision(divName) {
+  const rows = standingsData[divName] || [];
+  const adv  = ADVANCE[divName] ?? ADVANCE.default;
+
+  const content = document.getElementById('content');
+  if (!rows.length) {
+    content.innerHTML = `<div class="notice">No standings data yet for ${divName}.</div>`;
+    return;
+  }
+
+  const advanceText = divName === 'Division 1'
+    ? 'Top 6 advance to playoffs'
+    : 'Top 3 advance to playoffs';
+
+  const legend = `
+    <div class="legend">
+      <span>${advanceText}</span>
+      <span class="legend-item">
+        <span class="legend-bar adv-1"></span> 1st place
+      </span>
+      <span class="legend-item">
+        <span class="legend-bar adv-2"></span> Qualifying spot
+      </span>
+      <span class="legend-item">
+        <span class="legend-bar" style="background:#333"></span> Eliminated
+      </span>
+    </div>`;
+
+  const tbodyRows = rows.map((row, i) => {
+    const advClass = row.played === 0 ? 'adv-out'
+                   : row.rank === 1   ? 'adv-1'
+                   : row.rank <= adv  ? 'adv-2'
+                   : 'adv-out';
+
+    const teamRow = `
+      <tr class="team-row" onclick="togglePanel(${i})">
+        <td class="col-rank">${row.rank}</td>
+        <td class="col-team">
+          <div class="col-team-inner">
+            <span class="advance-bar ${advClass}"></span>
+            ${esc(row.team)}
+            <span class="expand-arrow">▼</span>
+          </div>
+        </td>
+        <td>${row.played}</td>
+        <td class="col-w">${row.wins}</td>
+        <td>${row.draws}</td>
+        <td class="col-l">${row.losses}</td>
+        <td>${row.score_for}</td>
+        <td>${row.score_against}</td>
+        <td class="col-pts">${row.points}</td>
+      </tr>`;
+
+    const panelRow = `
+      <tr id="panel-${i}" class="player-panel-row">
+        <td colspan="9">
+          <div class="player-panel">${buildPlayerPanel(row.team)}</div>
+        </td>
+      </tr>`;
+
+    return teamRow + panelRow;
+  }).join('');
+
+  const standingsHTML = `
+    ${legend}
+    <table class="standings-table">
+      <thead>
+        <tr>
+          <th class="col-rank">#</th>
+          <th class="col-team">Team</th>
+          <th title="Played">P</th>
+          <th title="Wins">W</th>
+          <th title="Draws">D</th>
+          <th title="Losses">L</th>
+          <th title="Score for">SF</th>
+          <th title="Score against">SA</th>
+          <th title="Points">Pts</th>
+        </tr>
+      </thead>
+      <tbody>${tbodyRows}</tbody>
+    </table>`;
+
+  content.innerHTML = `
+    <div class="content-wrap">
+      <div class="top-row">
+        <div>${standingsHTML}</div>
+        <div>${buildResultsSidebar(divName)}</div>
+      </div>
+      ${buildMatchesBlock(divName)}
+    </div>`;
+}
+
+function togglePanel(idx) {
+  const allRows   = document.querySelectorAll('.team-row');
+  const allPanels = document.querySelectorAll('.player-panel-row');
+  const row   = allRows[idx];
+  const panel = document.getElementById(`panel-${idx}`);
+  const isOpen = panel.classList.contains('visible');
+
+  allRows.forEach(r => r.classList.remove('expanded'));
+  allPanels.forEach(p => p.classList.remove('visible'));
+
+  if (!isOpen) {
+    row.classList.add('expanded');
+    panel.classList.add('visible');
+  }
+}
+
+// ── Results sidebar ───────────────────────────────────────────────────────────
+function buildResultsSidebar(divName) {
+  if (!scheduleData?.[divName]) return '';
+
+  const played = scheduleData[divName]
+    .filter(m => m.played)
+    .sort((a, b) => new Date(b.datetime) - new Date(a.datetime))
+    .slice(0, 10);
+
+  if (!played.length) return `
+    <div class="results-sidebar">
+      <div class="results-heading">Recent Results</div>
+      <div style="padding:0.75rem 1rem;color:#444;font-size:0.78rem;font-style:italic">No results yet.</div>
+    </div>`;
+
+  const groups = {};
+  for (const m of played) {
+    const key = new Date(m.datetime).toLocaleDateString('sv-SE', { weekday: 'short', day: 'numeric', month: 'short' });
+    (groups[key] ??= []).push(m);
+  }
+
+  const rows = Object.entries(groups).map(([label, ms]) => `
+    <div class="result-date-group">
+      <div class="result-date-label">${label}</div>
+      ${ms.map(m => {
+        const t1win = m.score1 > m.score2;
+        return `
+          <div class="result-row">
+            <span class="result-team t1${t1win ? ' winner' : ''}">${esc(m.team1)}</span>
+            <div class="result-score">
+              <span class="${t1win ? 's-win' : 's-loss'}">${m.score1}</span>
+              <span class="s-sep">–</span>
+              <span class="${!t1win ? 's-win' : 's-loss'}">${m.score2}</span>
+            </div>
+            <span class="result-team${!t1win ? ' winner' : ''}">${esc(m.team2)}</span>
+          </div>`;
+      }).join('')}
+    </div>`).join('');
+
+  return `
+    <div class="results-sidebar">
+      <div class="results-heading">Recent Results</div>
+      ${rows}
+    </div>`;
+}
+
+// ── Upcoming matches block ────────────────────────────────────────────────────
+function buildMatchesBlock(divName) {
+  if (!scheduleData?.[divName]) return '';
+
+  const upcoming = scheduleData[divName]
+    .filter(m => !m.played)
+    .sort((a, b) => new Date(a.datetime) - new Date(b.datetime))
+    .slice(0, 14);
+
+  if (!upcoming.length) return '';
+
+  return `
+    <div class="matches-block">
+      <div class="matches-block-title">Upcoming Matches</div>
+      ${groupedCards(upcoming)}
+    </div>`;
+}
+
+function groupedCards(matches) {
+  const groups = {};
+  for (const m of matches) {
+    const key = new Date(m.datetime).toLocaleDateString('sv-SE', { weekday: 'short', day: 'numeric', month: 'short' });
+    (groups[key] ??= []).push(m);
+  }
+
+  return Object.entries(groups).map(([label, ms]) => `
+    <div class="date-group">
+      <div class="date-label">${label}</div>
+      <div class="match-cards">
+        ${ms.map(m => {
+          const timeStr = new Date(m.datetime).toLocaleTimeString('sv-SE', { hour: '2-digit', minute: '2-digit' });
+          return `
+            <div class="match-card">
+              <div class="mc-time">${timeStr}</div>
+              <div class="mc-teams">
+                <span class="mc-team t1">${esc(m.team1)}</span>
+                <span class="mc-sep">vs</span>
+                <span class="mc-team t2">${esc(m.team2)}</span>
+              </div>
+            </div>`;
+        }).join('')}
+      </div>
+    </div>`
+  ).join('');
+}
+
+// ── Player panel ──────────────────────────────────────────────────────────────
+function findTeamPlayers(teamName) {
+  if (!eloData) return null;
+  if (eloData[teamName]) return eloData[teamName];
+  const norm = s => s.toLowerCase().replace(/\bab\b/g, '').replace(/\s+/g, ' ').trim();
+  const target = norm(teamName);
+  for (const [k, v] of Object.entries(eloData)) {
+    if (norm(k) === target) return v;
+  }
+  for (const [k, v] of Object.entries(eloData)) {
+    if (norm(k).includes(target) || target.includes(norm(k))) return v;
+  }
+  return null;
+}
+
+function eloColor(elo) {
+  if (!elo)        return '#444';
+  if (elo >= 2000) return '#e60039';
+  if (elo >= 1700) return '#f0582a';
+  if (elo >= 1400) return '#f5a623';
+  if (elo >= 1250) return '#f5e942';
+  if (elo >= 950)  return '#1ce400';
+  return '#828282';
+}
+
+function buildPlayerPanel(teamName) {
+  const players = findTeamPlayers(teamName);
+  if (!players?.length) return `<div class="no-players">No player data available yet.</div>`;
+
+  const cards = players.map(p => {
+    const initial = (p.nickname || p.name || '?')[0].toUpperCase();
+    const nick    = p.nickname || p.name || '?';
+    const st      = statsData?.players?.find(x => x.steamid === p.steamid);
+
+    const avatarEl = p.avatar
+      ? `<img class="p-avatar" src="${esc(p.avatar)}" alt=""
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+         <div class="p-avatar-placeholder" style="display:none">${initial}</div>`
+      : `<div class="p-avatar-placeholder">${initial}</div>`;
+
+    const lvlClass = p.level ? `lvl-${p.level}` : 'lvl-none';
+
+    let badges = `
+      <span class="lvl-badge ${lvlClass}">${p.level ?? '—'}</span>
+      <span class="elo-tag" style="color:${eloColor(p.elo)}">${p.elo ?? '—'}</span>`;
+
+    if (st?.maps > 0) {
+      badges += `
+        <span class="stat-chip">KD <span>${st.kd}</span></span>
+        <span class="stat-chip">ADR <span>${st.adr}</span></span>
+        <span class="stat-chip">${st.maps}m</span>`;
+    }
+
+    return `
+      <div class="player-card">
+        ${avatarEl}
+        <div class="p-info">
+          <div class="p-nick">${esc(nick)}</div>
+          <div class="p-name">${esc(p.name)}</div>
+          <div class="p-badges">${badges}</div>
+        </div>
+      </div>`;
+  }).join('');
+
+  return `<div class="player-grid">${cards}</div>`;
+}
+
+// ── Util ──────────────────────────────────────────────────────────────────────
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+loadAndRender();
+</script>
+</body>
+</html>
