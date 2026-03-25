@@ -251,17 +251,19 @@
       #player-table .avatar-placeholder { display: none !important; }
       #player-table .nick { max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 0.75rem; }
       #player-table .faceit-nick { display: none; }
-      /* Hide Team (3), A (6), KPR (11), ELO (12), Lvl (13) */
+      /* Hide Team (3), Div (4), A (7), KPR (12), ELO (13), Lvl (14) */
       #player-table th:nth-child(3),
       #player-table td:nth-child(3),
-      #player-table th:nth-child(6),
-      #player-table td:nth-child(6),
-      #player-table th:nth-child(11),
-      #player-table td:nth-child(11),
+      #player-table th:nth-child(4),
+      #player-table td:nth-child(4),
+      #player-table th:nth-child(7),
+      #player-table td:nth-child(7),
       #player-table th:nth-child(12),
       #player-table td:nth-child(12),
       #player-table th:nth-child(13),
-      #player-table td:nth-child(13) { display: none; }
+      #player-table td:nth-child(13),
+      #player-table th:nth-child(14),
+      #player-table td:nth-child(14) { display: none; }
     }
 
   </style>
@@ -299,6 +301,7 @@
           <th class="rank-num">#</th>
           <th data-col="name">Player</th>
           <th data-col="team">Team</th>
+          <th data-col="division">Div</th>
           <th data-col="kills" class="sorted" style="text-align:right">K<span class="sort-arrow">↓</span></th>
           <th data-col="deaths" style="text-align:right">D</th>
           <th data-col="assists" style="text-align:right">A</th>
@@ -353,7 +356,7 @@ function loadData() {
     .catch(() => {
       const s = currentSeason.replace('s','');
       document.getElementById('player-tbody').innerHTML = `
-        <tr><td colspan="13" style="text-align:center;color:#555;padding:3rem">
+        <tr><td colspan="14" style="text-align:center;color:#555;padding:3rem">
           No data available for Season ${s} yet.
         </td></tr>`;
     });
@@ -400,7 +403,9 @@ function initApp(stats, faceit) {
 
   allPlayers = stats.players.map(p => {
     const f = faceit[p.steamid] || {};
-    return { ...p, faceit_nick: f.nickname || null, avatar: f.avatar || "", elo: f.elo || null, level: f.level || null };
+    const divFull = TEAM_TO_DIVISION[p.team] || "";
+    const divShort = divFull.replace("Division ", "") || "—";
+    return { ...p, faceit_nick: f.nickname || null, avatar: f.avatar || "", elo: f.elo || null, level: f.level || null, division: divShort };
   });
 
   renderTable();
@@ -451,6 +456,7 @@ function renderTable() {
         </div>
       </td>
       <td style="color:#666;font-size:0.8rem;max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${p.team || "—"}</td>
+      <td style="color:#555;font-size:0.78rem;white-space:nowrap">${p.division}</td>
       <td data-label="K"    style="text-align:right">${p.kills}</td>
       <td data-label="D"    style="text-align:right">${p.deaths}</td>
       <td data-label="A"    style="text-align:right">${p.assists}</td>
