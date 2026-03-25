@@ -242,6 +242,78 @@
       padding: 0.3rem 0.8rem;
     }
 
+    /* Expandable player detail row */
+    .player-detail-row td {
+      padding: 0;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .player-detail-inner {
+      display: none;
+      padding: 1rem 1.5rem;
+      background: #181818;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .player-detail-row.open .player-detail-inner { display: flex; }
+
+    .leetify-stats-grid {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .leetify-stat {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 0.75rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      min-width: 90px;
+    }
+    .leetify-stat-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+    }
+    .leetify-stat-value {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .leetify-bar {
+      width: 100%;
+      height: 3px;
+      background: #2a2a2a;
+      border-radius: 2px;
+    }
+    .leetify-bar-fill {
+      height: 100%;
+      border-radius: 2px;
+      background: #ff6240;
+    }
+    .leetify-link {
+      color: #ff6240;
+      font-size: 0.8rem;
+      text-decoration: none;
+      border: 1px solid #ff6240;
+      padding: 0.3rem 0.8rem;
+      border-radius: 4px;
+      white-space: nowrap;
+      transition: background 0.15s, color 0.15s;
+    }
+    .leetify-link:hover { background: #ff6240; color: #fff; }
+    .leetify-no-data { color: #444; font-size: 0.8rem; font-style: italic; }
+
+    tr.player-row { cursor: pointer; }
+    tr.player-row:hover td { background: #252525; }
+    tr.player-row.open td { background: #1e1e1e; }
+
     @media (max-width: 640px) {
       body { padding: 1rem 0.5rem; }
       .table-header { padding: 0.75rem 0.8rem; }
@@ -344,15 +416,18 @@ let currentSeason = 's8';
 let divisionFilter = "";
 
 function loadData() {
-  const STATS_URL  = `data/${currentSeason}/stats.json`;
-  const FACEIT_URL = `data/${currentSeason}/faceit.json`;
+  const STATS_URL   = `data/${currentSeason}/stats.json`;
+  const FACEIT_URL  = `data/${currentSeason}/faceit.json`;
+  const LEETIFY_URL = `data/${currentSeason}/leetify.json`;
   Promise.all([
     fetch(STATS_URL).then(r => {
       if (!r.ok) throw new Error('not found');
       return r.json();
     }),
     fetch(FACEIT_URL).then(r => r.ok ? r.json() : {}).catch(() => ({})),
-  ]).then(([stats, faceit]) => initApp(stats, faceit))
+    fetch(LEETIFY_URL).then(r => r.ok ? r.json() : {}).catch(() => ({})),
+  ]).then(([stats, faceit, leetify]) => initApp(stats, faceit, leetify))
+
     .catch(() => {
       const s = currentSeason.replace('s','');
       document.getElementById('player-tbody').innerHTML = `
@@ -369,7 +444,7 @@ let sortAsc    = false;
 let searchTerm = "";
 let teamFilter = "";
 
-function initApp(stats, faceit) {
+function initApp(stats, faceit, leetify = {}) {
   // Populate division dropdown (S8 only)
   const divSel = document.getElementById("division-filter");
   divSel.innerHTML = '<option value="">All divisions</option>';
@@ -403,9 +478,10 @@ function initApp(stats, faceit) {
 
   allPlayers = stats.players.map(p => {
     const f = faceit[p.steamid] || {};
+    const l = leetify[p.steamid] || null;
     const divFull = TEAM_TO_DIVISION[p.team] || "";
     const divShort = divFull.replace("Division ", "") || "—";
-    return { ...p, faceit_nick: f.nickname || null, avatar: f.avatar || "", elo: f.elo || null, level: f.level || null, division: divShort };
+    return { ...p, faceit_nick: f.nickname || null, avatar: f.avatar || "", elo: f.elo || null, level: f.level || null, division: divShort, leetify: l };
   });
 
   renderTable();
@@ -444,7 +520,22 @@ function renderTable() {
       ? `<span class="lvl lvl-${p.level}">${p.level}</span>`
       : `<span class="lvl lvl-none">—</span>`;
 
-    return `<tr>
+    const rowId = `pr-${p.steamid}`;
+    const l = p.leetify;
+
+    const leetifyDetail = l ? `
+      ${leetifyStat("Aim", l.aim)}
+      ${leetifyStat("Utility", l.utility)}
+      ${leetifyStat("Positioning", l.positioning)}
+      ${leetifyClutch("Clutch", l.clutch)}
+      <a class="leetify-link" href="https://leetify.com/app/profile/${p.steamid}" target="_blank" rel="noopener">Leetify ↗</a>
+      ${p.faceit_nick ? `<a class="leetify-link" href="https://www.faceit.com/en/players/${encodeURIComponent(p.faceit_nick)}" target="_blank" rel="noopener">FACEIT ↗</a>` : ''}
+    ` : `<span class="leetify-no-data">No Leetify data</span>
+      <a class="leetify-link" href="https://leetify.com/app/profile/${p.steamid}" target="_blank" rel="noopener">Leetify ↗</a>
+      ${p.faceit_nick ? `<a class="leetify-link" href="https://www.faceit.com/en/players/${encodeURIComponent(p.faceit_nick)}" target="_blank" rel="noopener">FACEIT ↗</a>` : ''}`;
+
+    return `
+    <tr class="player-row" onclick="toggleDetail('${rowId}')">
       <td class="rank-num">${i + 1}</td>
       <td>
         <div class="player-cell">
@@ -467,8 +558,40 @@ function renderTable() {
       <td data-label="KPR"  style="text-align:right">${p.kpr}</td>
       <td data-label="ELO"  style="text-align:center">${eloStr}</td>
       <td data-label="Lvl"  style="text-align:center">${lvlStr}</td>
+    </tr>
+    <tr class="player-detail-row" id="${rowId}">
+      <td colspan="14">
+        <div class="player-detail-inner">${leetifyDetail}</div>
+      </td>
     </tr>`;
   }).join("");
+}
+
+function toggleDetail(rowId) {
+  const row = document.getElementById(rowId);
+  const playerRow = row.previousElementSibling;
+  const isOpen = row.classList.contains("open");
+  row.classList.toggle("open", !isOpen);
+  playerRow.classList.toggle("open", !isOpen);
+}
+
+function leetifyStat(label, value) {
+  const cls = value >= 70 ? "val-hi" : value >= 40 ? "" : "val-lo";
+  return `<div class="leetify-stat">
+    <div class="leetify-stat-label">${label}</div>
+    <div class="leetify-stat-value ${cls}">${value}</div>
+    <div class="leetify-bar"><div class="leetify-bar-fill" style="width:${value}%"></div></div>
+  </div>`;
+}
+
+function leetifyClutch(label, value) {
+  const pct = Math.round(value * 100);
+  const cls = pct >= 15 ? "val-hi" : pct >= 8 ? "" : "val-lo";
+  return `<div class="leetify-stat">
+    <div class="leetify-stat-label">${label}</div>
+    <div class="leetify-stat-value ${cls}">${pct}%</div>
+    <div class="leetify-bar"><div class="leetify-bar-fill" style="width:${Math.min(pct * 3, 100)}%"></div></div>
+  </div>`;
 }
 
 function eloColor(elo) {

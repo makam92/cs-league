@@ -14,7 +14,9 @@ Parses `.dem` demo files, extracts player stats, fetches FACEIT ELO, and display
 All data lives in `data/s8/`:
 - `parsed.json` — raw parse cache (keyed by filepath+hash, never re-parses same demo)
 - `stats.json` — aggregated player stats with correct team assignments
-- `elo_teams.json` — FACEIT ELO per team
+- `elo_teams.json` — FACEIT ELO per team (keyed by team name → list of players with steamid, name, nickname, avatar, elo, level, faceit_id)
+- `faceit.json` — FACEIT lookup cache keyed by steamid (used by fetch_elo.py to avoid redundant API calls)
+- `leetify.json` — Leetify ratings keyed by steamid: `{aim, utility, positioning, clutch, rounds}` (null if player has no data). ~170/175 players have data.
 - `standings.json` — division standings
 - `schedule.json` — match schedule from toornament widget
 - `rosters.json` — authoritative SFL roster (nickname → team), parsed from SFL HTML page
@@ -22,6 +24,7 @@ All data lives in `data/s8/`:
 ## Scripts
 - `scripts/parse_demos.py --season s8` — parse demos, aggregate stats, canonicalize team names
 - `scripts/fetch_elo.py --season s8` — fetch FACEIT ELO for all players in stats.json
+- `scripts/fetch_leetify.py --season s8` — fetch Leetify ratings (aim/utility/positioning/clutch) for all players; saves to `data/s8/leetify.json` keyed by steamid. SSL verification disabled due to macOS cert chain issue with Leetify.
 - `scripts/fetch_schedule.py` — fetch match schedule from toornament widget
 - `scripts/fetch_standings.py` — fetch division standings
 
@@ -63,11 +66,20 @@ Run this after adding demos or fixing rosters:
 ```
 python3 scripts/parse_demos.py --season s8
 python3 scripts/fetch_elo.py --season s8
+python3 scripts/fetch_leetify.py --season s8
 python3 scripts/fetch_standings.py
 python3 scripts/fetch_schedule.py
 git add data/s8/ && git commit -m "Refresh s8 data" && git push
 ```
 Always run `fetch_elo.py` after `parse_demos.py` — ELO is keyed by steamid→team and must reflect the latest team assignments.
+Always run `fetch_leetify.py` after `parse_demos.py` — it reads the player list from `stats.json`.
+
+## Leetify integration
+- Leetify ratings are shown in an expandable row on both `stats.html` (player stats table) and `index.html` (ELO leaderboard)
+- Clicking any player row expands it to show: Aim, Utility, Positioning, Clutch (as stat cards with color-coded values and progress bars), plus links to their Leetify and FACEIT profiles
+- Stat card colors: green ≥70, neutral 40–69, red <40. Clutch is shown as %, green ≥15%, red <8%
+- FACEIT profile URL: `https://www.faceit.com/en/players/{faceit_nickname}`
+- Leetify profile URL: `https://leetify.com/app/profile/{steamid}`
 
 ## Secrets
 - FACEIT API key is stored in `.env` (gitignored), loaded via `os.environ.get("FACEIT_API_KEY")`

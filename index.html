@@ -134,6 +134,42 @@
     .lvl-10 { background: #e60039; }
     .lvl-none { background: #2a2a2a; color: #444; }
 
+    /* Expandable Leetify detail row */
+    .player-detail-row td { padding: 0; border-bottom: 1px solid #2a2a2a; }
+    .player-detail-inner {
+      display: none;
+      padding: 0.75rem 1rem;
+      background: #181818;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .player-detail-row.open .player-detail-inner { display: flex; }
+    .player-row-clickable { cursor: pointer; }
+    .player-row-clickable.open td { background: #222 !important; }
+
+    .leetify-stat {
+      background: #1e1e1e;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      display: flex; flex-direction: column; align-items: center; gap: 0.3rem;
+      min-width: 80px;
+    }
+    .leetify-stat-label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.08em; color: #555; }
+    .leetify-stat-value { font-size: 1.2rem; font-weight: 700; }
+    .leetify-bar { width: 100%; height: 3px; background: #2a2a2a; border-radius: 2px; }
+    .leetify-bar-fill { height: 100%; border-radius: 2px; background: #ff6240; }
+    .leetify-link {
+      color: #ff6240; font-size: 0.78rem; text-decoration: none;
+      border: 1px solid #ff6240; padding: 0.25rem 0.7rem; border-radius: 4px;
+      white-space: nowrap;
+    }
+    .leetify-link:hover { background: #ff6240; color: #fff; }
+    .leetify-no-data { color: #444; font-size: 0.8rem; }
+
     @media (max-width: 480px) {
       body { padding: 1rem 0.5rem; }
       .grid { grid-template-columns: 1fr; }
@@ -171,6 +207,7 @@
       teams.forEach(t => TEAM_TO_DIV[t] = div);
 
     let allData = {};
+    let leetifyData = {};
     let activeTab = "All";
 
     function esc(s) {
@@ -198,6 +235,53 @@
         : `<div class="avatar-placeholder">${initial}</div>`;
     }
 
+    function leetifyStat(label, value) {
+      const cls = value >= 70 ? 'val-hi' : value >= 40 ? '' : 'val-lo';
+      const color = value >= 70 ? '#4caf50' : value >= 40 ? '#e0e0e0' : '#f44336';
+      const fill = Math.min(100, Math.max(0, value));
+      return `<div class="leetify-stat">
+        <div class="leetify-stat-label">${label}</div>
+        <div class="leetify-stat-value" style="color:${color}">${value}</div>
+        <div class="leetify-bar"><div class="leetify-bar-fill" style="width:${fill}%"></div></div>
+      </div>`;
+    }
+    function leetifyClutch(label, value) {
+      const pct = Math.round(value * 100);
+      const color = pct >= 15 ? '#4caf50' : pct >= 8 ? '#e0e0e0' : '#f44336';
+      const fill = Math.min(100, pct * 3);
+      return `<div class="leetify-stat">
+        <div class="leetify-stat-label">${label}</div>
+        <div class="leetify-stat-value" style="color:${color}">${pct}%</div>
+        <div class="leetify-bar"><div class="leetify-bar-fill" style="width:${fill}%"></div></div>
+      </div>`;
+    }
+    function profileLinks(p) {
+      const faceitNick = p.nickname || '';
+      return `
+        <a class="leetify-link" href="https://leetify.com/app/profile/${p.steamid}" target="_blank" rel="noopener">Leetify ↗</a>
+        ${faceitNick ? `<a class="leetify-link" href="https://www.faceit.com/en/players/${encodeURIComponent(faceitNick)}" target="_blank" rel="noopener">FACEIT ↗</a>` : ''}
+      `;
+    }
+    function detailRowHtml(rowId, p, colspan) {
+      const l = leetifyData[p.steamid];
+      const inner = l ? `
+        ${leetifyStat("Aim", l.aim)}
+        ${leetifyStat("Utility", l.utility)}
+        ${leetifyStat("Positioning", l.positioning)}
+        ${leetifyClutch("Clutch", l.clutch)}
+        ${profileLinks(p)}
+      ` : `<span class="leetify-no-data">No Leetify data</span>${profileLinks(p)}`;
+      return `<tr class="player-detail-row" id="${rowId}"><td colspan="${colspan}"><div class="player-detail-inner">${inner}</div></td></tr>`;
+    }
+    function toggleDetail(rowId) {
+      const detailRow = document.getElementById(rowId);
+      if (!detailRow) return;
+      const playerRow = detailRow.previousElementSibling;
+      const isOpen = detailRow.classList.contains('open');
+      detailRow.classList.toggle('open', !isOpen);
+      if (playerRow) playerRow.classList.toggle('open', !isOpen);
+    }
+
     function renderAll() {
       // Flatten all players from all teams, sorted by ELO desc
       const players = [];
@@ -211,14 +295,15 @@
         const eloStr = p.elo ? `<span style="color:${eloColor(p.elo)};font-weight:700">${p.elo}</span>` : `<span class="elo-none">—</span>`;
         const lvlStr = `<span class="level-badge ${levelClass(p.level)}">${p.level || '—'}</span>`;
         const div = (TEAM_TO_DIV[p.team] || '—').replace('Division ', '');
-        return `<tr>
+        const rowId = `lbd-${p.steamid}`;
+        return `<tr class="player-row-clickable" onclick="toggleDetail('${rowId}')">
           <td class="rank-col">${p.elo ? i + 1 : ''}</td>
           <td><div class="player-cell">${avatarEl(p)}<div><div class="nick">${esc(displayNick)}</div><div class="realname">${esc(p.name)}</div></div></div></td>
           <td style="color:#666;font-size:0.8rem">${esc(p.team)}</td>
           <td style="color:#555;font-size:0.78rem">${esc(div)}</td>
           <td style="text-align:center">${lvlStr}</td>
           <td class="elo-cell">${eloStr}</td>
-        </tr>`;
+        </tr>${detailRowHtml(rowId, p, 6)}`;
       }).join('');
 
       document.getElementById('content').innerHTML = `
@@ -244,12 +329,13 @@
         const displayNick = p.nickname || p.name || '?';
         const eloStr = p.elo ? `<span style="color:${eloColor(p.elo)}">${p.elo}</span>` : `<span class="elo-none">—</span>`;
         const lvlStr = `<span class="level-badge ${levelClass(p.level)}">${p.level || '—'}</span>`;
-        return `<tr>
+        const rowId = `div-${p.steamid}`;
+        return `<tr class="player-row-clickable" onclick="toggleDetail('${rowId}')">
           <td class="rank-col">${p.elo ? i + 1 : ''}</td>
           <td><div class="player-cell">${avatarEl(p)}<div><div class="nick">${esc(displayNick)}</div><div class="realname">${esc(p.name)}</div></div></div></td>
           <td style="text-align:center">${lvlStr}</td>
           <td class="elo-cell">${eloStr}</td>
-        </tr>`;
+        </tr>${detailRowHtml(rowId, p, 4)}`;
       }).join('');
 
       return `
@@ -304,12 +390,16 @@
     });
 
     // Load data
-    fetch('data/s8/elo_teams.json')
-      .then(r => r.ok ? r.json() : Promise.reject())
-      .then(data => { allData = data; setTab('All'); })
-      .catch(() => {
-        document.getElementById('content').innerHTML = '<p style="text-align:center;color:#555;padding:2rem">Failed to load ELO data.</p>';
-      });
+    Promise.all([
+      fetch('data/s8/elo_teams.json').then(r => r.ok ? r.json() : Promise.reject()),
+      fetch('data/s8/leetify.json').then(r => r.ok ? r.json() : {}).catch(() => ({})),
+    ]).then(([eloData, lData]) => {
+      allData = eloData;
+      leetifyData = lData;
+      setTab('All');
+    }).catch(() => {
+      document.getElementById('content').innerHTML = '<p style="text-align:center;color:#555;padding:2rem">Failed to load ELO data.</p>';
+    });
   </script>
 <script data-goatcounter="https://makam.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
