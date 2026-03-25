@@ -181,6 +181,28 @@ def parse_demo(path: Path) -> dict:
         "team_side":     "T" if sid in team_t else "CT",
     } for sid, name in all_players.items()}
 
+    # Backfill any player seen in kill events but missing from probe-tick snapshot
+    # (e.g. joined late, was in spectator at probe ticks, or unusual demo structure)
+    if len(kills_df):
+        for col, name_col in [("attacker_steamid", "attacker_name"), ("user_steamid", "user_name")]:
+            if col not in kills_df.columns:
+                continue
+            for _, row in kills_df[[col, name_col]].drop_duplicates().iterrows():
+                sid = str(int(row[col])) if row[col] else None
+                if sid and sid not in stats and sid != "0":
+                    stats[sid] = {
+                        "name":          row[name_col],
+                        "steamid":       sid,
+                        "kills":         0,
+                        "deaths":        0,
+                        "assists":       0,
+                        "headshots":     0,
+                        "flash_assists": 0,
+                        "damage":        0,
+                        "rounds":        total_rounds,
+                        "team_side":     "T" if sid in comp_team_t else ("CT" if sid in comp_team_ct else "unknown"),
+                    }
+
     for row in kills_df.to_dict("records"):
         attacker = str(row["attacker_steamid"]) if row["attacker_steamid"] else None
         victim   = str(row["user_steamid"])     if row["user_steamid"]     else None
@@ -676,6 +698,13 @@ def main():
                 return match_nick(stripped)
             return None
 
+        # Build steamid → canonical team from players already on canonical teams,
+        # so unknown-nick players can be matched by their historical team assignment.
+        steamid_to_team: dict[str, str] = {}
+        for p in stats["players"]:
+            if p["team"] in set(rosters.keys()):
+                steamid_to_team[p["steamid"]] = p["team"]
+
         canonical_set_now = set(rosters.keys())
         corrections = 0
         for p in stats["players"]:
@@ -688,6 +717,9 @@ def main():
             if not matched:
                 # Try matching player's own display name against roster nicknames
                 matched = match_nick(p["name"])
+            if not matched:
+                # Fallback: look up steamid in historical assignments from this run
+                matched = steamid_to_team.get(p["steamid"])
             if matched and matched != current_team:
                 print(f"  [roster] {p['name']} ({current_team}) → {matched}")
                 p["team"] = matched
@@ -709,6 +741,45 @@ def main():
                 corrections += 1
 
         print(f"Roster-based corrections: {corrections}")
+
+    # ── Per-demo balance check: CS is 5v5, so no team can have >5 players in one demo ──
+    # Build steamid → player lookup for quick access
+    sid_to_player = {p["steamid"]: p for p in stats["players"]}
+    balance_corrections = 0
+    for d in stats["demos"]:
+        demo_sids = [p["steamid"] for p in d.get("player_stats", [])]
+        if not demo_sids:
+            continue
+        # Count team assignments for this demo
+        team_counts: dict[str, list[str]] = {}
+        for sid in demo_sids:
+            p = sid_to_player.get(sid)
+            if not p:
+                continue
+            team_counts.setdefault(p["team"], []).append(sid)
+
+        teams = list(team_counts.keys())
+        if len(teams) != 2:
+            continue  # Can't balance if not exactly 2 teams
+
+        t1, t2 = teams
+        sids1, sids2 = team_counts[t1], team_counts[t2]
+
+        # If one team has 6+ and the other has 4-, move excess to the other
+        for over, under in [(t1, t2), (t2, t1)]:
+            over_sids  = team_counts[over]
+            under_sids = team_counts[under]
+            while len(over_sids) > 5 and len(under_sids) < 5:
+                # Move the last player (least confidently matched — added last) to the other team
+                sid = over_sids.pop()
+                under_sids.append(sid)
+                p = sid_to_player[sid]
+                print(f"  [balance] {p['name']} ({over}) → {under} (demo had {len(over_sids)+1} vs {len(under_sids)-1})")
+                p["team"] = under
+                balance_corrections += 1
+
+    if balance_corrections:
+        print(f"Balance corrections: {balance_corrections}")
 
     # ── Rebuild home_team / away_team using final corrected player assignments ──
     sid_to_team = {p["steamid"]: p["team"] for p in stats["players"]}

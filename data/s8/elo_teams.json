@@ -19,6 +19,15 @@
       "faceit_id": "92876fb2-e945-4c85-93c7-2cfc641fd397"
     },
     {
+      "steamid": "76561197960330159",
+      "name": "Faut",
+      "nickname": "Faut",
+      "avatar": "https://assets.faceit-cdn.net/avatars/20dff6b1-86e6-4e5e-8859-2bc8ea66bfc0_1550698984272.png",
+      "elo": 1450,
+      "level": 7,
+      "faceit_id": "20dff6b1-86e6-4e5e-8859-2bc8ea66bfc0"
+    },
+    {
       "steamid": "76561198025125798",
       "name": "Vidde",
       "nickname": "ViddeM",
@@ -26,24 +35,6 @@
       "elo": 883,
       "level": 3,
       "faceit_id": "a72cda12-26b3-48e9-a142-6f75b53d0e92"
-    },
-    {
-      "steamid": "76561198043613650",
-      "name": "⭕⃤ ᠌ no internet connection",
-      "nickname": "",
-      "avatar": "",
-      "elo": 0,
-      "level": 0,
-      "faceit_id": ""
-    },
-    {
-      "steamid": "76561197989134789",
-      "name": "zAyn",
-      "nickname": "",
-      "avatar": "",
-      "elo": 0,
-      "level": 0,
-      "faceit_id": ""
     },
     {
       "steamid": "76561198091917187",
@@ -254,6 +245,15 @@
       "faceit_id": "3f499c25-1ae8-4cda-bc5c-ea7fac343d24"
     },
     {
+      "steamid": "76561197961764035",
+      "name": "Arawak",
+      "nickname": "Arawak",
+      "avatar": "https://distribution.faceit-cdn.net/images/1125dd27-67de-4f85-b822-36d2a3a9d6c6.jpeg",
+      "elo": 1188,
+      "level": 5,
+      "faceit_id": "5761e3d9-593b-4ab3-b970-4e197c08c647"
+    },
+    {
       "steamid": "76561199113765491",
       "name": "SaltyGaben",
       "nickname": "SaltyGaben01",
@@ -442,15 +442,6 @@
       "faceit_id": "8006977e-f82d-4156-8e2c-738b994c13cf"
     },
     {
-      "steamid": "76561197961764035",
-      "name": "Arawak",
-      "nickname": "Arawak",
-      "avatar": "https://distribution.faceit-cdn.net/images/1125dd27-67de-4f85-b822-36d2a3a9d6c6.jpeg",
-      "elo": 1188,
-      "level": 5,
-      "faceit_id": "5761e3d9-593b-4ab3-b970-4e197c08c647"
-    },
-    {
       "steamid": "76561198059729962",
       "name": "eddie",
       "nickname": "revolveexe",
@@ -526,6 +517,15 @@
     }
   ],
   "Hogia AB": [
+    {
+      "steamid": "76561198004768336",
+      "name": "Köksal baba",
+      "nickname": "Lyktstolpe",
+      "avatar": "https://distribution.faceit-cdn.net/images/cdbbe993-3862-4577-a203-f2c5f86d76b7.jpeg",
+      "elo": 2126,
+      "level": 10,
+      "faceit_id": "c450abf5-06b1-4527-aa9b-abaaf2b6d942"
+    },
     {
       "steamid": "76561198198283239",
       "name": "Elof",
@@ -903,15 +903,6 @@
       "faceit_id": "0ce59d04-6fc5-439e-9cf4-9ef6390d3438"
     },
     {
-      "steamid": "76561197960330159",
-      "name": "Faut",
-      "nickname": "Faut",
-      "avatar": "https://assets.faceit-cdn.net/avatars/20dff6b1-86e6-4e5e-8859-2bc8ea66bfc0_1550698984272.png",
-      "elo": 1450,
-      "level": 7,
-      "faceit_id": "20dff6b1-86e6-4e5e-8859-2bc8ea66bfc0"
-    },
-    {
       "steamid": "76561197997739223",
       "name": "Nizhon♚",
       "nickname": "Nizhon",
@@ -928,6 +919,24 @@
       "elo": 1097,
       "level": 5,
       "faceit_id": "6b0a6edf-36d7-44ad-a6a0-73a6a3802cb3"
+    },
+    {
+      "steamid": "76561198043613650",
+      "name": "⭕⃤ ᠌ no internet connection",
+      "nickname": "",
+      "avatar": "",
+      "elo": 0,
+      "level": 0,
+      "faceit_id": ""
+    },
+    {
+      "steamid": "76561197989134789",
+      "name": "zAyn",
+      "nickname": "",
+      "avatar": "",
+      "elo": 0,
+      "level": 0,
+      "faceit_id": ""
     }
   ],
   "Omegapoint AB": [
@@ -1090,15 +1099,6 @@
     }
   ],
   "SAVR AB": [
-    {
-      "steamid": "76561198004768336",
-      "name": "Köksal baba",
-      "nickname": "Lyktstolpe",
-      "avatar": "https://distribution.faceit-cdn.net/images/cdbbe993-3862-4577-a203-f2c5f86d76b7.jpeg",
-      "elo": 2126,
-      "level": 10,
-      "faceit_id": "c450abf5-06b1-4527-aa9b-abaaf2b6d942"
-    },
     {
       "steamid": "76561198108671504",
       "name": "SAVR JERK",
@@ -1324,8 +1324,8 @@
       "faceit_id": "54415b3d-51d1-47ad-8e7c-9d051bb312a3"
     },
     {
-      "steamid": "76561197983540149",
-      "name": "Praktikanten",
+      "steamid": "76561197973729715",
+      "name": "Akke",
       "nickname": "",
       "avatar": "",
       "elo": 0,
@@ -1333,8 +1333,8 @@
       "faceit_id": ""
     },
     {
-      "steamid": "76561197973729715",
-      "name": "Akke",
+      "steamid": "76561197983540149",
+      "name": "Praktikanten",
       "nickname": "",
       "avatar": "",
       "elo": 0,

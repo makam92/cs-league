@@ -1,160 +1,4 @@
 {
-  "demos/s8/Accenture AB/2026-03-19_19-01-24_7_de_mirage_Accenture_vs_Nordlo_Evolve.dem": {
-    "hash": "7d55b55d20d57138d6b55e17946869f4",
-    "parsed_at": "2026-03-24T14:27:24.242118",
-    "data": {
-      "file": "2026-03-19_19-01-24_7_de_mirage_Accenture_vs_Nordlo_Evolve.dem",
-      "folder_team": "Accenture AB",
-      "date": "2026-03-19",
-      "time": "19:01:24",
-      "match_id": "7",
-      "map": "de_mirage",
-      "team1_raw": "Accenture",
-      "team2_raw": "Nordlo Evolve",
-      "total_rounds": 24,
-      "ct_wins": 9,
-      "t_wins": 15,
-      "t_start_score": 13,
-      "ct_start_score": 11,
-      "team_t_ids": [
-        "76561198263999689",
-        "76561198043613650",
-        "76561197989134789",
-        "76561197997739223",
-        "76561198858270466"
-      ],
-      "team_ct_ids": [
-        "76561198091917187",
-        "76561198006978277",
-        "76561198022548607",
-        "76561198025125798"
-      ],
-      "comp_team_t_ids": [
-        "76561198263999689",
-        "76561198043613650",
-        "76561197989134789",
-        "76561197997739223",
-        "76561198858270466"
-      ],
-      "comp_team_ct_ids": [
-        "76561197960330159",
-        "76561198091917187",
-        "76561198006978277",
-        "76561198022548607",
-        "76561198025125798"
-      ],
-      "player_stats": [
-        {
-          "name": "regnpojken",
-          "steamid": "76561198263999689",
-          "kills": 10,
-          "deaths": 19,
-          "assists": 8,
-          "headshots": 3,
-          "flash_assists": 0,
-          "damage": 1780,
-          "rounds": 24,
-          "team_side": "T"
-        },
-        {
-          "name": "\u2b55\u20e4 \u180c no internet connection",
-          "steamid": "76561198043613650",
-          "kills": 14,
-          "deaths": 19,
-          "assists": 4,
-          "headshots": 6,
-          "flash_assists": 0,
-          "damage": 1294,
-          "rounds": 24,
-          "team_side": "T"
-        },
-        {
-          "name": "zAyn",
-          "steamid": "76561197989134789",
-          "kills": 21,
-          "deaths": 18,
-          "assists": 10,
-          "headshots": 7,
-          "flash_assists": 0,
-          "damage": 2449,
-          "rounds": 24,
-          "team_side": "T"
-        },
-        {
-          "name": "Nizhon\u265a",
-          "steamid": "76561197997739223",
-          "kills": 28,
-          "deaths": 13,
-          "assists": 6,
-          "headshots": 6,
-          "flash_assists": 0,
-          "damage": 2414,
-          "rounds": 24,
-          "team_side": "T"
-        },
-        {
-          "name": "Doskalle",
-          "steamid": "76561198858270466",
-          "kills": 13,
-          "deaths": 17,
-          "assists": 6,
-          "headshots": 5,
-          "flash_assists": 0,
-          "damage": 1521,
-          "rounds": 24,
-          "team_side": "T"
-        },
-        {
-          "name": "Bruhn",
-          "steamid": "76561198091917187",
-          "kills": 8,
-          "deaths": 19,
-          "assists": 9,
-          "headshots": 5,
-          "flash_assists": 0,
-          "damage": 1394,
-          "rounds": 24,
-          "team_side": "CT"
-        },
-        {
-          "name": "int",
-          "steamid": "76561198006978277",
-          "kills": 29,
-          "deaths": 17,
-          "assists": 5,
-          "headshots": 11,
-          "flash_assists": 1,
-          "damage": 3020,
-          "rounds": 24,
-          "team_side": "CT"
-        },
-        {
-          "name": "SLITZ",
-          "steamid": "76561198022548607",
-          "kills": 24,
-          "deaths": 16,
-          "assists": 4,
-          "headshots": 11,
-          "flash_assists": 0,
-          "damage": 2742,
-          "rounds": 24,
-          "team_side": "CT"
-        },
-        {
-          "name": "Vidde",
-          "steamid": "76561198025125798",
-          "kills": 12,
-          "deaths": 17,
-          "assists": 2,
-          "headshots": 4,
-          "flash_assists": 0,
-          "damage": 1104,
-          "rounds": 24,
-          "team_side": "CT"
-        }
-      ]
-    }
-  },
   "demos/s8/Accenture AB/2026-03-19_20-00-19_35_de_ancient_Accenture_vs_Nordlo_Evolve.dem": {
     "hash": "45a50221a4b781a2d5b5694a9fb62464",
     "parsed_at": "2026-03-24T14:27:27.626171",
@@ -4549,162 +4393,6 @@
       ]
     }
   },
-  "demos/s8/Softronic CM1 AB/2026-03-19_19-02-16_9_de_inferno_Softronic_CM1_AB_vs_Knuts_Bygg.dem": {
-    "hash": "b38fa5a49172475bd7449061ae44077e",
-    "parsed_at": "2026-03-24T14:28:36.317222",
-    "data": {
-      "file": "2026-03-19_19-02-16_9_de_inferno_Softronic_CM1_AB_vs_Knuts_Bygg.dem",
-      "folder_team": "Softronic CM1 AB",
-      "date": "2026-03-19",
-      "time": "19:02:16",
-      "match_id": "9",
-      "map": "de_inferno",
-      "team1_raw": "Softronic CM1 AB",
-      "team2_raw": "Knuts Bygg",
-      "total_rounds": 36,
-      "ct_wins": 17,
-      "t_wins": 19,
-      "t_start_score": 17,
-      "ct_start_score": 19,
-      "team_t_ids": [
-        "76561199274184060",
-        "76561197999059961",
-        "76561198300979810",
-        "76561199869927461"
-      ],
-      "team_ct_ids": [
-        "76561198052063018",
-        "76561197983540149",
-        "76561197973729715",
-        "76561198770246176",
-        "76561198085665917"
-      ],
-      "comp_team_t_ids": [
-        "76561198052063018",
-        "76561197983540149",
-        "76561197973729715",
-        "76561198770246176",
-        "76561198085665917"
-      ],
-      "comp_team_ct_ids": [
-        "76561199274184060",
-        "76561197999059961",
-        "76561198300979810",
-        "76561199869927461",
-        "76561199082350066"
-      ],
-      "player_stats": [
-        {
-          "name": "DillSkruven",
-          "steamid": "76561199274184060",
-          "kills": 45,
-          "deaths": 30,
-          "assists": 12,
-          "headshots": 18,
-          "flash_assists": 0,
-          "damage": 4641,
-          "rounds": 36,
-          "team_side": "T"
-        },
-        {
-          "name": "real heaton",
-          "steamid": "76561197999059961",
-          "kills": 20,
-          "deaths": 28,
-          "assists": 8,
-          "headshots": 7,
-          "flash_assists": 1,
-          "damage": 2539,
-          "rounds": 36,
-          "team_side": "T"
-        },
-        {
-          "name": "Spiken",
-          "steamid": "76561198300979810",
-          "kills": 21,
-          "deaths": 26,
-          "assists": 0,
-          "headshots": 2,
-          "flash_assists": 0,
-          "damage": 1996,
-          "rounds": 36,
-          "team_side": "T"
-        },
-        {
-          "name": "Hassearo77",
-          "steamid": "76561199869927461",
-          "kills": 13,
-          "deaths": 20,
-          "assists": 5,
-          "headshots": 7,
-          "flash_assists": 0,
-          "damage": 1696,
-          "rounds": 36,
-          "team_side": "T"
-        },
-        {
-          "name": "Geddson",
-          "steamid": "76561198052063018",
-          "kills": 37,
-          "deaths": 24,
-          "assists": 10,
-          "headshots": 12,
-          "flash_assists": 0,
-          "damage": 3537,
-          "rounds": 36,
-          "team_side": "CT"
-        },
-        {
-          "name": "Praktikanten",
-          "steamid": "76561197983540149",
-          "kills": 8,
-          "deaths": 25,
-          "assists": 13,
-          "headshots": 2,
-          "flash_assists": 1,
-          "damage": 1150,
-          "rounds": 36,
-          "team_side": "CT"
-        },
-        {
-          "name": "Akke",
-          "steamid": "76561197973729715",
-          "kills": 23,
-          "deaths": 26,
-          "assists": 15,
-          "headshots": 10,
-          "flash_assists": 0,
-          "damage": 3096,
-          "rounds": 36,
-          "team_side": "CT"
-        },
-        {
-          "name": "Geten",
-          "steamid": "76561198770246176",
-          "kills": 27,
-          "deaths": 25,
-          "assists": 8,
-          "headshots": 12,
-          "flash_assists": 0,
-          "damage": 2699,
-          "rounds": 36,
-          "team_side": "CT"
-        },
-        {
-          "name": "KYC",
-          "steamid": "76561198085665917",
-          "kills": 32,
-          "deaths": 21,
-          "assists": 7,
-          "headshots": 17,
-          "flash_assists": 0,
-          "damage": 3267,
-          "rounds": 36,
-          "team_side": "CT"
-        }
-      ]
-    }
-  },
   "demos/s8/Softronic CM1 AB/2026-03-19_20-13-29_46_de_mirage_Knuts_Bygg_vs_Softronic_CM1_AB.dem": {
     "hash": "a1b6be8e349908b208ab8dee64b18c2f",
     "parsed_at": "2026-03-24T14:28:38.447755",
@@ -5043,162 +4731,6 @@
       ]
     }
   },
-  "demos/s8/Xenit AB/2026-03-19_20-16-04_47_de_nuke_team__Kimchi_vs_team_Uniguide_DOGGLER.dem": {
-    "hash": "bef74a92a4bdd0b70e2367975cc18860",
-    "parsed_at": "2026-03-24T14:28:44.226179",
-    "data": {
-      "file": "2026-03-19_20-16-04_47_de_nuke_team__Kimchi_vs_team_Uniguide_DOGGLER.dem",
-      "folder_team": "Xenit AB",
-      "date": "2026-03-19",
-      "time": "20:16:04",
-      "match_id": "47",
-      "map": "de_nuke",
-      "team1_raw": "team  Kimchi",
-      "team2_raw": "team Uniguide DOGGLER",
-      "total_rounds": 23,
-      "ct_wins": 14,
-      "t_wins": 9,
-      "t_start_score": 10,
-      "ct_start_score": 13,
-      "team_t_ids": [
-        "76561197996985966",
-        "76561198004467065",
-        "76561198075073796",
-        "76561198207185136",
-        "76561198187308345"
-      ],
-      "team_ct_ids": [
-        "76561198154595852",
-        "76561198107299516",
-        "76561198023772041",
-        "76561197988553594"
-      ],
-      "comp_team_t_ids": [
-        "76561198154595852",
-        "76561198107299516",
-        "76561198023772041",
-        "76561197969701400",
-        "76561197988553594"
-      ],
-      "comp_team_ct_ids": [
-        "76561197996985966",
-        "76561198004467065",
-        "76561198075073796",
-        "76561198207185136",
-        "76561198187308345"
-      ],
-      "player_stats": [
-        {
-          "name": "Uniguide frall1",
-          "steamid": "76561197996985966",
-          "kills": 13,
-          "deaths": 15,
-          "assists": 6,
-          "headshots": 5,
-          "flash_assists": 1,
-          "damage": 1524,
-          "rounds": 23,
-          "team_side": "T"
-        },
-        {
-          "name": "Uniguide kray2sick",
-          "steamid": "76561198004467065",
-          "kills": 21,
-          "deaths": 14,
-          "assists": 5,
-          "headshots": 13,
-          "flash_assists": 0,
-          "damage": 2007,
-          "rounds": 23,
-          "team_side": "T"
-        },
-        {
-          "name": "Uniguide tarre",
-          "steamid": "76561198075073796",
-          "kills": 10,
-          "deaths": 17,
-          "assists": 5,
-          "headshots": 6,
-          "flash_assists": 0,
-          "damage": 1470,
-          "rounds": 23,
-          "team_side": "T"
-        },
-        {
-          "name": "Uniguide neoo",
-          "steamid": "76561198207185136",
-          "kills": 31,
-          "deaths": 15,
-          "assists": 4,
-          "headshots": 19,
-          "flash_assists": 0,
-          "damage": 3096,
-          "rounds": 23,
-          "team_side": "T"
-        },
-        {
-          "name": "Uniguide DOGGLER",
-          "steamid": "76561198187308345",
-          "kills": 14,
-          "deaths": 15,
-          "assists": 5,
-          "headshots": 5,
-          "flash_assists": 0,
-          "damage": 1459,
-          "rounds": 23,
-          "team_side": "T"
-        },
-        {
-          "name": "a1a1",
-          "steamid": "76561198154595852",
-          "kills": 15,
-          "deaths": 17,
-          "assists": 5,
-          "headshots": 7,
-          "flash_assists": 0,
-          "damage": 1574,
-          "rounds": 23,
-          "team_side": "CT"
-        },
-        {
-          "name": "Blob",
-          "steamid": "76561198107299516",
-          "kills": 16,
-          "deaths": 19,
-          "assists": 7,
-          "headshots": 8,
-          "flash_assists": 0,
-          "damage": 1894,
-          "rounds": 23,
-          "team_side": "CT"
-        },
-        {
-          "name": "BowmanSC",
-          "steamid": "76561198023772041",
-          "kills": 21,
-          "deaths": 15,
-          "assists": 7,
-          "headshots": 13,
-          "flash_assists": 3,
-          "damage": 2061,
-          "rounds": 23,
-          "team_side": "CT"
-        },
-        {
-          "name": "\u2605 Kimchi",
-          "steamid": "76561197988553594",
-          "kills": 8,
-          "deaths": 17,
-          "assists": 8,
-          "headshots": 2,
-          "flash_assists": 0,
-          "damage": 1118,
-          "rounds": 23,
-          "team_side": "CT"
-        }
-      ]
-    }
-  },
   "demos/s8/evolvit Solutions AB/2026-03-19_19-01-13_6_de_mirage_evolvit_vs_Teamtailor.dem": {
     "hash": "051322b13bba452947bcdfbe41656283",
     "parsed_at": "2026-03-24T14:28:46.096106",
@@ -5368,9 +4900,513 @@
       ]
     }
   },
+  "demos/s8/Accenture AB/2026-03-19_19-01-24_7_de_mirage_Accenture_vs_Nordlo_Evolve.dem": {
+    "hash": "7d55b55d20d57138d6b55e17946869f4",
+    "parsed_at": "2026-03-25T08:48:02.664917",
+    "data": {
+      "file": "2026-03-19_19-01-24_7_de_mirage_Accenture_vs_Nordlo_Evolve.dem",
+      "folder_team": "Accenture AB",
+      "date": "2026-03-19",
+      "time": "19:01:24",
+      "match_id": "7",
+      "map": "de_mirage",
+      "team1_raw": "Accenture",
+      "team2_raw": "Nordlo Evolve",
+      "total_rounds": 24,
+      "ct_wins": 9,
+      "t_wins": 15,
+      "t_start_score": 13,
+      "ct_start_score": 11,
+      "team_t_ids": [
+        "76561198263999689",
+        "76561198043613650",
+        "76561197989134789",
+        "76561197997739223",
+        "76561198858270466"
+      ],
+      "team_ct_ids": [
+        "76561198091917187",
+        "76561198006978277",
+        "76561198022548607",
+        "76561198025125798"
+      ],
+      "comp_team_t_ids": [
+        "76561198263999689",
+        "76561198043613650",
+        "76561197989134789",
+        "76561197997739223",
+        "76561198858270466"
+      ],
+      "comp_team_ct_ids": [
+        "76561197960330159",
+        "76561198091917187",
+        "76561198006978277",
+        "76561198022548607",
+        "76561198025125798"
+      ],
+      "player_stats": [
+        {
+          "name": "regnpojken",
+          "steamid": "76561198263999689",
+          "kills": 10,
+          "deaths": 19,
+          "assists": 8,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 1780,
+          "rounds": 24,
+          "team_side": "T"
+        },
+        {
+          "name": "\u2b55\u20e4 \u180c no internet connection",
+          "steamid": "76561198043613650",
+          "kills": 14,
+          "deaths": 19,
+          "assists": 4,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1294,
+          "rounds": 24,
+          "team_side": "T"
+        },
+        {
+          "name": "zAyn",
+          "steamid": "76561197989134789",
+          "kills": 21,
+          "deaths": 18,
+          "assists": 10,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 2449,
+          "rounds": 24,
+          "team_side": "T"
+        },
+        {
+          "name": "Nizhon\u265a",
+          "steamid": "76561197997739223",
+          "kills": 28,
+          "deaths": 13,
+          "assists": 6,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 2414,
+          "rounds": 24,
+          "team_side": "T"
+        },
+        {
+          "name": "Doskalle",
+          "steamid": "76561198858270466",
+          "kills": 13,
+          "deaths": 17,
+          "assists": 6,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1521,
+          "rounds": 24,
+          "team_side": "T"
+        },
+        {
+          "name": "Bruhn",
+          "steamid": "76561198091917187",
+          "kills": 8,
+          "deaths": 19,
+          "assists": 9,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1287,
+          "rounds": 24,
+          "team_side": "CT"
+        },
+        {
+          "name": "int",
+          "steamid": "76561198006978277",
+          "kills": 29,
+          "deaths": 17,
+          "assists": 5,
+          "headshots": 11,
+          "flash_assists": 1,
+          "damage": 2989,
+          "rounds": 24,
+          "team_side": "CT"
+        },
+        {
+          "name": "SLITZ",
+          "steamid": "76561198022548607",
+          "kills": 24,
+          "deaths": 16,
+          "assists": 4,
+          "headshots": 11,
+          "flash_assists": 0,
+          "damage": 2653,
+          "rounds": 24,
+          "team_side": "CT"
+        },
+        {
+          "name": "Vidde",
+          "steamid": "76561198025125798",
+          "kills": 12,
+          "deaths": 17,
+          "assists": 2,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 1104,
+          "rounds": 24,
+          "team_side": "CT"
+        },
+        {
+          "name": "Faut",
+          "steamid": "76561197960330159",
+          "kills": 12,
+          "deaths": 17,
+          "assists": 5,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1648,
+          "rounds": 24,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Softronic CM1 AB/2026-03-19_19-02-16_9_de_inferno_Softronic_CM1_AB_vs_Knuts_Bygg.dem": {
+    "hash": "b38fa5a49172475bd7449061ae44077e",
+    "parsed_at": "2026-03-25T08:48:26.499753",
+    "data": {
+      "file": "2026-03-19_19-02-16_9_de_inferno_Softronic_CM1_AB_vs_Knuts_Bygg.dem",
+      "folder_team": "Softronic CM1 AB",
+      "date": "2026-03-19",
+      "time": "19:02:16",
+      "match_id": "9",
+      "map": "de_inferno",
+      "team1_raw": "Softronic CM1 AB",
+      "team2_raw": "Knuts Bygg",
+      "total_rounds": 36,
+      "ct_wins": 17,
+      "t_wins": 19,
+      "t_start_score": 17,
+      "ct_start_score": 19,
+      "team_t_ids": [
+        "76561199274184060",
+        "76561197999059961",
+        "76561198300979810",
+        "76561199869927461"
+      ],
+      "team_ct_ids": [
+        "76561198052063018",
+        "76561197983540149",
+        "76561197973729715",
+        "76561198770246176",
+        "76561198085665917"
+      ],
+      "comp_team_t_ids": [
+        "76561198052063018",
+        "76561197983540149",
+        "76561197973729715",
+        "76561198770246176",
+        "76561198085665917"
+      ],
+      "comp_team_ct_ids": [
+        "76561199274184060",
+        "76561197999059961",
+        "76561198300979810",
+        "76561199869927461",
+        "76561199082350066"
+      ],
+      "player_stats": [
+        {
+          "name": "DillSkruven",
+          "steamid": "76561199274184060",
+          "kills": 45,
+          "deaths": 30,
+          "assists": 12,
+          "headshots": 18,
+          "flash_assists": 0,
+          "damage": 4484,
+          "rounds": 36,
+          "team_side": "T"
+        },
+        {
+          "name": "real heaton",
+          "steamid": "76561197999059961",
+          "kills": 20,
+          "deaths": 28,
+          "assists": 8,
+          "headshots": 7,
+          "flash_assists": 1,
+          "damage": 2505,
+          "rounds": 36,
+          "team_side": "T"
+        },
+        {
+          "name": "Spiken",
+          "steamid": "76561198300979810",
+          "kills": 21,
+          "deaths": 26,
+          "assists": 0,
+          "headshots": 2,
+          "flash_assists": 0,
+          "damage": 1927,
+          "rounds": 36,
+          "team_side": "T"
+        },
+        {
+          "name": "Hassearo77",
+          "steamid": "76561199869927461",
+          "kills": 13,
+          "deaths": 20,
+          "assists": 5,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 1670,
+          "rounds": 36,
+          "team_side": "T"
+        },
+        {
+          "name": "Geddson",
+          "steamid": "76561198052063018",
+          "kills": 37,
+          "deaths": 24,
+          "assists": 10,
+          "headshots": 12,
+          "flash_assists": 0,
+          "damage": 3537,
+          "rounds": 36,
+          "team_side": "CT"
+        },
+        {
+          "name": "Praktikanten",
+          "steamid": "76561197983540149",
+          "kills": 8,
+          "deaths": 25,
+          "assists": 13,
+          "headshots": 2,
+          "flash_assists": 1,
+          "damage": 1150,
+          "rounds": 36,
+          "team_side": "CT"
+        },
+        {
+          "name": "Akke",
+          "steamid": "76561197973729715",
+          "kills": 23,
+          "deaths": 26,
+          "assists": 15,
+          "headshots": 10,
+          "flash_assists": 0,
+          "damage": 3096,
+          "rounds": 36,
+          "team_side": "CT"
+        },
+        {
+          "name": "Geten",
+          "steamid": "76561198770246176",
+          "kills": 27,
+          "deaths": 25,
+          "assists": 8,
+          "headshots": 12,
+          "flash_assists": 0,
+          "damage": 2699,
+          "rounds": 36,
+          "team_side": "CT"
+        },
+        {
+          "name": "KYC",
+          "steamid": "76561198085665917",
+          "kills": 32,
+          "deaths": 21,
+          "assists": 7,
+          "headshots": 17,
+          "flash_assists": 0,
+          "damage": 3267,
+          "rounds": 36,
+          "team_side": "CT"
+        },
+        {
+          "name": "HakiExperten",
+          "steamid": "76561199082350066",
+          "kills": 23,
+          "deaths": 26,
+          "assists": 10,
+          "headshots": 10,
+          "flash_assists": 0,
+          "damage": 2586,
+          "rounds": 36,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Xenit AB/2026-03-19_20-16-04_47_de_nuke_team__Kimchi_vs_team_Uniguide_DOGGLER.dem": {
+    "hash": "bef74a92a4bdd0b70e2367975cc18860",
+    "parsed_at": "2026-03-25T08:48:30.459304",
+    "data": {
+      "file": "2026-03-19_20-16-04_47_de_nuke_team__Kimchi_vs_team_Uniguide_DOGGLER.dem",
+      "folder_team": "Xenit AB",
+      "date": "2026-03-19",
+      "time": "20:16:04",
+      "match_id": "47",
+      "map": "de_nuke",
+      "team1_raw": "team  Kimchi",
+      "team2_raw": "team Uniguide DOGGLER",
+      "total_rounds": 23,
+      "ct_wins": 14,
+      "t_wins": 9,
+      "t_start_score": 10,
+      "ct_start_score": 13,
+      "team_t_ids": [
+        "76561197996985966",
+        "76561198004467065",
+        "76561198075073796",
+        "76561198207185136",
+        "76561198187308345"
+      ],
+      "team_ct_ids": [
+        "76561198154595852",
+        "76561198107299516",
+        "76561198023772041",
+        "76561197988553594"
+      ],
+      "comp_team_t_ids": [
+        "76561198154595852",
+        "76561198107299516",
+        "76561198023772041",
+        "76561197969701400",
+        "76561197988553594"
+      ],
+      "comp_team_ct_ids": [
+        "76561197996985966",
+        "76561198004467065",
+        "76561198075073796",
+        "76561198207185136",
+        "76561198187308345"
+      ],
+      "player_stats": [
+        {
+          "name": "Uniguide frall1",
+          "steamid": "76561197996985966",
+          "kills": 13,
+          "deaths": 15,
+          "assists": 6,
+          "headshots": 5,
+          "flash_assists": 1,
+          "damage": 1524,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Uniguide kray2sick",
+          "steamid": "76561198004467065",
+          "kills": 21,
+          "deaths": 14,
+          "assists": 5,
+          "headshots": 13,
+          "flash_assists": 0,
+          "damage": 1987,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Uniguide tarre",
+          "steamid": "76561198075073796",
+          "kills": 10,
+          "deaths": 17,
+          "assists": 5,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1470,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Uniguide neoo",
+          "steamid": "76561198207185136",
+          "kills": 31,
+          "deaths": 15,
+          "assists": 4,
+          "headshots": 19,
+          "flash_assists": 0,
+          "damage": 3096,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Uniguide DOGGLER",
+          "steamid": "76561198187308345",
+          "kills": 14,
+          "deaths": 15,
+          "assists": 5,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1458,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "a1a1",
+          "steamid": "76561198154595852",
+          "kills": 15,
+          "deaths": 17,
+          "assists": 5,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 1455,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "Blob",
+          "steamid": "76561198107299516",
+          "kills": 16,
+          "deaths": 19,
+          "assists": 7,
+          "headshots": 8,
+          "flash_assists": 0,
+          "damage": 1894,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "BowmanSC",
+          "steamid": "76561198023772041",
+          "kills": 21,
+          "deaths": 15,
+          "assists": 7,
+          "headshots": 13,
+          "flash_assists": 3,
+          "damage": 2025,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "\u2605 Kimchi",
+          "steamid": "76561197988553594",
+          "kills": 8,
+          "deaths": 17,
+          "assists": 8,
+          "headshots": 2,
+          "flash_assists": 0,
+          "damage": 1102,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "gordon",
+          "steamid": "76561197969701400",
+          "kills": 13,
+          "deaths": 21,
+          "assists": 6,
+          "headshots": 10,
+          "flash_assists": 1,
+          "damage": 1972,
+          "rounds": 23,
+          "team_side": "T"
+        }
+      ]
+    }
+  },
   "demos/s8/evolvit Solutions AB/2026-03-19_19-25-57_23_de_ancient_evolvit_vs_Teamtailor.dem": {
     "hash": "b3f0a42e2631ef2aa8f9ec405886c5c0",
-    "parsed_at": "2026-03-24T14:28:47.448169",
+    "parsed_at": "2026-03-25T08:48:32.258007",
     "data": {
       "file": "2026-03-19_19-25-57_23_de_ancient_evolvit_vs_Teamtailor.dem",
       "folder_team": "evolvit Solutions AB",
@@ -5413,7 +5449,7 @@
           "assists": 4,
           "headshots": 4,
           "flash_assists": 0,
-          "damage": 2353,
+          "damage": 2313,
           "rounds": 14,
           "team_side": "CT"
         },
@@ -5425,9 +5461,105 @@
           "assists": 2,
           "headshots": 0,
           "flash_assists": 1,
-          "damage": 455,
+          "damage": 331,
           "rounds": 14,
           "team_side": "CT"
+        },
+        {
+          "name": "pach",
+          "steamid": "76561198066008286",
+          "kills": 21,
+          "deaths": 7,
+          "assists": 4,
+          "headshots": 15,
+          "flash_assists": 0,
+          "damage": 1827,
+          "rounds": 14,
+          "team_side": "CT"
+        },
+        {
+          "name": "xervier",
+          "steamid": "76561197972809087",
+          "kills": 11,
+          "deaths": 5,
+          "assists": 5,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 1243,
+          "rounds": 14,
+          "team_side": "CT"
+        },
+        {
+          "name": "yungsteve",
+          "steamid": "76561197991293389",
+          "kills": 7,
+          "deaths": 13,
+          "assists": 1,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 878,
+          "rounds": 14,
+          "team_side": "T"
+        },
+        {
+          "name": "zairy",
+          "steamid": "76561198443657236",
+          "kills": 13,
+          "deaths": 5,
+          "assists": 6,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 1408,
+          "rounds": 14,
+          "team_side": "CT"
+        },
+        {
+          "name": "keewkN",
+          "steamid": "76561198741242927",
+          "kills": 9,
+          "deaths": 14,
+          "assists": 1,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 954,
+          "rounds": 14,
+          "team_side": "T"
+        },
+        {
+          "name": "Gaston",
+          "steamid": "76561197993782213",
+          "kills": 5,
+          "deaths": 14,
+          "assists": 1,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 556,
+          "rounds": 14,
+          "team_side": "T"
+        },
+        {
+          "name": "Edenwhat",
+          "steamid": "76561198202449913",
+          "kills": 4,
+          "deaths": 14,
+          "assists": 6,
+          "headshots": 2,
+          "flash_assists": 2,
+          "damage": 817,
+          "rounds": 14,
+          "team_side": "T"
+        },
+        {
+          "name": "Ludde",
+          "steamid": "76561198073245242",
+          "kills": 1,
+          "deaths": 14,
+          "assists": 2,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 225,
+          "rounds": 14,
+          "team_side": "T"
         }
       ]
     }
