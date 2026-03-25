@@ -134,6 +134,32 @@
     },
     {
       "rank": 4,
+      "team": "Spiris AB",
+      "played": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 21,
+      "score_against": 18,
+      "diff": 3,
+      "points": 3
+    },
+    {
+      "rank": 5,
+      "team": "Sciber AB",
+      "played": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 18,
+      "score_against": 21,
+      "diff": -3,
+      "points": 3
+    },
+    {
+      "rank": 6,
       "team": "EA DICE AB",
       "played": 2,
       "wins": 0,
@@ -146,7 +172,7 @@
       "points": 0
     },
     {
-      "rank": 5,
+      "rank": 7,
       "team": "Telia AB Jönköping",
       "played": 2,
       "wins": 0,
@@ -159,7 +185,7 @@
       "points": 0
     },
     {
-      "rank": 5,
+      "rank": 7,
       "team": "XXL Sport och Vildmark AB",
       "played": 2,
       "wins": 0,
@@ -169,32 +195,6 @@
       "score_for": 10,
       "score_against": 26,
       "diff": -16,
-      "points": 0
-    },
-    {
-      "rank": 0,
-      "team": "Sciber AB",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 0,
-      "score_against": 0,
-      "diff": 0,
-      "points": 0
-    },
-    {
-      "rank": 0,
-      "team": "Spiris AB",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 0,
-      "score_against": 0,
-      "diff": 0,
       "points": 0
     }
   ],
@@ -532,6 +532,19 @@
     },
     {
       "rank": 2,
+      "team": "Lumera AB 1",
+      "played": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 26,
+      "score_against": 22,
+      "diff": 4,
+      "points": 3
+    },
+    {
+      "rank": 3,
       "team": "Boulder AB Golden",
       "played": 2,
       "wins": 1,
@@ -544,7 +557,7 @@
       "points": 3
     },
     {
-      "rank": 3,
+      "rank": 4,
       "team": "SOLTAK AB",
       "played": 2,
       "wins": 1,
@@ -557,7 +570,20 @@
       "points": 3
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "team": "Nordomatic AB",
+      "played": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 22,
+      "score_against": 26,
+      "diff": -4,
+      "points": 3
+    },
+    {
+      "rank": 6,
       "team": "Hapio.io - (Viström Digital Development)",
       "played": 2,
       "wins": 0,
@@ -567,32 +593,6 @@
       "score_for": 6,
       "score_against": 26,
       "diff": -20,
-      "points": 0
-    },
-    {
-      "rank": 0,
-      "team": "Lumera AB 1",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 0,
-      "score_against": 0,
-      "diff": 0,
-      "points": 0
-    },
-    {
-      "rank": 0,
-      "team": "Nordomatic AB",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 0,
-      "score_against": 0,
-      "diff": 0,
       "points": 0
     },
     {
@@ -625,6 +625,32 @@
   "Division 2F": [
     {
       "rank": 1,
+      "team": "Hello Ebbot AB",
+      "played": 4,
+      "wins": 3,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 44,
+      "score_against": 41,
+      "diff": 3,
+      "points": 9
+    },
+    {
+      "rank": 2,
+      "team": "Hogia AB",
+      "played": 3,
+      "wins": 2,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 34,
+      "score_against": 23,
+      "diff": 11,
+      "points": 6
+    },
+    {
+      "rank": 3,
       "team": "Sweco AB",
       "played": 2,
       "wins": 2,
@@ -634,32 +660,6 @@
       "score_for": 32,
       "score_against": 27,
       "diff": 5,
-      "points": 6
-    },
-    {
-      "rank": 2,
-      "team": "Hogia AB",
-      "played": 2,
-      "wins": 2,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 26,
-      "score_against": 10,
-      "diff": 16,
-      "points": 6
-    },
-    {
-      "rank": 3,
-      "team": "Hello Ebbot AB",
-      "played": 2,
-      "wins": 2,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 26,
-      "score_against": 20,
-      "diff": 6,
       "points": 6
     },
     {
@@ -691,15 +691,15 @@
     {
       "rank": 6,
       "team": "Netgain AB",
-      "played": 2,
-      "wins": 0,
+      "played": 3,
+      "wins": 1,
       "draws": 0,
       "losses": 2,
       "forfeits": 0,
-      "score_for": 27,
-      "score_against": 32,
-      "diff": -5,
-      "points": 0
+      "score_for": 40,
+      "score_against": 37,
+      "diff": 3,
+      "points": 3
     },
     {
       "rank": 7,

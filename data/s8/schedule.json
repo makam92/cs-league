@@ -411,18 +411,18 @@
       "datetime": "2026-03-24T19:00:00+0100",
       "team1": "Sciber AB",
       "team2": "Spiris AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 13,
+      "score2": 8,
+      "played": true,
       "division": "Division 2A"
     },
     {
       "datetime": "2026-03-24T20:00:00+0100",
       "team1": "Spiris AB",
       "team2": "Sciber AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 13,
+      "score2": 5,
+      "played": true,
       "division": "Division 2A"
     },
     {
@@ -2363,18 +2363,18 @@
       "datetime": "2026-03-24T19:00:00+0100",
       "team1": "Lumera AB 1",
       "team2": "Nordomatic AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 13,
+      "score2": 16,
+      "played": true,
       "division": "Division 2E"
     },
     {
       "datetime": "2026-03-24T20:00:00+0100",
       "team1": "Nordomatic AB",
       "team2": "Lumera AB 1",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 6,
+      "score2": 13,
+      "played": true,
       "division": "Division 2E"
     },
     {
@@ -2905,18 +2905,18 @@
       "datetime": "2026-03-24T19:00:00+0100",
       "team1": "Hello Ebbot AB",
       "team2": "Netgain AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 5,
+      "score2": 13,
+      "played": true,
       "division": "Division 2F"
     },
     {
       "datetime": "2026-03-24T20:00:00+0100",
       "team1": "Hello Ebbot AB",
       "team2": "Hogia AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 13,
+      "score2": 8,
+      "played": true,
       "division": "Division 2F"
     },
     {
