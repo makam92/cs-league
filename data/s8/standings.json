@@ -241,18 +241,31 @@
     {
       "rank": 4,
       "team": "Aderian Aktiv IT AB",
-      "played": 2,
-      "wins": 0,
+      "played": 4,
+      "wins": 1,
       "draws": 0,
-      "losses": 2,
+      "losses": 3,
       "forfeits": 0,
-      "score_for": 16,
-      "score_against": 26,
-      "diff": -10,
-      "points": 0
+      "score_for": 46,
+      "score_against": 49,
+      "diff": -3,
+      "points": 3
     },
     {
       "rank": 5,
+      "team": "Lumera AB 2",
+      "played": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 23,
+      "score_against": 30,
+      "diff": -7,
+      "points": 3
+    },
+    {
+      "rank": 6,
       "team": "Xenit AB",
       "played": 2,
       "wins": 0,
@@ -265,7 +278,7 @@
       "points": 0
     },
     {
-      "rank": 6,
+      "rank": 7,
       "team": "Fragbite AB",
       "played": 2,
       "wins": 0,
@@ -280,19 +293,6 @@
     {
       "rank": 0,
       "team": "Öhrlings PricewaterhouseCoopers AB",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 0,
-      "score_against": 0,
-      "diff": 0,
-      "points": 0
-    },
-    {
-      "rank": 0,
-      "team": "Lumera AB 2",
       "played": 0,
       "wins": 0,
       "draws": 0,
@@ -519,6 +519,19 @@
   "Division 2E": [
     {
       "rank": 1,
+      "team": "Boulder AB Golden",
+      "played": 3,
+      "wins": 2,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 33,
+      "score_against": 26,
+      "diff": 7,
+      "points": 6
+    },
+    {
+      "rank": 2,
       "team": "Monitor ERP System AB",
       "played": 2,
       "wins": 2,
@@ -531,7 +544,7 @@
       "points": 6
     },
     {
-      "rank": 2,
+      "rank": 3,
       "team": "Lumera AB 1",
       "played": 2,
       "wins": 1,
@@ -544,33 +557,7 @@
       "points": 3
     },
     {
-      "rank": 3,
-      "team": "Boulder AB Golden",
-      "played": 2,
-      "wins": 1,
-      "draws": 0,
-      "losses": 1,
-      "forfeits": 0,
-      "score_for": 20,
-      "score_against": 17,
-      "diff": 3,
-      "points": 3
-    },
-    {
       "rank": 4,
-      "team": "SOLTAK AB",
-      "played": 2,
-      "wins": 1,
-      "draws": 0,
-      "losses": 1,
-      "forfeits": 0,
-      "score_for": 17,
-      "score_against": 20,
-      "diff": -3,
-      "points": 3
-    },
-    {
-      "rank": 5,
       "team": "Nordomatic AB",
       "played": 2,
       "wins": 1,
@@ -583,7 +570,33 @@
       "points": 3
     },
     {
+      "rank": 5,
+      "team": "SOLTAK AB",
+      "played": 2,
+      "wins": 1,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 17,
+      "score_against": 20,
+      "diff": -3,
+      "points": 3
+    },
+    {
       "rank": 6,
+      "team": "Teris AB",
+      "played": 1,
+      "wins": 0,
+      "draws": 0,
+      "losses": 1,
+      "forfeits": 0,
+      "score_for": 9,
+      "score_against": 13,
+      "diff": -4,
+      "points": 0
+    },
+    {
+      "rank": 7,
       "team": "Hapio.io - (Viström Digital Development)",
       "played": 2,
       "wins": 0,
@@ -593,19 +606,6 @@
       "score_for": 6,
       "score_against": 26,
       "diff": -20,
-      "points": 0
-    },
-    {
-      "rank": 0,
-      "team": "Teris AB",
-      "played": 0,
-      "wins": 0,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 0,
-      "score_against": 0,
-      "diff": 0,
       "points": 0
     },
     {

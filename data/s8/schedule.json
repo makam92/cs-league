@@ -100,9 +100,9 @@
       "division": "Division 1"
     },
     {
-      "datetime": "2026-03-31T19:00:00+0200",
-      "team1": "Webhallen Sverige AB",
-      "team2": "Netlight AB DUENDE",
+      "datetime": "2026-03-29T20:00:00+0200",
+      "team1": "Bredband2 AB",
+      "team2": "Toyota Material Handling AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -110,8 +110,8 @@
     },
     {
       "datetime": "2026-03-31T19:00:00+0200",
-      "team1": "Bredband2 AB",
-      "team2": "Toyota Material Handling AB",
+      "team1": "Webhallen Sverige AB",
+      "team2": "Netlight AB DUENDE",
       "score1": null,
       "score2": null,
       "played": false,
@@ -917,18 +917,18 @@
       "datetime": "2026-03-25T20:00:00+0100",
       "team1": "Lumera AB 2",
       "team2": "Aderian Aktiv IT AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 4,
+      "score2": 13,
+      "played": true,
       "division": "Division 2B"
     },
     {
       "datetime": "2026-03-25T21:00:00+0100",
       "team1": "Aderian Aktiv IT AB",
       "team2": "Lumera AB 2",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 17,
+      "score2": 19,
+      "played": true,
       "division": "Division 2B"
     },
     {
@@ -2388,20 +2388,11 @@
     },
     {
       "datetime": "2026-03-26T19:00:00+0100",
-      "team1": "Nordomatic AB",
-      "team2": "Monitor ERP System AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2E"
-    },
-    {
-      "datetime": "2026-03-26T19:00:00+0100",
       "team1": "Teris AB",
       "team2": "Boulder AB Golden",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 9,
+      "score2": 13,
+      "played": true,
       "division": "Division 2E"
     },
     {
@@ -2605,6 +2596,15 @@
     {
       "datetime": "2026-04-09T20:00:00+0200",
       "team1": "Boulder AB Golden",
+      "team2": "Monitor ERP System AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2E"
+    },
+    {
+      "datetime": "2026-04-09T21:00:00+0200",
+      "team1": "Nordomatic AB",
       "team2": "Monitor ERP System AB",
       "score1": null,
       "score2": null,
@@ -2930,15 +2930,6 @@
     },
     {
       "datetime": "2026-03-26T19:00:00+0100",
-      "team1": "CGI AB Optimistic Reloaders",
-      "team2": "Sweco AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2F"
-    },
-    {
-      "datetime": "2026-03-26T19:00:00+0100",
       "team1": "Netgain AB",
       "team2": "SAVR AB",
       "score1": null,
@@ -3040,6 +3031,15 @@
       "datetime": "2026-03-31T20:00:00+0200",
       "team1": "Leadstar Media AB",
       "team2": "CGI AB Optimistic Reloaders",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2F"
+    },
+    {
+      "datetime": "2026-04-01T20:00:00+0200",
+      "team1": "CGI AB Optimistic Reloaders",
+      "team2": "Sweco AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -3427,15 +3427,6 @@
     },
     {
       "datetime": "2026-03-26T19:00:00+0100",
-      "team1": "Andwhy AB",
-      "team2": "Mpya Digital AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2G"
-    },
-    {
-      "datetime": "2026-03-26T19:00:00+0100",
       "team1": "Gjuteriteknik AB",
       "team2": "Infracom AB",
       "score1": null,
@@ -3546,6 +3537,15 @@
       "datetime": "2026-03-31T20:00:00+0200",
       "team1": "NODAF AB",
       "team2": "Knuts Bygg AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2G"
+    },
+    {
+      "datetime": "2026-04-01T20:00:00+0200",
+      "team1": "Andwhy AB",
+      "team2": "Mpya Digital AB",
       "score1": null,
       "score2": null,
       "played": false,
