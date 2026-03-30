@@ -28,19 +28,32 @@
     },
     {
       "rank": 3,
-      "team": "Bredband2 AB",
-      "played": 4,
+      "team": "Toyota Material Handling AB",
+      "played": 2,
       "wins": 2,
       "draws": 0,
-      "losses": 2,
+      "losses": 0,
       "forfeits": 0,
-      "score_for": 43,
-      "score_against": 45,
-      "diff": -2,
+      "score_for": 26,
+      "score_against": 9,
+      "diff": 17,
       "points": 6
     },
     {
       "rank": 4,
+      "team": "Bredband2 AB",
+      "played": 5,
+      "wins": 2,
+      "draws": 0,
+      "losses": 3,
+      "forfeits": 0,
+      "score_for": 45,
+      "score_against": 58,
+      "diff": -13,
+      "points": 6
+    },
+    {
+      "rank": 5,
       "team": "CGI Sverige AB",
       "played": 2,
       "wins": 1,
@@ -50,19 +63,6 @@
       "score_for": 23,
       "score_against": 23,
       "diff": 0,
-      "points": 3
-    },
-    {
-      "rank": 5,
-      "team": "Toyota Material Handling AB",
-      "played": 1,
-      "wins": 1,
-      "draws": 0,
-      "losses": 0,
-      "forfeits": 0,
-      "score_for": 13,
-      "score_against": 7,
-      "diff": 6,
       "points": 3
     },
     {
@@ -784,11 +784,11 @@
     {
       "rank": 5,
       "team": "Mpya Digital AB",
-      "played": 2,
+      "played": 3,
       "wins": 2,
       "draws": 0,
       "losses": 0,
-      "forfeits": 0,
+      "forfeits": 1,
       "score_for": 0,
       "score_against": 0,
       "diff": 0,
@@ -797,15 +797,15 @@
     {
       "rank": 6,
       "team": "NODAF AB",
-      "played": 3,
-      "wins": 0,
+      "played": 4,
+      "wins": 1,
       "draws": 0,
       "losses": 3,
       "forfeits": 0,
       "score_for": 29,
       "score_against": 42,
       "diff": -13,
-      "points": 0
+      "points": 3
     },
     {
       "rank": 7,

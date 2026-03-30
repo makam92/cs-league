@@ -103,18 +103,9 @@
       "datetime": "2026-03-29T20:00:00+0200",
       "team1": "Bredband2 AB",
       "team2": "Toyota Material Handling AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 1"
-    },
-    {
-      "datetime": "2026-03-31T19:00:00+0200",
-      "team1": "Webhallen Sverige AB",
-      "team2": "Netlight AB DUENDE",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 2,
+      "score2": 13,
+      "played": true,
       "division": "Division 1"
     },
     {
@@ -175,6 +166,15 @@
       "datetime": "2026-04-09T20:00:00+0200",
       "team1": "Northmill Bank AB",
       "team2": "Webhallen Sverige AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 1"
+    },
+    {
+      "datetime": "2026-04-09T21:00:00+0200",
+      "team1": "Webhallen Sverige AB",
+      "team2": "Netlight AB DUENDE",
       "score1": null,
       "score2": null,
       "played": false,
@@ -969,15 +969,6 @@
     },
     {
       "datetime": "2026-03-31T19:00:00+0200",
-      "team1": "Xenit AB",
-      "team2": "Lumera AB 2",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2B"
-    },
-    {
-      "datetime": "2026-03-31T19:00:00+0200",
       "team1": "Svea Bank AB",
       "team2": "Uniguide AB",
       "score1": null,
@@ -996,26 +987,8 @@
     },
     {
       "datetime": "2026-03-31T20:00:00+0200",
-      "team1": "Fragbite AB",
-      "team2": "Lumera AB 2",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2B"
-    },
-    {
-      "datetime": "2026-03-31T20:00:00+0200",
       "team1": "Aderian Aktiv IT AB",
       "team2": "Uniguide AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2B"
-    },
-    {
-      "datetime": "2026-03-31T20:00:00+0200",
-      "team1": "Xenit AB",
-      "team2": "Öhrlings PricewaterhouseCoopers AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -1456,7 +1429,7 @@
       "division": "Division 2C"
     },
     {
-      "datetime": "2026-03-31T19:00:00+0200",
+      "datetime": "2026-03-30T20:00:00+0200",
       "team1": "Boulder AB Mozarteum",
       "team2": "DynaMate AB",
       "score1": null,
@@ -3449,7 +3422,7 @@
       "team2": "Mpya Digital AB",
       "score1": null,
       "score2": null,
-      "played": false,
+      "played": true,
       "division": "Division 2G"
     },
     {
@@ -3471,9 +3444,9 @@
       "division": "Division 2G"
     },
     {
-      "datetime": "2026-03-31T19:00:00+0200",
-      "team1": "Softronic CM1 AB",
-      "team2": "Mpya Digital AB",
+      "datetime": "2026-03-30T20:00:00+0200",
+      "team1": "Mpya Digital AB",
+      "team2": "Gjuteriteknik AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -3510,15 +3483,6 @@
       "datetime": "2026-03-31T20:00:00+0200",
       "team1": "Softronic CM1 AB",
       "team2": "Infracom AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2G"
-    },
-    {
-      "datetime": "2026-03-31T20:00:00+0200",
-      "team1": "Mpya Digital AB",
-      "team2": "Gjuteriteknik AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -3545,6 +3509,15 @@
     {
       "datetime": "2026-04-01T20:00:00+0200",
       "team1": "Andwhy AB",
+      "team2": "Mpya Digital AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2G"
+    },
+    {
+      "datetime": "2026-04-01T21:00:00+0200",
+      "team1": "Softronic CM1 AB",
       "team2": "Mpya Digital AB",
       "score1": null,
       "score2": null,
