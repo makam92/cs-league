@@ -5949,5 +5949,707 @@
         }
       ]
     }
+  },
+  "demos/s8/Spiris AB/2026-03-24_20-45-44_-1_de_anubis_team_Schuster_vs_team_Suppe.dem": {
+    "hash": "639b71c74dc92244d0320863073cc123",
+    "parsed_at": "2026-04-17T08:07:48.289531",
+    "data": {
+      "file": "2026-03-24_20-45-44_-1_de_anubis_team_Schuster_vs_team_Suppe.dem",
+      "folder_team": "Spiris AB",
+      "date": null,
+      "time": null,
+      "match_id": null,
+      "map": null,
+      "team1_raw": null,
+      "team2_raw": null,
+      "total_rounds": 18,
+      "ct_wins": 9,
+      "t_wins": 9,
+      "t_start_score": 5,
+      "ct_start_score": 13,
+      "team_t_ids": [
+        "76561197969501535",
+        "76561198142692699",
+        "76561198029926857",
+        "76561198336510690",
+        "76561197987641216"
+      ],
+      "team_ct_ids": [
+        "76561198165163012",
+        "76561198012296949",
+        "76561198049372741",
+        "76561198001957640",
+        "76561197984358650"
+      ],
+      "comp_team_t_ids": [
+        "76561198165163012",
+        "76561198012296949",
+        "76561198049372741",
+        "76561198001957640",
+        "76561197984358650"
+      ],
+      "comp_team_ct_ids": [
+        "76561197969501535",
+        "76561198142692699",
+        "76561198029926857",
+        "76561198336510690",
+        "76561197987641216"
+      ],
+      "player_stats": [
+        {
+          "name": "Heikkinen",
+          "steamid": "76561197969501535",
+          "kills": 14,
+          "deaths": 12,
+          "assists": 6,
+          "headshots": 7,
+          "flash_assists": 1,
+          "damage": 1432,
+          "rounds": 18,
+          "team_side": "T"
+        },
+        {
+          "name": "gurrab",
+          "steamid": "76561198142692699",
+          "kills": 9,
+          "deaths": 12,
+          "assists": 5,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 992,
+          "rounds": 18,
+          "team_side": "T"
+        },
+        {
+          "name": "Hugge",
+          "steamid": "76561198029926857",
+          "kills": 16,
+          "deaths": 9,
+          "assists": 4,
+          "headshots": 9,
+          "flash_assists": 0,
+          "damage": 1629,
+          "rounds": 18,
+          "team_side": "T"
+        },
+        {
+          "name": "Keena",
+          "steamid": "76561198336510690",
+          "kills": 19,
+          "deaths": 8,
+          "assists": 4,
+          "headshots": 8,
+          "flash_assists": 0,
+          "damage": 1868,
+          "rounds": 18,
+          "team_side": "T"
+        },
+        {
+          "name": "Suppe",
+          "steamid": "76561197987641216",
+          "kills": 19,
+          "deaths": 9,
+          "assists": 7,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 2096,
+          "rounds": 18,
+          "team_side": "T"
+        },
+        {
+          "name": "Blandfers",
+          "steamid": "76561198165163012",
+          "kills": 7,
+          "deaths": 17,
+          "assists": 4,
+          "headshots": 2,
+          "flash_assists": 2,
+          "damage": 903,
+          "rounds": 18,
+          "team_side": "CT"
+        },
+        {
+          "name": "Bruno",
+          "steamid": "76561198012296949",
+          "kills": 11,
+          "deaths": 16,
+          "assists": 5,
+          "headshots": 5,
+          "flash_assists": 2,
+          "damage": 1109,
+          "rounds": 18,
+          "team_side": "CT"
+        },
+        {
+          "name": "Errit",
+          "steamid": "76561198049372741",
+          "kills": 15,
+          "deaths": 15,
+          "assists": 4,
+          "headshots": 10,
+          "flash_assists": 0,
+          "damage": 1838,
+          "rounds": 18,
+          "team_side": "CT"
+        },
+        {
+          "name": "ninya",
+          "steamid": "76561198001957640",
+          "kills": 8,
+          "deaths": 15,
+          "assists": 2,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 1058,
+          "rounds": 18,
+          "team_side": "CT"
+        },
+        {
+          "name": "Schuster",
+          "steamid": "76561197984358650",
+          "kills": 7,
+          "deaths": 15,
+          "assists": 1,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 862,
+          "rounds": 18,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Spiris AB/2026-03-26_20-09-42_97_de_mirage_Telia_JKPG_vs_Spiris_AB.dem": {
+    "hash": "3b6e93ef8d646f1cdddadeedcf822d85",
+    "parsed_at": "2026-04-17T08:07:49.908783",
+    "data": {
+      "file": "2026-03-26_20-09-42_97_de_mirage_Telia_JKPG_vs_Spiris_AB.dem",
+      "folder_team": "Spiris AB",
+      "date": "2026-03-26",
+      "time": "20:09:42",
+      "match_id": "97",
+      "map": "de_mirage",
+      "team1_raw": "Telia JKPG",
+      "team2_raw": "Spiris AB",
+      "total_rounds": 15,
+      "ct_wins": 14,
+      "t_wins": 1,
+      "t_start_score": 2,
+      "ct_start_score": 13,
+      "team_t_ids": [
+        "76561198029926857",
+        "76561198138227849",
+        "76561198336510690",
+        "76561197969501535"
+      ],
+      "team_ct_ids": [
+        "76561198086229555",
+        "76561198142692699",
+        "76561197960428365",
+        "76561198021795657",
+        "76561198107344813",
+        "76561197967712859"
+      ],
+      "comp_team_t_ids": [
+        "76561198086229555",
+        "76561197960428365",
+        "76561198021795657",
+        "76561198107344813",
+        "76561197967712859"
+      ],
+      "comp_team_ct_ids": [
+        "76561198029926857",
+        "76561198138227849",
+        "76561198336510690",
+        "76561198142692699",
+        "76561197969501535"
+      ],
+      "player_stats": [
+        {
+          "name": "Hugge",
+          "steamid": "76561198029926857",
+          "kills": 14,
+          "deaths": 2,
+          "assists": 5,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 1469,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "Thaipaj",
+          "steamid": "76561198138227849",
+          "kills": 9,
+          "deaths": 11,
+          "assists": 10,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1411,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "Keena",
+          "steamid": "76561198336510690",
+          "kills": 12,
+          "deaths": 4,
+          "assists": 6,
+          "headshots": 5,
+          "flash_assists": 3,
+          "damage": 964,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "BND",
+          "steamid": "76561197969501535",
+          "kills": 20,
+          "deaths": 8,
+          "assists": 3,
+          "headshots": 5,
+          "flash_assists": 1,
+          "damage": 1814,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "Cardell",
+          "steamid": "76561198086229555",
+          "kills": 6,
+          "deaths": 14,
+          "assists": 2,
+          "headshots": 1,
+          "flash_assists": 0,
+          "damage": 646,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "gurrab",
+          "steamid": "76561198142692699",
+          "kills": 14,
+          "deaths": 8,
+          "assists": 8,
+          "headshots": 7,
+          "flash_assists": 1,
+          "damage": 91,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "Keken",
+          "steamid": "76561197960428365",
+          "kills": 6,
+          "deaths": 13,
+          "assists": 2,
+          "headshots": 3,
+          "flash_assists": 1,
+          "damage": 608,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "Pirre Piraya",
+          "steamid": "76561198021795657",
+          "kills": 4,
+          "deaths": 13,
+          "assists": 2,
+          "headshots": 2,
+          "flash_assists": 0,
+          "damage": 414,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "WirrO",
+          "steamid": "76561198107344813",
+          "kills": 6,
+          "deaths": 15,
+          "assists": 0,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 519,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "Vaalen",
+          "steamid": "76561197967712859",
+          "kills": 8,
+          "deaths": 14,
+          "assists": 3,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 657,
+          "rounds": 15,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Spiris AB/2026-03-26_21-04-23_102_de_anubis_Spiris_AB_vs_Boulder_AB_HK.dem": {
+    "hash": "2fa93001bec7a5a3e4245b03ad8e0085",
+    "parsed_at": "2026-04-17T08:07:52.512933",
+    "data": {
+      "file": "2026-03-26_21-04-23_102_de_anubis_Spiris_AB_vs_Boulder_AB_HK.dem",
+      "folder_team": "Spiris AB",
+      "date": "2026-03-26",
+      "time": "21:04:23",
+      "match_id": "102",
+      "map": "de_anubis",
+      "team1_raw": "Spiris AB",
+      "team2_raw": "Boulder AB HK",
+      "total_rounds": 21,
+      "ct_wins": 8,
+      "t_wins": 13,
+      "t_start_score": 8,
+      "ct_start_score": 13,
+      "team_t_ids": [
+        "76561198008037539",
+        "76561197963166329",
+        "76561198104279557",
+        "76561197984784906",
+        "76561197962719753"
+      ],
+      "team_ct_ids": [
+        "76561198336510690",
+        "76561198029926857",
+        "76561197969501535",
+        "76561198142692699",
+        "76561198138227849"
+      ],
+      "comp_team_t_ids": [
+        "76561198008037539",
+        "76561197963166329",
+        "76561198104279557",
+        "76561197984784906",
+        "76561197962719753"
+      ],
+      "comp_team_ct_ids": [
+        "76561198336510690",
+        "76561198029926857",
+        "76561197969501535",
+        "76561198142692699",
+        "76561198138227849"
+      ],
+      "player_stats": [
+        {
+          "name": "sparvel",
+          "steamid": "76561198008037539",
+          "kills": 9,
+          "deaths": 17,
+          "assists": 6,
+          "headshots": 3,
+          "flash_assists": 3,
+          "damage": 953,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "cel",
+          "steamid": "76561197963166329",
+          "kills": 14,
+          "deaths": 15,
+          "assists": 8,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 1748,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "PMA",
+          "steamid": "76561198104279557",
+          "kills": 13,
+          "deaths": 16,
+          "assists": 4,
+          "headshots": 9,
+          "flash_assists": 0,
+          "damage": 1503,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "HaZ",
+          "steamid": "76561197984784906",
+          "kills": 15,
+          "deaths": 16,
+          "assists": 4,
+          "headshots": 4,
+          "flash_assists": 1,
+          "damage": 1772,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "aggro",
+          "steamid": "76561197962719753",
+          "kills": 15,
+          "deaths": 16,
+          "assists": 5,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1507,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "Keena",
+          "steamid": "76561198336510690",
+          "kills": 7,
+          "deaths": 13,
+          "assists": 11,
+          "headshots": 2,
+          "flash_assists": 0,
+          "damage": 1370,
+          "rounds": 21,
+          "team_side": "CT"
+        },
+        {
+          "name": "Hugge",
+          "steamid": "76561198029926857",
+          "kills": 22,
+          "deaths": 12,
+          "assists": 3,
+          "headshots": 13,
+          "flash_assists": 0,
+          "damage": 2094,
+          "rounds": 21,
+          "team_side": "CT"
+        },
+        {
+          "name": "BND",
+          "steamid": "76561197969501535",
+          "kills": 18,
+          "deaths": 16,
+          "assists": 4,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1827,
+          "rounds": 21,
+          "team_side": "CT"
+        },
+        {
+          "name": "gurrab",
+          "steamid": "76561198142692699",
+          "kills": 18,
+          "deaths": 12,
+          "assists": 12,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 2156,
+          "rounds": 21,
+          "team_side": "CT"
+        },
+        {
+          "name": "Thaipaj",
+          "steamid": "76561198138227849",
+          "kills": 14,
+          "deaths": 15,
+          "assists": 3,
+          "headshots": 6,
+          "flash_assists": 1,
+          "damage": 1300,
+          "rounds": 21,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Spiris AB/2026-04-16_21-07-35_285_de_anubis_DICE_AB_vs_Spiris_AB.dem": {
+    "hash": "30f1b61c5663c35371c24caf947c4bf4",
+    "parsed_at": "2026-04-17T08:07:58.966946",
+    "data": {
+      "file": "2026-04-16_21-07-35_285_de_anubis_DICE_AB_vs_Spiris_AB.dem",
+      "folder_team": "Spiris AB",
+      "date": "2026-04-16",
+      "time": "21:07:35",
+      "match_id": "285",
+      "map": "de_anubis",
+      "team1_raw": "DICE AB",
+      "team2_raw": "Spiris AB",
+      "total_rounds": 21,
+      "ct_wins": 14,
+      "t_wins": 7,
+      "t_start_score": 8,
+      "ct_start_score": 13,
+      "team_t_ids": [
+        "76561198029926857",
+        "76561198074585973",
+        "76561198068333144",
+        "76561198336510690",
+        "76561197987641216",
+        "76561198142692699",
+        "76561197969501535"
+      ],
+      "team_ct_ids": [
+        "76561198041483676",
+        "76561197965289828",
+        "76561198004721760",
+        "76561198061361226",
+        "76561198045671708"
+      ],
+      "comp_team_t_ids": [
+        "76561198041483676",
+        "76561197965289828",
+        "76561198004721760",
+        "76561198061361226",
+        "76561198045671708"
+      ],
+      "comp_team_ct_ids": [
+        "76561198029926857",
+        "76561198336510690",
+        "76561197987641216",
+        "76561198142692699",
+        "76561197969501535"
+      ],
+      "player_stats": [
+        {
+          "name": "Hugge",
+          "steamid": "76561198029926857",
+          "kills": 21,
+          "deaths": 12,
+          "assists": 4,
+          "headshots": 14,
+          "flash_assists": 0,
+          "damage": 2221,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "gbuic22",
+          "steamid": "76561198074585973",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "rasqall",
+          "steamid": "76561198068333144",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "Keena",
+          "steamid": "76561198336510690",
+          "kills": 15,
+          "deaths": 12,
+          "assists": 7,
+          "headshots": 4,
+          "flash_assists": 1,
+          "damage": 1680,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "Suppe",
+          "steamid": "76561197987641216",
+          "kills": 15,
+          "deaths": 11,
+          "assists": 7,
+          "headshots": 7,
+          "flash_assists": 2,
+          "damage": 1686,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "gurrab",
+          "steamid": "76561198142692699",
+          "kills": 15,
+          "deaths": 14,
+          "assists": 7,
+          "headshots": 9,
+          "flash_assists": 0,
+          "damage": 1686,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "BND",
+          "steamid": "76561197969501535",
+          "kills": 19,
+          "deaths": 12,
+          "assists": 4,
+          "headshots": 14,
+          "flash_assists": 0,
+          "damage": 1756,
+          "rounds": 21,
+          "team_side": "T"
+        },
+        {
+          "name": "Trollmeister 2.0",
+          "steamid": "76561198041483676",
+          "kills": 13,
+          "deaths": 16,
+          "assists": 4,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1508,
+          "rounds": 21,
+          "team_side": "CT"
+        },
+        {
+          "name": "cmd",
+          "steamid": "76561197965289828",
+          "kills": 12,
+          "deaths": 19,
+          "assists": 6,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 1334,
+          "rounds": 21,
+          "team_side": "CT"
+        },
+        {
+          "name": "nattaratu",
+          "steamid": "76561198004721760",
+          "kills": 14,
+          "deaths": 14,
+          "assists": 1,
+          "headshots": 12,
+          "flash_assists": 0,
+          "damage": 1322,
+          "rounds": 21,
+          "team_side": "CT"
+        },
+        {
+          "name": "Villmon",
+          "steamid": "76561198061361226",
+          "kills": 7,
+          "deaths": 17,
+          "assists": 8,
+          "headshots": 1,
+          "flash_assists": 0,
+          "damage": 1231,
+          "rounds": 21,
+          "team_side": "CT"
+        },
+        {
+          "name": "DoctorIcy",
+          "steamid": "76561198045671708",
+          "kills": 12,
+          "deaths": 19,
+          "assists": 4,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1511,
+          "rounds": 21,
+          "team_side": "CT"
+        }
+      ]
+    }
   }
 }
