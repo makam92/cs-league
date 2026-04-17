@@ -188,7 +188,8 @@ def parse_demo(path: Path) -> dict:
             if col not in kills_df.columns:
                 continue
             for _, row in kills_df[[col, name_col]].drop_duplicates().iterrows():
-                sid = str(int(row[col])) if row[col] else None
+                import math
+                sid = str(int(row[col])) if row[col] and not (isinstance(row[col], float) and math.isnan(row[col])) else None
                 if sid and sid not in stats and sid != "0":
                     stats[sid] = {
                         "name":          row[name_col],

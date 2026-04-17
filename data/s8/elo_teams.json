@@ -424,6 +424,33 @@
   ],
   "EA DICE AB": [
     {
+      "steamid": "76561198114477703",
+      "name": "gurki",
+      "nickname": "gurki",
+      "avatar": "https://distribution.faceit-cdn.net/images/189349b1-ff88-4fac-be57-dcc243532638.jpeg",
+      "elo": 2467,
+      "level": 10,
+      "faceit_id": "5b118b99-1ce6-4154-8c3a-daeff1ef0772"
+    },
+    {
+      "steamid": "76561198150529831",
+      "name": "LK",
+      "nickname": "Lassekongo0",
+      "avatar": "https://distribution.faceit-cdn.net/images/09687e83-4eec-494d-a899-5ab4dcc8d3a9.jpg",
+      "elo": 2074,
+      "level": 10,
+      "faceit_id": "05bb0a74-0c42-4b88-919d-d7863c43b97e"
+    },
+    {
+      "steamid": "76561197972918651",
+      "name": "zorkie",
+      "nickname": "zorkie",
+      "avatar": "https://distribution.faceit-cdn.net/images/43e45d38-2f68-4db7-a8fe-ccee70ed7e5d.jpeg",
+      "elo": 2025,
+      "level": 10,
+      "faceit_id": "7167cdab-7d93-4a61-be58-a7121e116fe6"
+    },
+    {
       "steamid": "76561198041483676",
       "name": "Trollmeister 2.0",
       "nickname": "Gurren45",
@@ -440,6 +467,15 @@
       "elo": 1762,
       "level": 9,
       "faceit_id": "64a5b32c-af24-47f7-90a5-9f83a13a5fba"
+    },
+    {
+      "steamid": "76561198091674422",
+      "name": "El Comandante",
+      "nickname": "vesslaattack",
+      "avatar": "https://distribution.faceit-cdn.net/images/07cf7500-cf34-4d7f-be13-e7abd470154a.jpg",
+      "elo": 1621,
+      "level": 8,
+      "faceit_id": "f571be23-1de5-4fa5-bc20-586189a87f2e"
     },
     {
       "steamid": "76561197965289828",
@@ -561,6 +597,53 @@
       "elo": 0,
       "level": 0,
       "faceit_id": ""
+    }
+  ],
+  "Fortnox AB": [
+    {
+      "steamid": "76561197998893054",
+      "name": "BJOERN",
+      "nickname": "BJOERN",
+      "avatar": "https://distribution.faceit-cdn.net/images/914af5b6-634f-4f2a-a6f8-1367902fe859.jpeg",
+      "elo": 3213,
+      "level": 10,
+      "faceit_id": "122474c8-59b6-445d-9fbf-258f418829d5"
+    },
+    {
+      "steamid": "76561198126695240",
+      "name": "skarre_",
+      "nickname": "skarre",
+      "avatar": "https://distribution.faceit-cdn.net/images/87bd59e9-43a2-4636-965d-a65d6d0d6bdd.jpeg",
+      "elo": 2437,
+      "level": 10,
+      "faceit_id": "f846d8c8-c151-4c1a-a74a-ac6535876eb3"
+    },
+    {
+      "steamid": "76561198009714204",
+      "name": "units",
+      "nickname": "unitss_",
+      "avatar": "https://assets.faceit-cdn.net/avatars/a0d11f9a-2d7f-419d-97a2-9dc6eb90366e_1550541499636.png",
+      "elo": 2398,
+      "level": 10,
+      "faceit_id": "a0d11f9a-2d7f-419d-97a2-9dc6eb90366e"
+    },
+    {
+      "steamid": "76561198405200060",
+      "name": "Krak3N",
+      "nickname": "Krak3N__",
+      "avatar": "https://distribution.faceit-cdn.net/images/3a02983e-e6a5-458a-b71c-4e032544b8ab.jpeg",
+      "elo": 2007,
+      "level": 10,
+      "faceit_id": "135c45f4-0861-4ba0-a1cf-6bb09e0de87f"
+    },
+    {
+      "steamid": "76561199121624477",
+      "name": "Lolkana",
+      "nickname": "gartho",
+      "avatar": "",
+      "elo": 939,
+      "level": 4,
+      "faceit_id": "13841dfe-8d14-48bb-9541-550d86b70311"
     }
   ],
   "Hello Ebbot AB": [
@@ -968,13 +1051,13 @@
       "faceit_id": "efc062d5-7f1e-412a-8f0b-338c4e175b49"
     },
     {
-      "steamid": "76561198376869678",
-      "name": "kleenBoB",
-      "nickname": "kleen",
-      "avatar": "https://distribution.faceit-cdn.net/images/c2edc152-612c-4bf5-8d2d-363294dfc5c9.jpeg",
-      "elo": 2058,
+      "steamid": "76561197987641216",
+      "name": "Suppe",
+      "nickname": "Suppejaow",
+      "avatar": "https://assets.faceit-cdn.net/avatars/84ed2b6d-14e3-4dc8-b09d-7f1ea8a09eaa_1550680963259.jpg",
+      "elo": 2010,
       "level": 10,
-      "faceit_id": "c5361162-eae7-48af-a103-d0460f6428b7"
+      "faceit_id": "84ed2b6d-14e3-4dc8-b09d-7f1ea8a09eaa"
     },
     {
       "steamid": "76561198074585973",
@@ -1382,6 +1465,42 @@
   ],
   "Sciber AB": [
     {
+      "steamid": "76561199492162742",
+      "name": "_johny1337_",
+      "nickname": "_johny1337_",
+      "avatar": "https://distribution.faceit-cdn.net/images/e7a91ef7-85b9-4f04-bc65-9eefe210a114.jpg",
+      "elo": 3164,
+      "level": 10,
+      "faceit_id": "373f2224-7982-4013-a4a6-c4d9564ed49e"
+    },
+    {
+      "steamid": "76561199575737637",
+      "name": "wicia",
+      "nickname": "w1cia-",
+      "avatar": "https://distribution.faceit-cdn.net/images/47785736-9c29-45ce-83c7-56eac551eaa5.jpg",
+      "elo": 2964,
+      "level": 10,
+      "faceit_id": "9692cd14-26e6-4d54-97b0-04d76ac4575f"
+    },
+    {
+      "steamid": "76561198274002406",
+      "name": "-mxni",
+      "nickname": "-mxni666",
+      "avatar": "https://distribution.faceit-cdn.net/images/5a8d2c00-d5e3-4dc2-b24e-1a0ced20ca3e.jpg",
+      "elo": 2640,
+      "level": 10,
+      "faceit_id": "6c42f5bd-d2a4-4773-b844-6845db9f0765"
+    },
+    {
+      "steamid": "76561198443295598",
+      "name": ":Saltiee",
+      "nickname": "Saltyy",
+      "avatar": "https://distribution.faceit-cdn.net/images/8720ad5c-cfc7-4297-bba8-ec37db53f932.jpeg",
+      "elo": 2587,
+      "level": 10,
+      "faceit_id": "bcdea5d5-521b-469b-b6f7-82b6b6ac0aab"
+    },
+    {
       "steamid": "76561198165163012",
       "name": "Blandfers",
       "nickname": "Blandferss",
@@ -1389,6 +1508,15 @@
       "elo": 2456,
       "level": 10,
       "faceit_id": "d9efba72-0390-4e0b-9206-9ac16a744dd9"
+    },
+    {
+      "steamid": "76561199427429948",
+      "name": "Y O H A N I",
+      "nickname": "Yohani",
+      "avatar": "https://distribution.faceit-cdn.net/images/f7e74520-aa02-4ba7-8c81-0b0f1af40525.jpg",
+      "elo": 2281,
+      "level": 10,
+      "faceit_id": "9a161d65-e3ee-4ef4-82e9-96e63fe86b19"
     },
     {
       "steamid": "76561197984358650",
@@ -1568,6 +1696,15 @@
       "faceit_id": "89a8ffda-ec1f-4105-b2ab-dfa67e8d96be"
     },
     {
+      "steamid": "76561197979859992",
+      "name": "DERREW",
+      "nickname": "DERREWP",
+      "avatar": "https://assets.faceit-cdn.net/avatars/5049c085-31d1-4d77-b020-ec4bdd0267c5_1550489913091.png",
+      "elo": 2263,
+      "level": 10,
+      "faceit_id": "5049c085-31d1-4d77-b020-ec4bdd0267c5"
+    },
+    {
       "steamid": "76561198142692699",
       "name": "gurrab",
       "nickname": "GurraBe",
@@ -1577,13 +1714,13 @@
       "faceit_id": "96db531e-3a62-46c7-b38a-f94132282abb"
     },
     {
-      "steamid": "76561197987641216",
-      "name": "Suppe",
-      "nickname": "Suppejaow",
-      "avatar": "https://assets.faceit-cdn.net/avatars/84ed2b6d-14e3-4dc8-b09d-7f1ea8a09eaa_1550680963259.jpg",
-      "elo": 2010,
+      "steamid": "76561198376869678",
+      "name": "kleenBoB",
+      "nickname": "kleen",
+      "avatar": "https://distribution.faceit-cdn.net/images/c2edc152-612c-4bf5-8d2d-363294dfc5c9.jpeg",
+      "elo": 2058,
       "level": 10,
-      "faceit_id": "84ed2b6d-14e3-4dc8-b09d-7f1ea8a09eaa"
+      "faceit_id": "c5361162-eae7-48af-a103-d0460f6428b7"
     },
     {
       "steamid": "76561197969501535",
@@ -1709,6 +1846,15 @@
   ],
   "Telia AB Jönköping": [
     {
+      "steamid": "76561198230025928",
+      "name": "Fh0Ny",
+      "nickname": "Fh0Ny",
+      "avatar": "https://distribution.faceit-cdn.net/images/396a8520-d440-4a5b-a9a2-39489d1ef95e.jpg",
+      "elo": 2540,
+      "level": 10,
+      "faceit_id": "b39fddbd-349d-42e7-b92a-3a891b0f1421"
+    },
+    {
       "steamid": "76561197960428365",
       "name": "Keken",
       "nickname": "Keken_",
@@ -1752,6 +1898,15 @@
       "elo": 1179,
       "level": 5,
       "faceit_id": "89311e7e-cd52-42fe-a0a2-3c5463e573d6"
+    },
+    {
+      "steamid": "76561198017150139",
+      "name": "Arvid",
+      "nickname": "Frawde",
+      "avatar": "https://assets.faceit-cdn.net/avatars/10ed3d16-22c4-45a0-af32-4149f8b7cc5b_1550588069873.png",
+      "elo": 1018,
+      "level": 4,
+      "faceit_id": "10ed3d16-22c4-45a0-af32-4149f8b7cc5b"
     }
   ],
   "Uniguide AB": [
@@ -1987,6 +2142,53 @@
       "elo": 1047,
       "level": 4,
       "faceit_id": "7b919322-2a25-4ca6-8968-c9a0a73df648"
+    }
+  ],
+  "team OneDiGiDim": [
+    {
+      "steamid": "76561198012696321",
+      "name": "CONQUER",
+      "nickname": "CONQUER11111",
+      "avatar": "https://distribution.faceit-cdn.net/images/2eda3e11-6d63-405e-bf1d-330b743ab626.jpeg",
+      "elo": 2791,
+      "level": 10,
+      "faceit_id": "63fb17c9-3c12-41b5-95be-56f720de9d1c"
+    },
+    {
+      "steamid": "76561198028625268",
+      "name": "OneDiGiDim",
+      "nickname": "MobileNaabz",
+      "avatar": "https://distribution.faceit-cdn.net/images/bc498a2f-51b5-4ec7-b58c-427198659f68.jpeg",
+      "elo": 2184,
+      "level": 10,
+      "faceit_id": "c311d1cb-d3a0-4c8e-80dd-819e9171bb56"
+    },
+    {
+      "steamid": "76561198038399718",
+      "name": "Nookiabaits",
+      "nickname": "Heggen",
+      "avatar": "https://distribution.faceit-cdn.net/images/60d610dc-840a-4307-af0e-e4fbe239335d.jpeg",
+      "elo": 2172,
+      "level": 10,
+      "faceit_id": "62dc3132-07d0-4892-916a-a59ecb750d40"
+    },
+    {
+      "steamid": "76561198088640288",
+      "name": "essenholm",
+      "nickname": "Essenholm",
+      "avatar": "https://distribution.faceit-cdn.net/images/d1265d7a-5cd9-4c29-8868-83a406656427.jpg",
+      "elo": 1592,
+      "level": 8,
+      "faceit_id": "57b70057-b96a-4e2f-8872-62df544ac60e"
+    },
+    {
+      "steamid": "76561198256738393",
+      "name": "Willie Scheffler",
+      "nickname": "Stewie75k",
+      "avatar": "https://distribution.faceit-cdn.net/images/fc2eff16-5f2c-4bcc-825d-294814840d3c.jpg",
+      "elo": 1455,
+      "level": 7,
+      "faceit_id": "46523862-98a2-4359-817a-3f652b001a14"
     }
   ]
 }
