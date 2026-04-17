@@ -742,6 +742,46 @@ def main():
 
         print(f"Roster-based corrections: {corrections}")
 
+    # ── Co-appearance inference: if a player has no canonical team assignment,
+    # look at their teammates on the same side in each demo they appear in.
+    # If a majority of those teammates are on one canonical team, assign them to it.
+    canonical_set_final = set(rosters.keys()) if roster_file.exists() else set()
+    if canonical_set_final:
+        sid_to_player_ref = {p["steamid"]: p for p in stats["players"]}
+        coapp_corrections = 0
+        changed = True
+        while changed:
+            changed = False
+            for demo in stats["demos"]:
+                all_demo_sids = set(p["steamid"] for p in demo.get("player_stats", []))
+                t_sids  = set(demo.get("comp_team_t_ids") or demo.get("team_t_ids", []))
+                ct_sids = set(demo.get("comp_team_ct_ids") or demo.get("team_ct_ids", []))
+                for side_sids in [t_sids, ct_sids]:
+                    # Find players on this side without a canonical team
+                    unknown = [s for s in side_sids if s in sid_to_player_ref and sid_to_player_ref[s]["team"] not in canonical_set_final]
+                    if not unknown:
+                        continue
+                    # Count canonical teams among known teammates on this side
+                    from collections import Counter
+                    known_teams = Counter(
+                        sid_to_player_ref[s]["team"]
+                        for s in side_sids
+                        if s in sid_to_player_ref and sid_to_player_ref[s]["team"] in canonical_set_final
+                    )
+                    if not known_teams:
+                        continue
+                    majority_team, majority_count = known_teams.most_common(1)[0]
+                    # Only infer if majority is clear (at least 2 known teammates agree)
+                    if majority_count >= 2:
+                        for sid in unknown:
+                            p = sid_to_player_ref[sid]
+                            print(f"  [coapp] {p['name']} ({p['team']}) → {majority_team} (via {majority_count} teammates in {demo['file']})")
+                            p["team"] = majority_team
+                            coapp_corrections += 1
+                            changed = True
+        if coapp_corrections:
+            print(f"Co-appearance corrections: {coapp_corrections}")
+
     # ── Per-demo balance check: CS is 5v5, so no team can have >5 players in one demo ──
     # Build steamid → player lookup for quick access
     sid_to_player = {p["steamid"]: p for p in stats["players"]}

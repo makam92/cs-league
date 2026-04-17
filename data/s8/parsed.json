@@ -5563,5 +5563,391 @@
         }
       ]
     }
+  },
+  "demos/s8/Sciber AB/2026-03-26_19-12-06_73_de_dust2_XXL_Sport_och_Vildmark_AB_vs_Sciber_AB.dem": {
+    "hash": "874ec63c0e3a4c73078834ef584de06a",
+    "parsed_at": "2026-04-17T08:03:15.363786",
+    "data": {
+      "file": "2026-03-26_19-12-06_73_de_dust2_XXL_Sport_och_Vildmark_AB_vs_Sciber_AB.dem",
+      "folder_team": "Sciber AB",
+      "date": "2026-03-26",
+      "time": "19:12:06",
+      "match_id": "73",
+      "map": "de_dust2",
+      "team1_raw": "XXL Sport och Vildmark AB",
+      "team2_raw": "Sciber AB",
+      "total_rounds": 22,
+      "ct_wins": 13,
+      "t_wins": 9,
+      "t_start_score": 9,
+      "ct_start_score": 13,
+      "team_t_ids": [
+        "76561198012296949",
+        "76561197960498971",
+        "76561198165163012",
+        "76561198049372741",
+        "76561197984358650"
+      ],
+      "team_ct_ids": [
+        "76561198028523107",
+        "76561198001188817",
+        "76561198073402897",
+        "76561198410828419",
+        "76561197985926403"
+      ],
+      "comp_team_t_ids": [
+        "76561198012296949",
+        "76561197960498971",
+        "76561198165163012",
+        "76561198049372741",
+        "76561197984358650"
+      ],
+      "comp_team_ct_ids": [
+        "76561198028523107",
+        "76561198001188817",
+        "76561198073402897",
+        "76561198410828419",
+        "76561197985926403"
+      ],
+      "player_stats": [
+        {
+          "name": "Bruno",
+          "steamid": "76561198012296949",
+          "kills": 13,
+          "deaths": 16,
+          "assists": 7,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 1739,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "olander",
+          "steamid": "76561197960498971",
+          "kills": 15,
+          "deaths": 17,
+          "assists": 8,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1575,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "Blandfers",
+          "steamid": "76561198165163012",
+          "kills": 20,
+          "deaths": 18,
+          "assists": 8,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 2240,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "Errit",
+          "steamid": "76561198049372741",
+          "kills": 13,
+          "deaths": 17,
+          "assists": 6,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1426,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "Schuster",
+          "steamid": "76561197984358650",
+          "kills": 11,
+          "deaths": 16,
+          "assists": 6,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 1160,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "datapata",
+          "steamid": "76561198028523107",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 6,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1530,
+          "rounds": 22,
+          "team_side": "CT"
+        },
+        {
+          "name": "G\u00f6tterd\u00e4mmerung",
+          "steamid": "76561198001188817",
+          "kills": 19,
+          "deaths": 15,
+          "assists": 12,
+          "headshots": 9,
+          "flash_assists": 3,
+          "damage": 1959,
+          "rounds": 22,
+          "team_side": "CT"
+        },
+        {
+          "name": "Haddock",
+          "steamid": "76561198073402897",
+          "kills": 25,
+          "deaths": 17,
+          "assists": 3,
+          "headshots": 13,
+          "flash_assists": 0,
+          "damage": 2658,
+          "rounds": 22,
+          "team_side": "CT"
+        },
+        {
+          "name": "Dripsson\u265b",
+          "steamid": "76561198410828419",
+          "kills": 12,
+          "deaths": 13,
+          "assists": 4,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1376,
+          "rounds": 22,
+          "team_side": "CT"
+        },
+        {
+          "name": "big rapper",
+          "steamid": "76561197985926403",
+          "kills": 16,
+          "deaths": 15,
+          "assists": 6,
+          "headshots": 8,
+          "flash_assists": 0,
+          "damage": 1296,
+          "rounds": 22,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Sciber AB/2026-03-26_20-07-30_96_de_dust2_Boulder_AB_Hong_Kong_vs_Sciber_AB.dem": {
+    "hash": "12de15a18b755200de1e4e79b32988d7",
+    "parsed_at": "2026-04-17T08:03:15.633692",
+    "data": {
+      "file": "2026-03-26_20-07-30_96_de_dust2_Boulder_AB_Hong_Kong_vs_Sciber_AB.dem",
+      "folder_team": "Sciber AB",
+      "date": "2026-03-26",
+      "time": "20:07:30",
+      "match_id": "96",
+      "map": "de_dust2",
+      "team1_raw": "Boulder AB Hong Kong",
+      "team2_raw": "Sciber AB",
+      "total_rounds": 0,
+      "ct_wins": 0,
+      "t_wins": 0,
+      "t_start_score": 0,
+      "ct_start_score": 0,
+      "team_t_ids": [],
+      "team_ct_ids": [],
+      "comp_team_t_ids": [],
+      "comp_team_ct_ids": [],
+      "player_stats": []
+    }
+  },
+  "demos/s8/Sciber AB/2026-04-09_20-04-40_201_de_ancient_Sciber_AB_vs_Fortnox_AB.dem": {
+    "hash": "eb8a12d21034d20d6968228781499a9e",
+    "parsed_at": "2026-04-17T08:03:19.801604",
+    "data": {
+      "file": "2026-04-09_20-04-40_201_de_ancient_Sciber_AB_vs_Fortnox_AB.dem",
+      "folder_team": "Sciber AB",
+      "date": "2026-04-09",
+      "time": "20:04:40",
+      "match_id": "201",
+      "map": "de_ancient",
+      "team1_raw": "Sciber AB",
+      "team2_raw": "Fortnox AB",
+      "total_rounds": 0,
+      "ct_wins": 0,
+      "t_wins": 0,
+      "t_start_score": 0,
+      "ct_start_score": 0,
+      "team_t_ids": [],
+      "team_ct_ids": [],
+      "comp_team_t_ids": [],
+      "comp_team_ct_ids": [],
+      "player_stats": []
+    }
+  },
+  "demos/s8/Sciber AB/2026-04-09_21-04-27_214_de_dust2_Netlight_AB_BOIDS_vs_Sciber_AB.dem": {
+    "hash": "71a81cfb6dbf614fae1772e2a2c6ee3b",
+    "parsed_at": "2026-04-17T08:03:22.176810",
+    "data": {
+      "file": "2026-04-09_21-04-27_214_de_dust2_Netlight_AB_BOIDS_vs_Sciber_AB.dem",
+      "folder_team": "Sciber AB",
+      "date": "2026-04-09",
+      "time": "21:04:27",
+      "match_id": "214",
+      "map": "de_dust2",
+      "team1_raw": "Netlight AB BOIDS",
+      "team2_raw": "Sciber AB",
+      "total_rounds": 19,
+      "ct_wins": 10,
+      "t_wins": 9,
+      "t_start_score": 6,
+      "ct_start_score": 13,
+      "team_t_ids": [
+        "76561197960498971",
+        "76561198049372741",
+        "76561197984358650",
+        "76561198165163012",
+        "76561198012296949"
+      ],
+      "team_ct_ids": [
+        "76561198122535570",
+        "76561198074585973",
+        "76561198068333144",
+        "76561198074780483",
+        "76561198376869678"
+      ],
+      "comp_team_t_ids": [
+        "76561197960498971",
+        "76561198049372741",
+        "76561197984358650",
+        "76561198165163012",
+        "76561198012296949"
+      ],
+      "comp_team_ct_ids": [
+        "76561198122535570",
+        "76561198074585973",
+        "76561198068333144",
+        "76561198074780483",
+        "76561198376869678"
+      ],
+      "player_stats": [
+        {
+          "name": "olander",
+          "steamid": "76561197960498971",
+          "kills": 9,
+          "deaths": 17,
+          "assists": 6,
+          "headshots": 5,
+          "flash_assists": 1,
+          "damage": 1085,
+          "rounds": 19,
+          "team_side": "T"
+        },
+        {
+          "name": "Errit",
+          "steamid": "76561198049372741",
+          "kills": 11,
+          "deaths": 15,
+          "assists": 3,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1244,
+          "rounds": 19,
+          "team_side": "T"
+        },
+        {
+          "name": "Schuster",
+          "steamid": "76561197984358650",
+          "kills": 17,
+          "deaths": 14,
+          "assists": 7,
+          "headshots": 8,
+          "flash_assists": 1,
+          "damage": 1562,
+          "rounds": 19,
+          "team_side": "T"
+        },
+        {
+          "name": "Blandfers",
+          "steamid": "76561198165163012",
+          "kills": 8,
+          "deaths": 14,
+          "assists": 5,
+          "headshots": 4,
+          "flash_assists": 1,
+          "damage": 1342,
+          "rounds": 19,
+          "team_side": "T"
+        },
+        {
+          "name": "Bruno",
+          "steamid": "76561198012296949",
+          "kills": 12,
+          "deaths": 14,
+          "assists": 4,
+          "headshots": 9,
+          "flash_assists": 2,
+          "damage": 1048,
+          "rounds": 19,
+          "team_side": "T"
+        },
+        {
+          "name": "Domilz",
+          "steamid": "76561198122535570",
+          "kills": 18,
+          "deaths": 12,
+          "assists": 3,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 1851,
+          "rounds": 19,
+          "team_side": "CT"
+        },
+        {
+          "name": "gbuic22",
+          "steamid": "76561198074585973",
+          "kills": 10,
+          "deaths": 11,
+          "assists": 9,
+          "headshots": 7,
+          "flash_assists": 5,
+          "damage": 1225,
+          "rounds": 19,
+          "team_side": "CT"
+        },
+        {
+          "name": "rasqall",
+          "steamid": "76561198068333144",
+          "kills": 16,
+          "deaths": 10,
+          "assists": 8,
+          "headshots": 7,
+          "flash_assists": 2,
+          "damage": 1723,
+          "rounds": 19,
+          "team_side": "CT"
+        },
+        {
+          "name": "sAM",
+          "steamid": "76561198074780483",
+          "kills": 19,
+          "deaths": 12,
+          "assists": 4,
+          "headshots": 11,
+          "flash_assists": 1,
+          "damage": 2018,
+          "rounds": 19,
+          "team_side": "CT"
+        },
+        {
+          "name": "kleenBoB",
+          "steamid": "76561198376869678",
+          "kills": 10,
+          "deaths": 11,
+          "assists": 4,
+          "headshots": 5,
+          "flash_assists": 2,
+          "damage": 1064,
+          "rounds": 19,
+          "team_side": "CT"
+        }
+      ]
+    }
   }
 }
