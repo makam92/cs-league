@@ -1335,5 +1335,12 @@
     "elo": 2306,
     "level": 10,
     "faceit_id": "81416155-83f0-4668-bc20-efee0651fcc7"
+  },
+  "76561198006039146": {
+    "nickname": "zouhner",
+    "avatar": "https://assets.faceit-cdn.net/avatars/11b11d1f-6abb-4305-83bd-7ecd82960037_1550717830395.jpg",
+    "elo": 2005,
+    "level": 10,
+    "faceit_id": "11b11d1f-6abb-4305-83bd-7ecd82960037"
   }
 }

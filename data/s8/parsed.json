@@ -8882,5 +8882,367 @@
         }
       ]
     }
+  },
+  "demos/s8/Boulder Hong Kong/2026-03-31_19-02-16_116_de_ancient_team_cel_vs_team_Keken.dem": {
+    "hash": "e8137836b6180393575c1b4dea27b0bb",
+    "parsed_at": "2026-04-22T12:37:30.166180",
+    "data": {
+      "file": "2026-03-31_19-02-16_116_de_ancient_team_cel_vs_team_Keken.dem",
+      "folder_team": "Boulder Hong Kong",
+      "date": "2026-03-31",
+      "time": "19:02:16",
+      "match_id": "116",
+      "map": "de_ancient",
+      "team1_raw": "team cel",
+      "team2_raw": "team Keken",
+      "total_rounds": 15,
+      "ct_wins": 10,
+      "t_wins": 5,
+      "t_start_score": 2,
+      "ct_start_score": 13,
+      "team_t_ids": [
+        "76561198086229555",
+        "76561197967712859",
+        "76561198230025928",
+        "76561198017150139",
+        "76561197960428365"
+      ],
+      "team_ct_ids": [
+        "76561197963166329",
+        "76561197962719753",
+        "76561198008037539",
+        "76561197984784906",
+        "76561198006039146"
+      ],
+      "comp_team_t_ids": [
+        "76561198086229555",
+        "76561197967712859",
+        "76561198230025928",
+        "76561198017150139",
+        "76561197960428365"
+      ],
+      "comp_team_ct_ids": [
+        "76561197963166329",
+        "76561197962719753",
+        "76561198008037539",
+        "76561197984784906",
+        "76561198006039146"
+      ],
+      "player_stats": [
+        {
+          "name": "Cardell",
+          "steamid": "76561198086229555",
+          "kills": 13,
+          "deaths": 13,
+          "assists": 1,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1281,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "Vaalen",
+          "steamid": "76561197967712859",
+          "kills": 3,
+          "deaths": 15,
+          "assists": 6,
+          "headshots": 2,
+          "flash_assists": 0,
+          "damage": 596,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "Fh0Ny",
+          "steamid": "76561198230025928",
+          "kills": 9,
+          "deaths": 15,
+          "assists": 2,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1013,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "Arvid",
+          "steamid": "76561198017150139",
+          "kills": 8,
+          "deaths": 14,
+          "assists": 2,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 959,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "Keken",
+          "steamid": "76561197960428365",
+          "kills": 6,
+          "deaths": 14,
+          "assists": 3,
+          "headshots": 3,
+          "flash_assists": 1,
+          "damage": 673,
+          "rounds": 15,
+          "team_side": "T"
+        },
+        {
+          "name": "cel",
+          "steamid": "76561197963166329",
+          "kills": 17,
+          "deaths": 4,
+          "assists": 2,
+          "headshots": 8,
+          "flash_assists": 1,
+          "damage": 1443,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "aggro",
+          "steamid": "76561197962719753",
+          "kills": 17,
+          "deaths": 8,
+          "assists": 6,
+          "headshots": 8,
+          "flash_assists": 0,
+          "damage": 1618,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "sparvel",
+          "steamid": "76561198008037539",
+          "kills": 11,
+          "deaths": 9,
+          "assists": 2,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1140,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "HaZ",
+          "steamid": "76561197984784906",
+          "kills": 14,
+          "deaths": 9,
+          "assists": 8,
+          "headshots": 8,
+          "flash_assists": 1,
+          "damage": 1738,
+          "rounds": 15,
+          "team_side": "CT"
+        },
+        {
+          "name": "De_dos",
+          "steamid": "76561198006039146",
+          "kills": 12,
+          "deaths": 9,
+          "assists": 7,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1326,
+          "rounds": 15,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Boulder Hong Kong/2026-03-31_20-02-24_135_de_ancient_Boulder_Hongkong_vs_Fortnox.dem": {
+    "hash": "b32bda6773ccafb42811923815e493fb",
+    "parsed_at": "2026-04-22T12:37:30.437111",
+    "data": {
+      "file": "2026-03-31_20-02-24_135_de_ancient_Boulder_Hongkong_vs_Fortnox.dem",
+      "folder_team": "Boulder Hong Kong",
+      "date": "2026-03-31",
+      "time": "20:02:24",
+      "match_id": "135",
+      "map": "de_ancient",
+      "team1_raw": "Boulder Hongkong",
+      "team2_raw": "Fortnox",
+      "total_rounds": 0,
+      "ct_wins": 0,
+      "t_wins": 0,
+      "t_start_score": 0,
+      "ct_start_score": 0,
+      "team_t_ids": [],
+      "team_ct_ids": [],
+      "comp_team_t_ids": [],
+      "comp_team_ct_ids": [],
+      "player_stats": []
+    }
+  },
+  "demos/s8/Boulder Hong Kong/2026-04-16_20-36-19_279_de_dust2_team_PMA_vs_team_datapata.dem": {
+    "hash": "cb87d1150e7a2fa5bfc5368e35004e50",
+    "parsed_at": "2026-04-22T12:37:33.144564",
+    "data": {
+      "file": "2026-04-16_20-36-19_279_de_dust2_team_PMA_vs_team_datapata.dem",
+      "folder_team": "Boulder Hong Kong",
+      "date": "2026-04-16",
+      "time": "20:36:19",
+      "match_id": "279",
+      "map": "de_dust2",
+      "team1_raw": "team PMA",
+      "team2_raw": "team datapata",
+      "total_rounds": 22,
+      "ct_wins": 11,
+      "t_wins": 11,
+      "t_start_score": 13,
+      "ct_start_score": 9,
+      "team_t_ids": [
+        "76561197985926403",
+        "76561198028523107",
+        "76561198073402897",
+        "76561198410828419",
+        "76561198001188817"
+      ],
+      "team_ct_ids": [
+        "76561198104279557",
+        "76561197984784906",
+        "76561198008037539",
+        "76561197963166329",
+        "76561197962719753"
+      ],
+      "comp_team_t_ids": [
+        "76561198104279557",
+        "76561197984784906",
+        "76561198008037539",
+        "76561197963166329",
+        "76561197962719753"
+      ],
+      "comp_team_ct_ids": [
+        "76561197985926403",
+        "76561198028523107",
+        "76561198073402897",
+        "76561198410828419",
+        "76561198001188817"
+      ],
+      "player_stats": [
+        {
+          "name": "big rapper",
+          "steamid": "76561197985926403",
+          "kills": 14,
+          "deaths": 17,
+          "assists": 3,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1618,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "datapata",
+          "steamid": "76561198028523107",
+          "kills": 9,
+          "deaths": 14,
+          "assists": 7,
+          "headshots": 4,
+          "flash_assists": 1,
+          "damage": 1335,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "Haddock",
+          "steamid": "76561198073402897",
+          "kills": 19,
+          "deaths": 18,
+          "assists": 7,
+          "headshots": 10,
+          "flash_assists": 0,
+          "damage": 2173,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "Dripsson\u265b",
+          "steamid": "76561198410828419",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 1,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 1193,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "G\u00f6tterd\u00e4mmerung",
+          "steamid": "76561198001188817",
+          "kills": 20,
+          "deaths": 17,
+          "assists": 4,
+          "headshots": 9,
+          "flash_assists": 0,
+          "damage": 1966,
+          "rounds": 22,
+          "team_side": "T"
+        },
+        {
+          "name": "PMA",
+          "steamid": "76561198104279557",
+          "kills": 18,
+          "deaths": 17,
+          "assists": 3,
+          "headshots": 10,
+          "flash_assists": 0,
+          "damage": 1950,
+          "rounds": 22,
+          "team_side": "CT"
+        },
+        {
+          "name": "HaZ",
+          "steamid": "76561197984784906",
+          "kills": 12,
+          "deaths": 14,
+          "assists": 9,
+          "headshots": 6,
+          "flash_assists": 2,
+          "damage": 1524,
+          "rounds": 22,
+          "team_side": "CT"
+        },
+        {
+          "name": "sparvel",
+          "steamid": "76561198008037539",
+          "kills": 16,
+          "deaths": 16,
+          "assists": 4,
+          "headshots": 8,
+          "flash_assists": 0,
+          "damage": 1835,
+          "rounds": 22,
+          "team_side": "CT"
+        },
+        {
+          "name": "cel",
+          "steamid": "76561197963166329",
+          "kills": 16,
+          "deaths": 15,
+          "assists": 4,
+          "headshots": 11,
+          "flash_assists": 0,
+          "damage": 1306,
+          "rounds": 22,
+          "team_side": "CT"
+        },
+        {
+          "name": "aggro",
+          "steamid": "76561197962719753",
+          "kills": 20,
+          "deaths": 15,
+          "assists": 8,
+          "headshots": 13,
+          "flash_assists": 0,
+          "damage": 2062,
+          "rounds": 22,
+          "team_side": "CT"
+        }
+      ]
+    }
   }
 }
