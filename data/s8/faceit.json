@@ -1321,5 +1321,19 @@
     "elo": 2184,
     "level": 10,
     "faceit_id": "c311d1cb-d3a0-4c8e-80dd-819e9171bb56"
+  },
+  "76561198019035694": {
+    "nickname": "wrng",
+    "avatar": "https://distribution.faceit-cdn.net/images/bfbd777a-0f2f-4a3c-b8ad-730c6fb25823.jpeg",
+    "elo": 1831,
+    "level": 9,
+    "faceit_id": "a41ed003-01b8-4cd5-b460-f648953da51d"
+  },
+  "76561198090211954": {
+    "nickname": "Cuuurl",
+    "avatar": "https://assets.faceit-cdn.net/avatars/81416155-83f0-4668-bc20-efee0651fcc7_1550495086559.jpg",
+    "elo": 2306,
+    "level": 10,
+    "faceit_id": "81416155-83f0-4668-bc20-efee0651fcc7"
   }
 }

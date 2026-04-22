@@ -433,15 +433,6 @@
       "faceit_id": "5b118b99-1ce6-4154-8c3a-daeff1ef0772"
     },
     {
-      "steamid": "76561198150529831",
-      "name": "LK",
-      "nickname": "Lassekongo0",
-      "avatar": "https://distribution.faceit-cdn.net/images/09687e83-4eec-494d-a899-5ab4dcc8d3a9.jpg",
-      "elo": 2074,
-      "level": 10,
-      "faceit_id": "05bb0a74-0c42-4b88-919d-d7863c43b97e"
-    },
-    {
       "steamid": "76561197972918651",
       "name": "zorkie",
       "nickname": "zorkie",
@@ -628,6 +619,15 @@
       "faceit_id": "a0d11f9a-2d7f-419d-97a2-9dc6eb90366e"
     },
     {
+      "steamid": "76561198090211954",
+      "name": "Cuuurl o} ♿",
+      "nickname": "Cuuurl",
+      "avatar": "https://assets.faceit-cdn.net/avatars/81416155-83f0-4668-bc20-efee0651fcc7_1550495086559.jpg",
+      "elo": 2306,
+      "level": 10,
+      "faceit_id": "81416155-83f0-4668-bc20-efee0651fcc7"
+    },
+    {
       "steamid": "76561198405200060",
       "name": "Krak3N",
       "nickname": "Krak3N__",
@@ -635,6 +635,15 @@
       "elo": 2007,
       "level": 10,
       "faceit_id": "135c45f4-0861-4ba0-a1cf-6bb09e0de87f"
+    },
+    {
+      "steamid": "76561198019035694",
+      "name": "wRoNg",
+      "nickname": "wrng",
+      "avatar": "https://distribution.faceit-cdn.net/images/bfbd777a-0f2f-4a3c-b8ad-730c6fb25823.jpeg",
+      "elo": 1831,
+      "level": 9,
+      "faceit_id": "a41ed003-01b8-4cd5-b460-f648953da51d"
     },
     {
       "steamid": "76561199121624477",
@@ -785,6 +794,17 @@
       "elo": 897,
       "level": 3,
       "faceit_id": "726c36ae-c795-4c33-935d-2b9a265fed91"
+    }
+  ],
+  "Infracom AB": [
+    {
+      "steamid": "76561198150529831",
+      "name": "Lassek",
+      "nickname": "Lassekongo0",
+      "avatar": "https://distribution.faceit-cdn.net/images/09687e83-4eec-494d-a899-5ab4dcc8d3a9.jpg",
+      "elo": 2074,
+      "level": 10,
+      "faceit_id": "05bb0a74-0c42-4b88-919d-d7863c43b97e"
     }
   ],
   "Knuts Bygg AB": [

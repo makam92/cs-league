@@ -7665,5 +7665,1222 @@
         }
       ]
     }
+  },
+  "demos/s8/Fortnox/2026-03-26_19-11-06_72_de_mirage_team_gbuic22_vs_team_BJOERN.dem": {
+    "hash": "64b2bc3b86f2e8460ddc9a37bef9f717",
+    "parsed_at": "2026-04-22T12:30:34.309930",
+    "data": {
+      "file": "2026-03-26_19-11-06_72_de_mirage_team_gbuic22_vs_team_BJOERN.dem",
+      "folder_team": "Fortnox",
+      "date": "2026-03-26",
+      "time": "19:11:06",
+      "match_id": "72",
+      "map": "de_mirage",
+      "team1_raw": "team gbuic22",
+      "team2_raw": "team BJOERN",
+      "total_rounds": 34,
+      "ct_wins": 17,
+      "t_wins": 17,
+      "t_start_score": 19,
+      "ct_start_score": 15,
+      "team_t_ids": [
+        "76561197998893054",
+        "76561199121624477",
+        "76561198405200060",
+        "76561198019035694",
+        "76561198090211954"
+      ],
+      "team_ct_ids": [
+        "76561198074585973",
+        "76561198376869678",
+        "76561198122535570",
+        "76561198068333144",
+        "76561198074780483"
+      ],
+      "comp_team_t_ids": [
+        "76561198074585973",
+        "76561198376869678",
+        "76561198122535570",
+        "76561198068333144",
+        "76561198074780483"
+      ],
+      "comp_team_ct_ids": [
+        "76561197998893054",
+        "76561199121624477",
+        "76561198405200060",
+        "76561198019035694",
+        "76561198090211954"
+      ],
+      "player_stats": [
+        {
+          "name": "BJOERN",
+          "steamid": "76561197998893054",
+          "kills": 18,
+          "deaths": 23,
+          "assists": 5,
+          "headshots": 12,
+          "flash_assists": 0,
+          "damage": 163,
+          "rounds": 34,
+          "team_side": "T"
+        },
+        {
+          "name": "Lolkana",
+          "steamid": "76561199121624477",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 34,
+          "team_side": "T"
+        },
+        {
+          "name": "Krak3N",
+          "steamid": "76561198405200060",
+          "kills": 21,
+          "deaths": 28,
+          "assists": 6,
+          "headshots": 8,
+          "flash_assists": 0,
+          "damage": 1965,
+          "rounds": 34,
+          "team_side": "T"
+        },
+        {
+          "name": "wRoNg",
+          "steamid": "76561198019035694",
+          "kills": 14,
+          "deaths": 24,
+          "assists": 5,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1441,
+          "rounds": 34,
+          "team_side": "T"
+        },
+        {
+          "name": "Cuuurl o} \u267f",
+          "steamid": "76561198090211954",
+          "kills": 23,
+          "deaths": 26,
+          "assists": 7,
+          "headshots": 16,
+          "flash_assists": 0,
+          "damage": 1875,
+          "rounds": 34,
+          "team_side": "T"
+        },
+        {
+          "name": "gbuic22",
+          "steamid": "76561198074585973",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 34,
+          "team_side": "CT"
+        },
+        {
+          "name": "kleenBoB",
+          "steamid": "76561198376869678",
+          "kills": 12,
+          "deaths": 23,
+          "assists": 7,
+          "headshots": 4,
+          "flash_assists": 1,
+          "damage": 1160,
+          "rounds": 34,
+          "team_side": "CT"
+        },
+        {
+          "name": "Domilz",
+          "steamid": "76561198122535570",
+          "kills": 31,
+          "deaths": 22,
+          "assists": 6,
+          "headshots": 18,
+          "flash_assists": 0,
+          "damage": 2906,
+          "rounds": 34,
+          "team_side": "CT"
+        },
+        {
+          "name": "rasqall",
+          "steamid": "76561198068333144",
+          "kills": 37,
+          "deaths": 22,
+          "assists": 9,
+          "headshots": 22,
+          "flash_assists": 1,
+          "damage": 3150,
+          "rounds": 34,
+          "team_side": "CT"
+        },
+        {
+          "name": "sAM",
+          "steamid": "76561198074780483",
+          "kills": 27,
+          "deaths": 23,
+          "assists": 7,
+          "headshots": 18,
+          "flash_assists": 0,
+          "damage": 2722,
+          "rounds": 34,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Fortnox/2026-03-26_20-17-05_98_de_dust2_DICE_vs_Fortnox.dem": {
+    "hash": "0fb446609c8048955464dbae3c1e6aff",
+    "parsed_at": "2026-04-22T12:30:36.065259",
+    "data": {
+      "file": "2026-03-26_20-17-05_98_de_dust2_DICE_vs_Fortnox.dem",
+      "folder_team": "Fortnox",
+      "date": "2026-03-26",
+      "time": "20:17:05",
+      "match_id": "98",
+      "map": "de_dust2",
+      "team1_raw": "DICE",
+      "team2_raw": "Fortnox",
+      "total_rounds": 16,
+      "ct_wins": 7,
+      "t_wins": 9,
+      "t_start_score": 13,
+      "ct_start_score": 3,
+      "team_t_ids": [
+        "76561198114477703",
+        "76561198061361226",
+        "76561197972918651",
+        "76561198045671708",
+        "76561198150529831"
+      ],
+      "team_ct_ids": [
+        "76561198019035694",
+        "76561198090211954",
+        "76561198068333144",
+        "76561199121624477",
+        "76561198405200060",
+        "76561197998893054"
+      ],
+      "comp_team_t_ids": [
+        "76561198114477703",
+        "76561198061361226",
+        "76561197972918651",
+        "76561198045671708",
+        "76561198150529831"
+      ],
+      "comp_team_ct_ids": [
+        "76561198019035694",
+        "76561198090211954",
+        "76561199121624477",
+        "76561198405200060",
+        "76561197998893054"
+      ],
+      "player_stats": [
+        {
+          "name": "gurki",
+          "steamid": "76561198114477703",
+          "kills": 23,
+          "deaths": 7,
+          "assists": 2,
+          "headshots": 13,
+          "flash_assists": 0,
+          "damage": 1988,
+          "rounds": 16,
+          "team_side": "T"
+        },
+        {
+          "name": "Villmon",
+          "steamid": "76561198061361226",
+          "kills": 7,
+          "deaths": 11,
+          "assists": 3,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 855,
+          "rounds": 16,
+          "team_side": "T"
+        },
+        {
+          "name": "zorkie",
+          "steamid": "76561197972918651",
+          "kills": 12,
+          "deaths": 10,
+          "assists": 6,
+          "headshots": 8,
+          "flash_assists": 2,
+          "damage": 1252,
+          "rounds": 16,
+          "team_side": "T"
+        },
+        {
+          "name": "DoctorIcy",
+          "steamid": "76561198045671708",
+          "kills": 11,
+          "deaths": 8,
+          "assists": 10,
+          "headshots": 5,
+          "flash_assists": 3,
+          "damage": 1377,
+          "rounds": 16,
+          "team_side": "T"
+        },
+        {
+          "name": "Lassek",
+          "steamid": "76561198150529831",
+          "kills": 14,
+          "deaths": 8,
+          "assists": 1,
+          "headshots": 11,
+          "flash_assists": 0,
+          "damage": 1370,
+          "rounds": 16,
+          "team_side": "T"
+        },
+        {
+          "name": "wRoNg",
+          "steamid": "76561198019035694",
+          "kills": 9,
+          "deaths": 14,
+          "assists": 6,
+          "headshots": 5,
+          "flash_assists": 0,
+          "damage": 1268,
+          "rounds": 16,
+          "team_side": "CT"
+        },
+        {
+          "name": "Cuuurl o} \u267f",
+          "steamid": "76561198090211954",
+          "kills": 6,
+          "deaths": 14,
+          "assists": 5,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 882,
+          "rounds": 16,
+          "team_side": "CT"
+        },
+        {
+          "name": "rasqall",
+          "steamid": "76561198068333144",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 16,
+          "team_side": "CT"
+        },
+        {
+          "name": "Lolkana",
+          "steamid": "76561199121624477",
+          "kills": 7,
+          "deaths": 13,
+          "assists": 0,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 754,
+          "rounds": 16,
+          "team_side": "CT"
+        },
+        {
+          "name": "Krak3N",
+          "steamid": "76561198405200060",
+          "kills": 8,
+          "deaths": 14,
+          "assists": 3,
+          "headshots": 2,
+          "flash_assists": 1,
+          "damage": 1062,
+          "rounds": 16,
+          "team_side": "CT"
+        },
+        {
+          "name": "BJOERN",
+          "steamid": "76561197998893054",
+          "kills": 11,
+          "deaths": 12,
+          "assists": 5,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 1307,
+          "rounds": 16,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Fortnox/2026-04-09_19-08-49_180_de_dust2_TeliaJKPG_vs_Fortnox.dem": {
+    "hash": "32621b5bf5a2e902852ff01b70993762",
+    "parsed_at": "2026-04-22T12:30:38.006609",
+    "data": {
+      "file": "2026-04-09_19-08-49_180_de_dust2_TeliaJKPG_vs_Fortnox.dem",
+      "folder_team": "Fortnox",
+      "date": "2026-04-09",
+      "time": "19:08:49",
+      "match_id": "180",
+      "map": "de_dust2",
+      "team1_raw": "TeliaJKPG",
+      "team2_raw": "Fortnox",
+      "total_rounds": 17,
+      "ct_wins": 9,
+      "t_wins": 8,
+      "t_start_score": 13,
+      "ct_start_score": 4,
+      "team_t_ids": [
+        "76561198019035694",
+        "76561198405200060",
+        "76561198126695240",
+        "76561198009714204",
+        "76561197998893054"
+      ],
+      "team_ct_ids": [
+        "76561197960428365",
+        "76561198230025928"
+      ],
+      "comp_team_t_ids": [
+        "76561198019035694",
+        "76561198405200060",
+        "76561198126695240",
+        "76561198009714204",
+        "76561197998893054"
+      ],
+      "comp_team_ct_ids": [
+        "76561198021795657",
+        "76561198107344813",
+        "76561197960428365",
+        "76561198230025928",
+        "76561197967712859"
+      ],
+      "player_stats": [
+        {
+          "name": "wRoNg",
+          "steamid": "76561198019035694",
+          "kills": 11,
+          "deaths": 11,
+          "assists": 3,
+          "headshots": 5,
+          "flash_assists": 1,
+          "damage": 1161,
+          "rounds": 17,
+          "team_side": "T"
+        },
+        {
+          "name": "Krak3N",
+          "steamid": "76561198405200060",
+          "kills": 9,
+          "deaths": 11,
+          "assists": 4,
+          "headshots": 3,
+          "flash_assists": 1,
+          "damage": 880,
+          "rounds": 17,
+          "team_side": "T"
+        },
+        {
+          "name": "skarre_",
+          "steamid": "76561198126695240",
+          "kills": 14,
+          "deaths": 11,
+          "assists": 7,
+          "headshots": 7,
+          "flash_assists": 1,
+          "damage": 1549,
+          "rounds": 17,
+          "team_side": "T"
+        },
+        {
+          "name": "units",
+          "steamid": "76561198009714204",
+          "kills": 11,
+          "deaths": 10,
+          "assists": 6,
+          "headshots": 4,
+          "flash_assists": 1,
+          "damage": 1286,
+          "rounds": 17,
+          "team_side": "T"
+        },
+        {
+          "name": "BJOERN",
+          "steamid": "76561197998893054",
+          "kills": 27,
+          "deaths": 8,
+          "assists": 7,
+          "headshots": 17,
+          "flash_assists": 2,
+          "damage": 2536,
+          "rounds": 17,
+          "team_side": "T"
+        },
+        {
+          "name": "Keken",
+          "steamid": "76561197960428365",
+          "kills": 11,
+          "deaths": 12,
+          "assists": 7,
+          "headshots": 3,
+          "flash_assists": 3,
+          "damage": 1187,
+          "rounds": 17,
+          "team_side": "CT"
+        },
+        {
+          "name": "Fh0Ny",
+          "steamid": "76561198230025928",
+          "kills": 19,
+          "deaths": 15,
+          "assists": 5,
+          "headshots": 11,
+          "flash_assists": 0,
+          "damage": 2068,
+          "rounds": 17,
+          "team_side": "CT"
+        },
+        {
+          "name": "Pirre Piraya",
+          "steamid": "76561198021795657",
+          "kills": 11,
+          "deaths": 15,
+          "assists": 2,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 981,
+          "rounds": 17,
+          "team_side": "CT"
+        },
+        {
+          "name": "WirrO",
+          "steamid": "76561198107344813",
+          "kills": 5,
+          "deaths": 15,
+          "assists": 7,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 966,
+          "rounds": 17,
+          "team_side": "CT"
+        },
+        {
+          "name": "Vaalen",
+          "steamid": "76561197967712859",
+          "kills": 4,
+          "deaths": 15,
+          "assists": 3,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 477,
+          "rounds": 17,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Fortnox/2026-04-13_18-30-57_-1_de_mirage_team_flawlezZz_vs_team_3xpress.dem": {
+    "hash": "f1873f33a68cb45677d9344086bbcf97",
+    "parsed_at": "2026-04-22T12:30:38.426473",
+    "data": {
+      "file": "2026-04-13_18-30-57_-1_de_mirage_team_flawlezZz_vs_team_3xpress.dem",
+      "folder_team": "Fortnox",
+      "date": null,
+      "time": null,
+      "match_id": null,
+      "map": null,
+      "team1_raw": null,
+      "team2_raw": null,
+      "total_rounds": 0,
+      "ct_wins": 0,
+      "t_wins": 0,
+      "t_start_score": 0,
+      "ct_start_score": 0,
+      "team_t_ids": [
+        "76561197998893054",
+        "76561198800736924",
+        "76561199487651012"
+      ],
+      "team_ct_ids": [
+        "76561199061438479",
+        "76561197997562719",
+        "76561198747254097"
+      ],
+      "comp_team_t_ids": [
+        "76561197998893054",
+        "76561198800736924",
+        "76561199487651012",
+        "76561199037047267",
+        "76561198747254097"
+      ],
+      "comp_team_ct_ids": [
+        "76561199061438479",
+        "76561197997562719"
+      ],
+      "player_stats": [
+        {
+          "name": "BJOERN",
+          "steamid": "76561197998893054",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 0,
+          "team_side": "T"
+        },
+        {
+          "name": "Kira",
+          "steamid": "76561198800736924",
+          "kills": 1,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 0,
+          "team_side": "T"
+        },
+        {
+          "name": "LucKar",
+          "steamid": "76561199487651012",
+          "kills": 1,
+          "deaths": 1,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 100,
+          "rounds": 0,
+          "team_side": "T"
+        },
+        {
+          "name": "-AxeFr-",
+          "steamid": "76561199061438479",
+          "kills": 0,
+          "deaths": 1,
+          "assists": 1,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 76,
+          "rounds": 0,
+          "team_side": "CT"
+        },
+        {
+          "name": "flawlezZz",
+          "steamid": "76561197997562719",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 0,
+          "team_side": "CT"
+        },
+        {
+          "name": "alowlightv",
+          "steamid": "76561198747254097",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 62,
+          "rounds": 0,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Fortnox/2026-04-13_18-31-26_-1_de_mirage_team_flawlezZz_vs_team_3xpress.dem": {
+    "hash": "f4aba19cb1228be5d70328c3f8e4334e",
+    "parsed_at": "2026-04-22T12:30:41.094972",
+    "data": {
+      "file": "2026-04-13_18-31-26_-1_de_mirage_team_flawlezZz_vs_team_3xpress.dem",
+      "folder_team": "Fortnox",
+      "date": null,
+      "time": null,
+      "match_id": null,
+      "map": null,
+      "team1_raw": null,
+      "team2_raw": null,
+      "total_rounds": 1,
+      "ct_wins": 0,
+      "t_wins": 1,
+      "t_start_score": 1,
+      "ct_start_score": 0,
+      "team_t_ids": [
+        "76561197998893054",
+        "76561198800736924",
+        "76561199487651012",
+        "76561199037047267"
+      ],
+      "team_ct_ids": [
+        "76561199061438479",
+        "76561197997562719",
+        "76561198747254097"
+      ],
+      "comp_team_t_ids": [
+        "76561199061438479",
+        "76561197997562719",
+        "76561198800736924",
+        "76561199037047267"
+      ],
+      "comp_team_ct_ids": [
+        "76561197998893054",
+        "76561199487651012",
+        "76561198747254097"
+      ],
+      "player_stats": [
+        {
+          "name": "BJOERN",
+          "steamid": "76561197998893054",
+          "kills": 1,
+          "deaths": 1,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 1,
+          "team_side": "T"
+        },
+        {
+          "name": "Kira",
+          "steamid": "76561198800736924",
+          "kills": 2,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 1,
+          "flash_assists": 0,
+          "damage": 100,
+          "rounds": 1,
+          "team_side": "T"
+        },
+        {
+          "name": "LucKar",
+          "steamid": "76561199487651012",
+          "kills": 0,
+          "deaths": 1,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 1,
+          "team_side": "T"
+        },
+        {
+          "name": "3xpress",
+          "steamid": "76561199037047267",
+          "kills": 0,
+          "deaths": 1,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 1,
+          "team_side": "T"
+        },
+        {
+          "name": "-AxeFr-",
+          "steamid": "76561199061438479",
+          "kills": 1,
+          "deaths": 0,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 16,
+          "rounds": 1,
+          "team_side": "CT"
+        },
+        {
+          "name": "flawlezZz",
+          "steamid": "76561197997562719",
+          "kills": 0,
+          "deaths": 0,
+          "assists": 1,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 84,
+          "rounds": 1,
+          "team_side": "CT"
+        },
+        {
+          "name": "alowlightv",
+          "steamid": "76561198747254097",
+          "kills": 0,
+          "deaths": 1,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 24,
+          "rounds": 1,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Fortnox/2026-04-13_19-16-37_-1_de_inferno_team_Kira_vs_team_BJOERN.dem": {
+    "hash": "8e95cba3ca9f52c5a9ec7348c7d99cce",
+    "parsed_at": "2026-04-22T12:31:09.213789",
+    "data": {
+      "file": "2026-04-13_19-16-37_-1_de_inferno_team_Kira_vs_team_BJOERN.dem",
+      "folder_team": "Fortnox",
+      "date": null,
+      "time": null,
+      "match_id": null,
+      "map": null,
+      "team1_raw": null,
+      "team2_raw": null,
+      "total_rounds": 2,
+      "ct_wins": 2,
+      "t_wins": 0,
+      "t_start_score": 0,
+      "ct_start_score": 2,
+      "team_t_ids": [
+        "76561197998893054",
+        "76561198747254097"
+      ],
+      "team_ct_ids": [],
+      "comp_team_t_ids": [
+        "76561199487651012",
+        "76561197997562719",
+        "76561199061438479",
+        "76561199037047267"
+      ],
+      "comp_team_ct_ids": [
+        "76561198800736924",
+        "76561197998893054",
+        "76561198747254097"
+      ],
+      "player_stats": [
+        {
+          "name": "BJOERN",
+          "steamid": "76561197998893054",
+          "kills": 1,
+          "deaths": 1,
+          "assists": 1,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 184,
+          "rounds": 2,
+          "team_side": "T"
+        },
+        {
+          "name": "alowlightv",
+          "steamid": "76561198747254097",
+          "kills": 4,
+          "deaths": 1,
+          "assists": 0,
+          "headshots": 1,
+          "flash_assists": 0,
+          "damage": 316,
+          "rounds": 2,
+          "team_side": "T"
+        },
+        {
+          "name": "-AxeFr-",
+          "steamid": "76561199061438479",
+          "kills": 2,
+          "deaths": 2,
+          "assists": 0,
+          "headshots": 1,
+          "flash_assists": 0,
+          "damage": 281,
+          "rounds": 2,
+          "team_side": "T"
+        },
+        {
+          "name": "LucKar",
+          "steamid": "76561199487651012",
+          "kills": 1,
+          "deaths": 2,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 100,
+          "rounds": 2,
+          "team_side": "T"
+        },
+        {
+          "name": "3xpress",
+          "steamid": "76561199037047267",
+          "kills": 0,
+          "deaths": 2,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 2,
+          "team_side": "T"
+        },
+        {
+          "name": "flawlezZz",
+          "steamid": "76561197997562719",
+          "kills": 0,
+          "deaths": 3,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 0,
+          "rounds": 2,
+          "team_side": "T"
+        },
+        {
+          "name": "Kira",
+          "steamid": "76561198800736924",
+          "kills": 1,
+          "deaths": 2,
+          "assists": 0,
+          "headshots": 0,
+          "flash_assists": 0,
+          "damage": 100,
+          "rounds": 2,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Fortnox/2026-04-16_19-01-41_234_de_mirage_team_Errit_vs_team_Krak3N.dem": {
+    "hash": "c9d24f0e573a6ac0993ed5a7537ea9f2",
+    "parsed_at": "2026-04-22T12:31:12.062846",
+    "data": {
+      "file": "2026-04-16_19-01-41_234_de_mirage_team_Errit_vs_team_Krak3N.dem",
+      "folder_team": "Fortnox",
+      "date": "2026-04-16",
+      "time": "19:01:41",
+      "match_id": "234",
+      "map": "de_mirage",
+      "team1_raw": "team Errit",
+      "team2_raw": "team Krak3N",
+      "total_rounds": 23,
+      "ct_wins": 13,
+      "t_wins": 10,
+      "t_start_score": 13,
+      "ct_start_score": 10,
+      "team_t_ids": [
+        "76561199121624477",
+        "76561197998893054",
+        "76561198126695240",
+        "76561198405200060",
+        "76561198090211954"
+      ],
+      "team_ct_ids": [
+        "76561197984358650",
+        "76561198165163012",
+        "76561198049372741",
+        "76561198001957640",
+        "76561198012296949"
+      ],
+      "comp_team_t_ids": [
+        "76561197984358650",
+        "76561198165163012",
+        "76561198049372741",
+        "76561198001957640",
+        "76561198012296949"
+      ],
+      "comp_team_ct_ids": [
+        "76561199121624477",
+        "76561197998893054",
+        "76561198126695240",
+        "76561198405200060",
+        "76561198090211954"
+      ],
+      "player_stats": [
+        {
+          "name": "Lolkana",
+          "steamid": "76561199121624477",
+          "kills": 13,
+          "deaths": 15,
+          "assists": 5,
+          "headshots": 6,
+          "flash_assists": 0,
+          "damage": 1403,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "BJOERN",
+          "steamid": "76561197998893054",
+          "kills": 12,
+          "deaths": 19,
+          "assists": 2,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 1436,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "skarre_",
+          "steamid": "76561198126695240",
+          "kills": 26,
+          "deaths": 15,
+          "assists": 6,
+          "headshots": 16,
+          "flash_assists": 1,
+          "damage": 2571,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Krak3N",
+          "steamid": "76561198405200060",
+          "kills": 16,
+          "deaths": 17,
+          "assists": 3,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 1629,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Cuuurl o} \u267f",
+          "steamid": "76561198090211954",
+          "kills": 11,
+          "deaths": 19,
+          "assists": 7,
+          "headshots": 8,
+          "flash_assists": 0,
+          "damage": 1534,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Schuster",
+          "steamid": "76561197984358650",
+          "kills": 12,
+          "deaths": 19,
+          "assists": 14,
+          "headshots": 3,
+          "flash_assists": 3,
+          "damage": 1905,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "Blandfers",
+          "steamid": "76561198165163012",
+          "kills": 22,
+          "deaths": 16,
+          "assists": 8,
+          "headshots": 10,
+          "flash_assists": 0,
+          "damage": 2482,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "Errit",
+          "steamid": "76561198049372741",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 3,
+          "headshots": 8,
+          "flash_assists": 0,
+          "damage": 1431,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "ninya",
+          "steamid": "76561198001957640",
+          "kills": 15,
+          "deaths": 15,
+          "assists": 1,
+          "headshots": 10,
+          "flash_assists": 0,
+          "damage": 1546,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "Bruno",
+          "steamid": "76561198012296949",
+          "kills": 24,
+          "deaths": 14,
+          "assists": 4,
+          "headshots": 7,
+          "flash_assists": 2,
+          "damage": 1888,
+          "rounds": 23,
+          "team_side": "CT"
+        }
+      ]
+    }
+  },
+  "demos/s8/Fortnox/2026-04-16_20-03-21_269_de_ancient_team_Keken_vs_team_Cuuurl_o_.dem": {
+    "hash": "d7afb67ee7b5b0f951b8beafd0c5fa8a",
+    "parsed_at": "2026-04-22T12:31:14.775162",
+    "data": {
+      "file": "2026-04-16_20-03-21_269_de_ancient_team_Keken_vs_team_Cuuurl_o_.dem",
+      "folder_team": "Fortnox",
+      "date": "2026-04-16",
+      "time": "20:03:21",
+      "match_id": "269",
+      "map": "de_ancient",
+      "team1_raw": "team Keken",
+      "team2_raw": "team Cuuurl o ",
+      "total_rounds": 23,
+      "ct_wins": 11,
+      "t_wins": 12,
+      "t_start_score": 13,
+      "ct_start_score": 10,
+      "team_t_ids": [
+        "76561198405200060",
+        "76561198126695240",
+        "76561199121624477",
+        "76561197998893054",
+        "76561198090211954"
+      ],
+      "team_ct_ids": [
+        "76561198017150139",
+        "76561197967712859",
+        "76561198230025928",
+        "76561198086229555",
+        "76561197960428365"
+      ],
+      "comp_team_t_ids": [
+        "76561198405200060",
+        "76561198126695240",
+        "76561199121624477",
+        "76561197998893054",
+        "76561198090211954"
+      ],
+      "comp_team_ct_ids": [
+        "76561198017150139",
+        "76561197967712859",
+        "76561198230025928",
+        "76561198086229555",
+        "76561197960428365"
+      ],
+      "player_stats": [
+        {
+          "name": "Krak3N",
+          "steamid": "76561198405200060",
+          "kills": 17,
+          "deaths": 17,
+          "assists": 3,
+          "headshots": 9,
+          "flash_assists": 0,
+          "damage": 1787,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "skarre_",
+          "steamid": "76561198126695240",
+          "kills": 19,
+          "deaths": 15,
+          "assists": 8,
+          "headshots": 7,
+          "flash_assists": 2,
+          "damage": 2133,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Lolkana",
+          "steamid": "76561199121624477",
+          "kills": 11,
+          "deaths": 13,
+          "assists": 4,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 1342,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "BJOERN",
+          "steamid": "76561197998893054",
+          "kills": 17,
+          "deaths": 14,
+          "assists": 12,
+          "headshots": 9,
+          "flash_assists": 4,
+          "damage": 1843,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Cuuurl o} \u267f",
+          "steamid": "76561198090211954",
+          "kills": 16,
+          "deaths": 20,
+          "assists": 5,
+          "headshots": 7,
+          "flash_assists": 0,
+          "damage": 1582,
+          "rounds": 23,
+          "team_side": "T"
+        },
+        {
+          "name": "Arvid",
+          "steamid": "76561198017150139",
+          "kills": 6,
+          "deaths": 19,
+          "assists": 4,
+          "headshots": 1,
+          "flash_assists": 0,
+          "damage": 792,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "Vaalen",
+          "steamid": "76561197967712859",
+          "kills": 15,
+          "deaths": 17,
+          "assists": 5,
+          "headshots": 9,
+          "flash_assists": 0,
+          "damage": 1876,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "Fh0Ny",
+          "steamid": "76561198230025928",
+          "kills": 31,
+          "deaths": 14,
+          "assists": 7,
+          "headshots": 15,
+          "flash_assists": 1,
+          "damage": 3251,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "Cardell",
+          "steamid": "76561198086229555",
+          "kills": 11,
+          "deaths": 15,
+          "assists": 2,
+          "headshots": 4,
+          "flash_assists": 0,
+          "damage": 906,
+          "rounds": 23,
+          "team_side": "CT"
+        },
+        {
+          "name": "Keken",
+          "steamid": "76561197960428365",
+          "kills": 12,
+          "deaths": 16,
+          "assists": 4,
+          "headshots": 3,
+          "flash_assists": 0,
+          "damage": 1808,
+          "rounds": 23,
+          "team_side": "CT"
+        }
+      ]
+    }
   }
 }
