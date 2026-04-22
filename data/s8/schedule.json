@@ -253,6 +253,51 @@
       "division": "Division 1"
     },
     {
+      "datetime": "2026-04-20T08:00:00+0200",
+      "team1": "Toyota Material Handling AB",
+      "team2": "Northmill Bank AB",
+      "score1": 16,
+      "score2": 14,
+      "played": true,
+      "division": "Division 1"
+    },
+    {
+      "datetime": "2026-04-20T19:00:00+0200",
+      "team1": "Northmill Bank AB",
+      "team2": "Toyota Material Handling AB",
+      "score1": 4,
+      "score2": 13,
+      "played": true,
+      "division": "Division 1"
+    },
+    {
+      "datetime": "2026-04-20T21:00:00+0200",
+      "team1": "Northmill Bank AB",
+      "team2": "CGI Sverige AB",
+      "score1": 11,
+      "score2": 13,
+      "played": true,
+      "division": "Division 1"
+    },
+    {
+      "datetime": "2026-04-22T20:00:00+0200",
+      "team1": "Netlight AB DUENDE",
+      "team2": "CGI Sverige AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 1"
+    },
+    {
+      "datetime": "2026-04-22T20:00:00+0200",
+      "team1": "Webhallen Sverige AB",
+      "team2": "CGI Sverige AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 1"
+    },
+    {
       "datetime": "2026-04-23T19:00:00+0200",
       "team1": "Northmill Bank AB",
       "team2": "Bredband2 AB",
@@ -271,15 +316,6 @@
       "division": "Division 1"
     },
     {
-      "datetime": "2026-04-23T19:00:00+0200",
-      "team1": "Netlight AB DUENDE",
-      "team2": "CGI Sverige AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 1"
-    },
-    {
       "datetime": "2026-04-23T20:00:00+0200",
       "team1": "Toyota Material Handling AB",
       "team2": "Bredband2 AB",
@@ -292,15 +328,6 @@
       "datetime": "2026-04-23T20:00:00+0200",
       "team1": "Netlight AB DUENDE",
       "team2": "Webhallen Sverige AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 1"
-    },
-    {
-      "datetime": "2026-04-23T20:00:00+0200",
-      "team1": "Northmill Bank AB",
-      "team2": "CGI Sverige AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -334,27 +361,9 @@
       "division": "Division 1"
     },
     {
-      "datetime": "2026-04-28T19:00:00+0200",
-      "team1": "Webhallen Sverige AB",
-      "team2": "CGI Sverige AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 1"
-    },
-    {
       "datetime": "2026-04-28T20:00:00+0200",
       "team1": "Netlight AB DUENDE",
       "team2": "Telia Sverige AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 1"
-    },
-    {
-      "datetime": "2026-04-28T20:00:00+0200",
-      "team1": "Northmill Bank AB",
-      "team2": "Toyota Material Handling AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -732,7 +741,7 @@
       "division": "Division 2A"
     },
     {
-      "datetime": "2026-04-23T19:00:00+0200",
+      "datetime": "2026-04-22T20:00:00+0200",
       "team1": "Spiris AB",
       "team2": "XXL Sport och Vildmark AB",
       "score1": null,
@@ -769,15 +778,6 @@
     },
     {
       "datetime": "2026-04-23T20:00:00+0200",
-      "team1": "Fortnox AB",
-      "team2": "Spiris AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2A"
-    },
-    {
-      "datetime": "2026-04-23T20:00:00+0200",
       "team1": "EA DICE AB",
       "team2": "XXL Sport och Vildmark AB",
       "score1": null,
@@ -798,6 +798,15 @@
       "datetime": "2026-04-23T20:00:00+0200",
       "team1": "Netlight AB BOIDS",
       "team2": "Sciber AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2A"
+    },
+    {
+      "datetime": "2026-04-26T20:00:00+0200",
+      "team1": "Fortnox AB",
+      "team2": "Spiris AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -1202,21 +1211,39 @@
       "division": "Division 2B"
     },
     {
+      "datetime": "2026-04-20T19:00:00+0200",
+      "team1": "Svea Bank AB",
+      "team2": "Öhrlings PricewaterhouseCoopers AB",
+      "score1": 13,
+      "score2": 6,
+      "played": true,
+      "division": "Division 2B"
+    },
+    {
+      "datetime": "2026-04-20T20:00:00+0200",
+      "team1": "Svea Bank AB",
+      "team2": "HappyHomes Lidingö AB",
+      "score1": 13,
+      "score2": 9,
+      "played": true,
+      "division": "Division 2B"
+    },
+    {
+      "datetime": "2026-04-20T20:00:00+0200",
+      "team1": "HappyHomes Lidingö AB",
+      "team2": "Svea Bank AB",
+      "score1": 9,
+      "score2": 13,
+      "played": true,
+      "division": "Division 2B"
+    },
+    {
       "datetime": "2026-04-21T20:00:00+0200",
       "team1": "Xenit AB",
       "team2": "Aderian Aktiv IT AB",
       "score1": null,
       "score2": null,
-      "played": false,
-      "division": "Division 2B"
-    },
-    {
-      "datetime": "2026-04-23T19:00:00+0200",
-      "team1": "HappyHomes Lidingö AB",
-      "team2": "Svea Bank AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "played": true,
       "division": "Division 2B"
     },
     {
@@ -1225,7 +1252,7 @@
       "team2": "Xenit AB",
       "score1": null,
       "score2": null,
-      "played": false,
+      "played": true,
       "division": "Division 2B"
     },
     {
@@ -1270,7 +1297,7 @@
       "team2": "Xenit AB",
       "score1": null,
       "score2": null,
-      "played": false,
+      "played": true,
       "division": "Division 2B"
     },
     {
@@ -1324,7 +1351,7 @@
       "team2": "HappyHomes Lidingö AB",
       "score1": null,
       "score2": null,
-      "played": false,
+      "played": true,
       "division": "Division 2B"
     },
     {
@@ -1681,12 +1708,21 @@
       "division": "Division 2C"
     },
     {
+      "datetime": "2026-04-20T20:00:00+0200",
+      "team1": "SSG Solutions AB",
+      "team2": "Omegapoint AB",
+      "score1": 13,
+      "score2": 4,
+      "played": true,
+      "division": "Division 2C"
+    },
+    {
       "datetime": "2026-04-20T21:00:00+0200",
       "team1": "SSG Solutions AB",
       "team2": "Boulder AB Mozarteum",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 13,
+      "score2": 8,
+      "played": true,
       "division": "Division 2C"
     },
     {
@@ -1720,15 +1756,6 @@
       "datetime": "2026-04-23T20:00:00+0200",
       "team1": "Onevinn AB",
       "team2": "Asurgent AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2C"
-    },
-    {
-      "datetime": "2026-04-23T20:00:00+0200",
-      "team1": "SSG Solutions AB",
-      "team2": "Omegapoint AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -1771,6 +1798,15 @@
       "division": "Division 2C"
     },
     {
+      "datetime": "2026-04-27T21:00:00+0200",
+      "team1": "Omegapoint AB",
+      "team2": "Dizparc Infrastruktur Jönköping AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2C"
+    },
+    {
       "datetime": "2026-04-28T19:00:00+0200",
       "team1": "Onevinn AB",
       "team2": "Eltel Networks AB",
@@ -1819,15 +1855,6 @@
       "datetime": "2026-04-28T20:00:00+0200",
       "team1": "DynaMate AB",
       "team2": "Eltel Networks AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2C"
-    },
-    {
-      "datetime": "2026-04-28T20:00:00+0200",
-      "team1": "Omegapoint AB",
-      "team2": "Dizparc Infrastruktur Jönköping AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -2775,15 +2802,6 @@
     },
     {
       "datetime": "2026-04-28T19:00:00+0200",
-      "team1": "Hapio.io - (Viström Digital Development)",
-      "team2": "Teris AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2E"
-    },
-    {
-      "datetime": "2026-04-28T19:00:00+0200",
       "team1": "SOLTAK AB",
       "team2": "Nordomatic AB",
       "score1": null,
@@ -2840,6 +2858,15 @@
       "datetime": "2026-04-28T20:00:00+0200",
       "team1": "Enzure AB",
       "team2": "Lumera AB 1",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2E"
+    },
+    {
+      "datetime": "2026-04-28T21:00:00+0200",
+      "team1": "Hapio.io - (Viström Digital Development)",
+      "team2": "Teris AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -3190,16 +3217,16 @@
       "division": "Division 2F"
     },
     {
-      "datetime": "2026-04-23T19:00:00+0200",
-      "team1": "CGI AB Optimistic Reloaders",
+      "datetime": "2026-04-20T19:00:00+0200",
+      "team1": "Netgain AB",
       "team2": "Leadstar Media AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 13,
+      "score2": 8,
+      "played": true,
       "division": "Division 2F"
     },
     {
-      "datetime": "2026-04-23T19:00:00+0200",
+      "datetime": "2026-04-22T20:00:00+0200",
       "team1": "Hello Ebbot AB",
       "team2": "Sweco AB",
       "score1": null,
@@ -3209,8 +3236,8 @@
     },
     {
       "datetime": "2026-04-23T19:00:00+0200",
-      "team1": "Netgain AB",
-      "team2": "Hogia AB",
+      "team1": "CGI AB Optimistic Reloaders",
+      "team2": "Leadstar Media AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -3229,15 +3256,6 @@
       "datetime": "2026-04-23T20:00:00+0200",
       "team1": "Hello Ebbot AB",
       "team2": "CGI AB Optimistic Reloaders",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2F"
-    },
-    {
-      "datetime": "2026-04-23T20:00:00+0200",
-      "team1": "Netgain AB",
-      "team2": "Leadstar Media AB",
       "score1": null,
       "score2": null,
       "played": false,
@@ -3591,9 +3609,9 @@
       "datetime": "2026-04-09T20:00:00+0200",
       "team1": "Infracom AB",
       "team2": "NODAF AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 0,
+      "score2": 0,
+      "played": true,
       "division": "Division 2G"
     },
     {
@@ -3618,9 +3636,9 @@
       "datetime": "2026-04-16T19:00:00+0200",
       "team1": "NODAF AB",
       "team2": "Infracom AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 0,
+      "score2": 0,
+      "played": true,
       "division": "Division 2G"
     },
     {
@@ -3645,9 +3663,9 @@
       "datetime": "2026-04-16T20:00:00+0200",
       "team1": "NODAF AB",
       "team2": "Bizzdo AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 2,
+      "score2": 13,
+      "played": true,
       "division": "Division 2G"
     },
     {
@@ -3663,9 +3681,9 @@
       "datetime": "2026-04-16T20:00:00+0200",
       "team1": "Andwhy AB",
       "team2": "Infracom AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 0,
+      "score2": 0,
+      "played": true,
       "division": "Division 2G"
     },
     {
@@ -3696,6 +3714,15 @@
       "division": "Division 2G"
     },
     {
+      "datetime": "2026-04-21T20:00:00+0200",
+      "team1": "Gjuteriteknik AB",
+      "team2": "Mpya Digital AB",
+      "score1": null,
+      "score2": null,
+      "played": false,
+      "division": "Division 2G"
+    },
+    {
       "datetime": "2026-04-23T19:00:00+0200",
       "team1": "Knuts Bygg AB",
       "team2": "NODAF AB",
@@ -3715,20 +3742,11 @@
     },
     {
       "datetime": "2026-04-23T19:00:00+0200",
-      "team1": "Gjuteriteknik AB",
-      "team2": "Mpya Digital AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
-      "division": "Division 2G"
-    },
-    {
-      "datetime": "2026-04-23T19:00:00+0200",
       "team1": "Infracom AB",
       "team2": "Softronic CM1 AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 0,
+      "score2": 0,
+      "played": true,
       "division": "Division 2G"
     },
     {
@@ -3753,9 +3771,9 @@
       "datetime": "2026-04-23T20:00:00+0200",
       "team1": "Infracom AB",
       "team2": "Bizzdo AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 0,
+      "score2": 0,
+      "played": true,
       "division": "Division 2G"
     },
     {
@@ -3780,9 +3798,9 @@
       "datetime": "2026-04-28T19:00:00+0200",
       "team1": "Infracom AB",
       "team2": "Knuts Bygg AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 0,
+      "score2": 0,
+      "played": true,
       "division": "Division 2G"
     },
     {
@@ -3807,9 +3825,9 @@
       "datetime": "2026-04-28T20:00:00+0200",
       "team1": "Infracom AB",
       "team2": "Gjuteriteknik AB",
-      "score1": null,
-      "score2": null,
-      "played": false,
+      "score1": 0,
+      "score2": 0,
+      "played": true,
       "division": "Division 2G"
     },
     {
