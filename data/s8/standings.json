@@ -3,28 +3,28 @@
     {
       "rank": 1,
       "team": "CGI Sverige AB",
-      "played": 10,
-      "wins": 9,
+      "played": 12,
+      "wins": 10,
       "draws": 0,
-      "losses": 1,
+      "losses": 2,
       "forfeits": 0,
-      "score_for": 127,
-      "score_against": 74,
-      "diff": 53,
-      "points": 27
+      "score_for": 150,
+      "score_against": 88,
+      "diff": 62,
+      "points": 30
     },
     {
       "rank": 2,
       "team": "Netlight AB DUENDE",
-      "played": 8,
-      "wins": 7,
+      "played": 9,
+      "wins": 8,
       "draws": 0,
       "losses": 1,
       "forfeits": 0,
-      "score_for": 95,
-      "score_against": 61,
-      "diff": 34,
-      "points": 21
+      "score_for": 108,
+      "score_against": 71,
+      "diff": 37,
+      "points": 24
     },
     {
       "rank": 3,
@@ -68,14 +68,14 @@
     {
       "rank": 6,
       "team": "Webhallen Sverige AB",
-      "played": 8,
+      "played": 9,
       "wins": 2,
       "draws": 0,
-      "losses": 6,
+      "losses": 7,
       "forfeits": 0,
-      "score_for": 77,
-      "score_against": 98,
-      "diff": -21,
+      "score_for": 78,
+      "score_against": 111,
+      "diff": -33,
       "points": 6
     },
     {
@@ -109,14 +109,14 @@
     {
       "rank": 2,
       "team": "Spiris AB",
-      "played": 10,
+      "played": 11,
       "wins": 7,
       "draws": 0,
-      "losses": 3,
+      "losses": 4,
       "forfeits": 0,
-      "score_for": 119,
-      "score_against": 83,
-      "diff": 36,
+      "score_for": 126,
+      "score_against": 96,
+      "diff": 30,
       "points": 21
     },
     {
@@ -161,15 +161,15 @@
     {
       "rank": 6,
       "team": "XXL Sport och Vildmark AB",
-      "played": 10,
-      "wins": 4,
+      "played": 11,
+      "wins": 5,
       "draws": 0,
       "losses": 6,
       "forfeits": 0,
-      "score_for": 101,
-      "score_against": 108,
-      "diff": -7,
-      "points": 12
+      "score_for": 114,
+      "score_against": 115,
+      "diff": -1,
+      "points": 15
     },
     {
       "rank": 7,
@@ -732,18 +732,31 @@
     {
       "rank": 1,
       "team": "Gjuteriteknik AB",
-      "played": 11,
+      "played": 12,
       "wins": 11,
       "draws": 0,
-      "losses": 0,
+      "losses": 1,
       "forfeits": 0,
-      "score_for": 117,
-      "score_against": 55,
-      "diff": 62,
+      "score_for": 133,
+      "score_against": 74,
+      "diff": 59,
       "points": 33
     },
     {
       "rank": 2,
+      "team": "Mpya Digital AB",
+      "played": 10,
+      "wins": 8,
+      "draws": 0,
+      "losses": 2,
+      "forfeits": 0,
+      "score_for": 105,
+      "score_against": 88,
+      "diff": 17,
+      "points": 24
+    },
+    {
+      "rank": 3,
       "team": "Knuts Bygg AB",
       "played": 11,
       "wins": 7,
@@ -753,19 +766,6 @@
       "score_for": 95,
       "score_against": 89,
       "diff": 6,
-      "points": 21
-    },
-    {
-      "rank": 3,
-      "team": "Mpya Digital AB",
-      "played": 9,
-      "wins": 7,
-      "draws": 0,
-      "losses": 2,
-      "forfeits": 0,
-      "score_for": 86,
-      "score_against": 72,
-      "diff": 14,
       "points": 21
     },
     {
